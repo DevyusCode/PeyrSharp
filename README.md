@@ -48,7 +48,7 @@ PeyrSharp is divided in multiple packages:
 
 <details>
     <summary>
-        <b>PeyrSharp.Env</b>
+        <b>PeyrSharp.Env</b>, methods related to the file system and to the current execution environment.
     </summary>
 
 - FileSys
@@ -60,7 +60,7 @@ PeyrSharp is divided in multiple packages:
 
 <details>
     <summary>
-        <b>PeyrSharp.Enums</b>
+        <b>PeyrSharp.Enums</b>, all enumerations used by PeyrSharp
     </summary>
 
 - WindowsVersion
@@ -76,7 +76,7 @@ PeyrSharp is divided in multiple packages:
 
 <details>
     <summary>
-        <b>PeyrSharp.Exceptions</b>
+        <b>PeyrSharp.Exceptions</b>, all exceptions used by PeyrSharp
     </summary>
 
 - RGBInvalidValueException
@@ -87,7 +87,7 @@ PeyrSharp is divided in multiple packages:
 
 <details>
     <summary>
-        <b>PeyrSharp.Extensions</b>
+        <b>PeyrSharp.Extensions</b>, extension methods, that extends basic types, such as <code>string</code>, <code>int</code>, <code>double</code> or arrays (<code>T[]</code>).
     </summary>
 
 - String
@@ -99,7 +99,7 @@ PeyrSharp is divided in multiple packages:
 
 <details>
     <summary>
-        <b>PeyrSharp.UiHelpers</b>
+        <b>PeyrSharp.UiHelpers</b>, methods related to Windows Forms or to the Windows Presentation Framework (WPF).
     </summary>
 
 - WinForms
@@ -107,3 +107,59 @@ PeyrSharp is divided in multiple packages:
 - WPF
 
 </details>
+
+## Compatibility
+### Platforms
+Some modules of PeyrSharp are targeting features only available in specific operating systems. Thus, some packages aren't available on all platform.
+
+| Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
+|------------------	|---------	|-------	|----------------	|
+| Core             	| ✅       	| ✅     	| ✅              	|
+| Env              	| ✅       	| ⚠️     	| ⚠️              	|
+| Enums            	| ✅       	| ✅     	| ✅              	|
+| Exceptions       	| ✅       	| ✅     	| ✅              	|
+| Extensions       	| ✅       	| ✅     	| ✅              	|
+| UiHelpers        	| ✅       	| ❌     	| ❌              	|
+
+Caption:
+- ✅ Full Support
+- ⚠️ Partial Support
+- ❌ Unsupported platform
+
+### Frameworks
+PeyrSharp is available in the following frameworks
+- .NET 5
+- .NET 6
+- .NET 7 (soon)
+
+> Note: .NET Framework and .NET Core are not targeted by PeyrSharp, since they are no longer supported.
+
+## Documentation
+### Branches
+There are two branches:
+
+| Name | Release | Description |
+| :--: | :-----: | :---------: |
+| `main` | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/PeyrSharp) | Stable versions |
+| `vNext` | ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Leo-Corporation/PeyrSharp?include_prereleases) | Next version of PeyrSharp (unstable) |
+
+> Note: Other branches can also - of course - exists.
+
+## Contribute
+Here's what you'll need to contribute to this project:
+- Visual Studio 2022 with:
+   - .NET Desktop Development
+   - Git
+- .NET
+   - .NET 5 (SDK + runtime)
+   - .NET 6 (SDK + runtime)
+   - .NET 7 (SDK + runtime)   
+- (*optionnal*) NuGet
+
+## Badge
+~~~ md
+![Using PeyrSharp](https://img.shields.io/badge/using-PeyrSharp-DD00FF?logo=nuget)
+~~~
+
+## License
+Project under the [MIT](https://github.com/Leo-Corporation/PeyrShar^p/blob/main/LICENSE) license.
