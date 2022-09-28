@@ -22,35 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Time units such as milliseconds, seconds, minutes, etc...
-/// </summary>
-public enum TimeUnits
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Milliseconds.
+	/// Time units such as milliseconds, seconds, minutes, etc...
 	/// </summary>
-	Milliseconds,
+	public enum TimeUnits
+	{
+		/// <summary>
+		/// Milliseconds.
+		/// </summary>
+		Milliseconds,
 
-	/// <summary>
-	/// Seconds.
-	/// </summary>
-	Seconds,
+		/// <summary>
+		/// Seconds.
+		/// </summary>
+		Seconds,
 
-	/// <summary>
-	/// Minutes.
-	/// </summary>
-	Minutes,
+		/// <summary>
+		/// Minutes.
+		/// </summary>
+		Minutes,
 
-	/// <summary>
-	/// Hours.
-	/// </summary>
-	Hours,
+		/// <summary>
+		/// Hours.
+		/// </summary>
+		Hours,
 
-	/// <summary>
-	/// Days.
-	/// </summary>
-	Days
+		/// <summary>
+		/// Days.
+		/// </summary>
+		Days
+	}
 }

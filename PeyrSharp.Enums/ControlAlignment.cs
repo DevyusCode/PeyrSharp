@@ -22,25 +22,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// The alignement of a <see cref="System.Windows.Forms.Control"/>.
-/// </summary>
-public enum ControlAlignment
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be horizontal.
+	/// The alignement of a <see cref="System.Windows.Forms.Control"/>.
 	/// </summary>
-	Horizontal,
+	public enum ControlAlignment
+	{
+		/// <summary>
+		/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be horizontal.
+		/// </summary>
+		Horizontal,
 
-	/// <summary>
-	/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be vertical.
-	/// </summary>
-	Vertical,
+		/// <summary>
+		/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be vertical.
+		/// </summary>
+		Vertical,
 
-	/// <summary>
-	/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be horizontal and vertical.
-	/// </summary>
-	Both
+		/// <summary>
+		/// The alignement of the <see cref="System.Windows.Forms.Control"/> will be horizontal and vertical.
+		/// </summary>
+		Both
+	}
 }

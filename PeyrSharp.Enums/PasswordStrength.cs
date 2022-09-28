@@ -22,35 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// The password strenght enum.
-/// </summary>
-public enum PasswordStrength
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Very good password strenght.
+	/// The password strenght enum.
 	/// </summary>
-	VeryGood,
+	public enum PasswordStrength
+	{
+		/// <summary>
+		/// Very good password strenght.
+		/// </summary>
+		VeryGood,
 
-	/// <summary>
-	/// Good password strenght.
-	/// </summary>
-	Good,
+		/// <summary>
+		/// Good password strenght.
+		/// </summary>
+		Good,
 
-	/// <summary>
-	/// Medium password strenght.
-	/// </summary>
-	Medium,
+		/// <summary>
+		/// Medium password strenght.
+		/// </summary>
+		Medium,
 
-	/// <summary>
-	/// Low password strenght.
-	/// </summary>
-	Low,
+		/// <summary>
+		/// Low password strenght.
+		/// </summary>
+		Low,
 
-	/// <summary>
-	/// Unknown password strenght.
-	/// </summary>
-	Unknown
+		/// <summary>
+		/// Unknown password strenght.
+		/// </summary>
+		Unknown
+	}
 }
