@@ -1,0 +1,194 @@
+# Roadmap of PeyrSharp
+## Version 1.0
+- [ ] PeyrSharp.Core (namespace)
+    - [ ] **Maths** (namespace)
+        - [ ] Geometry (namespace)
+            - [ ] Circle
+                - [ ] `constructor(double radius)`
+                - [ ] `Area`
+                - [ ] `Perimeter`
+            - [ ] Rectangle
+                - [ ] `constructor(double width, double height)`
+                - [ ] `Diagonal`
+                - [ ] `Area`
+            - [ ] Triangle
+                - [ ] `constructor(double width, double height|double s1, double s2, double s3)`
+                - [ ] `FromSides(double*3)` (static)
+                - [ ] `FromSize(double width, double height)` (static)
+                - [ ] `Area`
+                - [ ] `Perimeter`
+                - [ ] `CanBeBuilt`
+                - [ ] `Hypotenuse`
+                - [ ] `IsRight`
+            - [ ] Cube
+                - [ ] `constructor(double side, [double height])`
+                - [ ] `Volume`
+                - [ ] `Edge`
+                - [ ] `Area`
+            - [ ] Cylinder
+                - [ ] `constructor(double radius, double height)`
+                - [ ] `Volume`
+                - [ ] `Height`
+                - [ ] `BaseArea`
+            - [ ] Pyramid
+                - [ ] `constructor(double length, double width, double height)`
+                - [ ] `FromVolume()` (static)
+                - [ ] `FromWidthArea()` (static)
+                - [ ] `FromLengthArea()` (static)
+                - [ ] `Volume`
+                - [ ] `Height`
+                - [ ] `LengthBase`
+                - [ ] `WidthBase`
+            - [ ] Hexagon
+                - [ ] `constructor(double side)`
+                - [ ] `Area`
+                - [ ] `Perimeter`
+            - [ ] Diamond
+                - [ ] `constructor(double side|double diag1, double diag2)`
+                - [ ] `Area`
+                - [ ] `Perimeter`
+            - [ ] Sphere
+                - [ ] `constructor(double radius)`
+                - [ ] `Area`
+                - [ ] `Volume`
+            - [ ] Cone
+                - [ ] `constructor(double radius, double height)`
+                - [ ] `Volume`
+        - [ ] Algebra (inside of the Maths namespace)
+            - [ ] `Sum()`
+            - [ ] `IsInt()`
+            - [ ] `GetOpposite()`
+            - [ ] `Factorial()`
+            - [ ] `PositiveOf()`
+            - [ ] `NegativeOf()`
+            - [ ] `GetResultsOf()`
+        - [ ] Trigonometry (inside of the Maths namespace)
+            - [ ] `GetOpposedSideFrom()`
+            - [ ] `GetAdjacentSideFrom()`
+            - [ ] `GetHypotenuseSideFrom()`
+        - [ ] Percentages
+            - [ ] `IncreaseBy()`
+            - [ ] `DecreaseBy()`
+            - [ ] `GetInvertedEvolutionRate()`
+            - [ ] `ProportionToPercentageString()`
+    - [ ] **Password**
+        - [ ] `GenerateAsync()`
+        - [ ] `GetStrength()`
+    - [ ] **Guid**
+        - [ ] `Generate()`
+        - [ ] `GuidOptions`
+    - [ ] **Converters**
+        - [ ] Distances
+            - [ ] `MilesToKilometers()`
+            - [ ] `KilometersToMiles()`
+            - [ ] `FeetToMeters()`
+            - [ ] `MetersToFeet()`
+        - [ ] Temperatures
+            - [ ] `CelsiusToFahrenheit()`
+            - [ ] `FahrenheitToCelsius()`
+        - [ ] Volumes
+            - [ ] `CubicMeterToLitre()`
+            - [ ] `LitreToCubicMeter()`
+        - [ ] Masses
+            - [ ] `PoundsToKilograms()`
+            - [ ] `KilogramsToPounds()`
+        - [ ] Time/Date
+            - [ ] `ToSeconds()`
+            - [ ] `ToMinutes()`
+            - [ ] `ToHours()`
+            - [ ] `ToDays()`
+        - [ ] Storage
+            - [ ] `ToByte()`
+            - [ ] `ToKilobyte()`
+            - [ ] `ToMegabyte()`
+            - [ ] `ToGigabyte()`
+            - [ ] `ToTerabyte()`
+            - [ ] `ToPetabyte()`
+        - [ ] Color (namespace)
+            - [ ] RGB (class)
+                - [ ] `constructor(Color|int, int, int)`
+                - [ ] `ToHex()`
+                - [ ] `ToHsv()`
+            - [ ] HEX (class)
+                - [ ] `constructor(string)`
+                - [ ] `ToRgb()`
+                - [ ] `ToHsv()`
+        - [ ] Angle
+            - [ ] `RadiansToDegrees()`
+            - [ ] `DegreesToRadians()`
+    - [ ] **Internet**
+        - [ ] `IsAvailableAsync()`
+        - [ ] `GetStatusCodeAsync()`
+        - [ ] `GetStatusDescriptionAsync()`
+        - [ ] `IsUrlValid()`
+        - [ ] `GetUrlProtocol()`
+    - [ ] **Crypt**
+        - [ ] `Encrypt3Des()`
+        - [ ] `EncryptAes()`
+        - [ ] `EncryptRsa()`
+        - [ ] `Decrypt3Des()`
+        - [ ] `DecryptAes()`
+        - [ ] `DecryptRsa()`
+- [ ] PeyrSharp.Env (namespace)
+    - [ ] **FileSys**
+        - [ ] `GetAvailableSpace()`
+        - [ ] `GetOccupiedSpace()`
+        - [ ] `GetTotalSpace()`
+        - [ ] `CountCharsInFileAsync()`
+        - [ ] `CanWriteFile()`
+        - [ ] `GetSystemDrive`
+    - [ ] **Logger**
+        - [ ] `Log()`
+    - [ ] **Update**
+        - [ ] `GetLastVersionAsync()`
+        - [ ] `IsAvailable()`
+    - [ ] **System**
+        - [ ] `CurrentWindowsVersion`
+        - [ ] `RunningProcesses`
+        - [ ] `LaunchUwpApp()`
+        - [ ] `ExecuteAsAdmin()`
+        - [ ] `CurrentOperatingSystem`
+        - [ ] `IsDarkThemeSupported`
+- [ ] PeyrSharp.Enums (namespace)
+    - [x] WindowsVersion
+    - [x] TimeUnits
+    - [x] SystemThemes
+    - [x] OperatingSystems
+    - [x] StorageUnits
+    - [x] ControlAlignment
+    - [x] PasswordPresets
+    - [x] PasswordStrength
+    - [ ] Shapes
+    - [ ] TriangleSides
+- [x] PeyrSharp.Exceptions (namespace)
+    - [x] `RGBInvalidValueException`
+    - [x] `HEXInvalidValueException`
+    - [x] `InvalidGuidLengthException`
+- [ ] PeyrSharp.Extensions (namespace)
+    - [ ] **String**
+        - [ ] `CountWords()`
+        - [ ] `Encrypt()`
+        - [ ] `Decrypt()`
+        - [ ] `SplitLines()`
+        - [ ] `HasRepeatedChar()`
+        - [ ] `EndsWithSamePunctuation()`
+    - [ ] **Int**
+        - [ ] `IsEven`
+        - [ ] `Double`
+        - [ ] `Divisors`
+        - [ ] + all conversion units that support `int`
+    - [ ] **Double**
+        - [ ] all conversion units that support `double`
+    - [ ] **Array** (`T[]`)
+        - [ ] `Append()`
+        - [ ] `RemoveElement()`
+- [x] PeyrSharp.UiHelpers
+    - [x] **WinForms**
+        - [x] `GetMousePosition()`
+        - [x] `CenterControl()`
+        - [x] `CenterForm()`
+    - [x] **Screen**
+        - [x] `GetDpi()`
+        - [x] `GetScale()`
+    - [x] **WPF**
+        - [x] `GetMousePosition`
