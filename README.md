@@ -1,3 +1,9 @@
+![GitHub contributors](https://img.shields.io/github/contributors/Leo-Corporation/PeyrSharp)
+![GitHub issues](https://img.shields.io/github/issues/Leo-Corporation/PeyrSharp) 
+![GitHub](https://img.shields.io/github/license/Leo-Corporation/PeyrSharp)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Leo-Corporation/PeyrSharp) 
+![Nuget](https://img.shields.io/nuget/dt/PeyrSharp)
+
 <br />
 <p align="center">
   <a href="https://github.com/Leo-Corporation/PeyrSharp">
@@ -154,7 +160,7 @@ Here's what you'll need to contribute to this project:
    - .NET 5 (SDK + runtime)
    - .NET 6 (SDK + runtime)
    - .NET 7 (SDK + runtime)   
-- (*optionnal*) NuGet
+- (*optional*) NuGet
 
 ## Badge
 ~~~ md
@@ -162,4 +168,4 @@ Here's what you'll need to contribute to this project:
 ~~~
 
 ## License
-Project under the [MIT](https://github.com/Leo-Corporation/PeyrShar^p/blob/main/LICENSE) license.
+Project under the [MIT](https://github.com/Leo-Corporation/PeyrSharp/blob/main/LICENSE) license.
