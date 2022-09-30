@@ -22,7 +22,7 @@
 
 ## Introduction
 ### The roots
-In March 2020, we published LeoCorpLibrary, which is also a C# library that contains useful methods. When we started the development of it, we didn't know where the project will go yet. Over the releases, we've added more and more methods and nw features. However, the meaning and the purpose of LeoCorpLibrary was becoming less clear for everyone; it was becoming a mess. This is why we decided to rather not release v5, but instead, we decided to make a brand new .NET Library, PeyrSharp.
+In March 2020, we published LeoCorpLibrary, which was also a C# library that contains useful methods. When we started the development of it, we didn't know where the project will go yet. Over the releases, we've added more and more methods and new features. However, the meaning and the purpose of LeoCorpLibrary was becoming less clear for everyone; it was becoming a mess. This is why we decided to rather not release v5, but instead, we decided to make a brand new .NET Library, PeyrSharp.
 
 ### Our next product
 PeyrSharp is a C# written library designed to make developers' life easier. We've all written code that we wish we hadn't. PeyrSharp is here to respond to this need; by implementing useful methods in various domains: Mathematics, Web/HTTP requests, unit converters, extensions, environment-related operations, and more!
