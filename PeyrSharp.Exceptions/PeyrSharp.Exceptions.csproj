@@ -2,8 +2,36 @@
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PeyrSharp.Exceptions</Title>
+    <Version>1.0.0.2210-pre1</Version>
+    <Company>Léo Corporation</Company>
+    <Description>Exceptions of PeyrSharp.</Description>
+    <Copyright>© 2022</Copyright>
+    <PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>exceptions;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.github\images\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
