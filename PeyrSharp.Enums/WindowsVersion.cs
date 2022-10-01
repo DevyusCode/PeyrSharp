@@ -22,40 +22,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Windows Operating Systems.
-/// </summary>
-public enum WindowsVersion
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Windows 7 (Version 6.1).
+	/// Windows Operating Systems.
 	/// </summary>
-	Windows7,
+	public enum WindowsVersion
+	{
+		/// <summary>
+		/// Windows 7 (Version 6.1).
+		/// </summary>
+		Windows7,
 
-	/// <summary>
-	/// Windows 8 (Version 6.2).
-	/// </summary>
-	Windows8,
+		/// <summary>
+		/// Windows 8 (Version 6.2).
+		/// </summary>
+		Windows8,
 
-	/// <summary>
-	/// Windows 8.1 (Version 6.3).
-	/// </summary>
-	Windows81,
+		/// <summary>
+		/// Windows 8.1 (Version 6.3).
+		/// </summary>
+		Windows81,
 
-	/// <summary>
-	/// Windows 10 (Version 10.0).
-	/// </summary>
-	Windows10,
+		/// <summary>
+		/// Windows 10 (Version 10.0).
+		/// </summary>
+		Windows10,
 
-	/// <summary>
-	/// Windows 11 (Version 10.0.22XXX+).
-	/// </summary>
-	Windows11,
+		/// <summary>
+		/// Windows 11 (Version 10.0.22XXX+).
+		/// </summary>
+		Windows11,
 
-	/// <summary>
-	/// Unknown operating system.
-	/// </summary>
-	Unknown
+		/// <summary>
+		/// Unknown operating system.
+		/// </summary>
+		Unknown
+	}
 }

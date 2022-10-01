@@ -22,35 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Status Code type of a request to a website.
-/// </summary>
-public enum StatusCodes
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Informational (1xx).
+	/// Status Code type of a request to a website.
 	/// </summary>
-	Informational,
+	public enum StatusCodes
+	{
+		/// <summary>
+		/// Informational (1xx).
+		/// </summary>
+		Informational,
 
-	/// <summary>
-	/// Success (2xx).
-	/// </summary>
-	Success,
+		/// <summary>
+		/// Success (2xx).
+		/// </summary>
+		Success,
 
-	/// <summary>
-	/// Redirection (3xx).
-	/// </summary>
-	Redirection,
+		/// <summary>
+		/// Redirection (3xx).
+		/// </summary>
+		Redirection,
 
-	/// <summary>
-	/// Client error (4xx).
-	/// </summary>
-	ClientError,
+		/// <summary>
+		/// Client error (4xx).
+		/// </summary>
+		ClientError,
 
-	/// <summary>
-	/// Server error (5xx).
-	/// </summary>
-	ServerError
+		/// <summary>
+		/// Server error (5xx).
+		/// </summary>
+		ServerError
+	}
 }

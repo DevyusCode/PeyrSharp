@@ -22,30 +22,31 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Operating systems.
-/// </summary>
-public enum OperatingSystems
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// The Windows Operating system.
+	/// Operating systems.
 	/// </summary>
-	Windows,
+	public enum OperatingSystems
+	{
+		/// <summary>
+		/// The Windows Operating system.
+		/// </summary>
+		Windows,
 
-	/// <summary>
-	/// The macOS Operating system.
-	/// </summary>
-	macOS,
+		/// <summary>
+		/// The macOS Operating system.
+		/// </summary>
+		macOS,
 
-	/// <summary>
-	/// The Linux Operating system.
-	/// </summary>
-	Linux,
+		/// <summary>
+		/// The Linux Operating system.
+		/// </summary>
+		Linux,
 
-	/// <summary>
-	/// An unknown Operating system.
-	/// </summary>
-	Unknown
+		/// <summary>
+		/// An unknown Operating system.
+		/// </summary>
+		Unknown
+	}
 }

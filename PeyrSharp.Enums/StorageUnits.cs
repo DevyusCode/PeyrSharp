@@ -22,35 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Size of files/directories.
-/// </summary>
-public enum StorageUnits
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Byte Unit.
+	/// Size of files/directories.
 	/// </summary>
-	Byte,
-	/// <summary>
-	/// Kilobyte Unit.
-	/// </summary>
-	Kilobyte,
-	/// <summary>
-	/// Megabyte Unit.
-	/// </summary>
-	Megabyte,
-	/// <summary>
-	/// Gigabyte Unit.
-	/// </summary>
-	Gigabyte,
-	/// <summary>
-	/// Terabyte Unit.
-	/// </summary>
-	Terabyte,
-	/// <summary>
-	/// Petabyte Unit.
-	/// </summary>
-	Petabyte
+	public enum StorageUnits
+	{
+		/// <summary>
+		/// Byte Unit.
+		/// </summary>
+		Byte,
+		/// <summary>
+		/// Kilobyte Unit.
+		/// </summary>
+		Kilobyte,
+		/// <summary>
+		/// Megabyte Unit.
+		/// </summary>
+		Megabyte,
+		/// <summary>
+		/// Gigabyte Unit.
+		/// </summary>
+		Gigabyte,
+		/// <summary>
+		/// Terabyte Unit.
+		/// </summary>
+		Terabyte,
+		/// <summary>
+		/// Petabyte Unit.
+		/// </summary>
+		Petabyte
+	}
 }

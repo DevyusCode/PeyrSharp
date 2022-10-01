@@ -1,5 +1,7 @@
-﻿namespace PeyrSharp;
-public class Class1
+﻿namespace PeyrSharp
 {
+    public class Class1
+    {
 
+    }
 }

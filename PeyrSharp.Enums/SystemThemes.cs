@@ -22,25 +22,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Available themes on Windows.
-/// </summary>
-public enum SystemThemes
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// Dark theme.
+	/// Available themes on Windows.
 	/// </summary>
-	Dark,
+	public enum SystemThemes
+	{
+		/// <summary>
+		/// Dark theme.
+		/// </summary>
+		Dark,
 
-	/// <summary>
-	/// Light theme.
-	/// </summary>
-	Light,
+		/// <summary>
+		/// Light theme.
+		/// </summary>
+		Light,
 
-	/// <summary>
-	/// Unknown theme/OS not supported.
-	/// </summary>
-	Unknown
+		/// <summary>
+		/// Unknown theme/OS not supported.
+		/// </summary>
+		Unknown
+	}
 }

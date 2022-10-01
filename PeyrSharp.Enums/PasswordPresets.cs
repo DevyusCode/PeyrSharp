@@ -22,20 +22,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums;
-
-/// <summary>
-/// Presets that can be used for password generation.
-/// </summary>
-public enum PasswordPresets
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// The "Simple" preset generates a password with simple characters.
+	/// Presets that can be used for password generation.
 	/// </summary>
-	Simple,
+	public enum PasswordPresets
+	{
+		/// <summary>
+		/// The "Simple" preset generates a password with simple characters.
+		/// </summary>
+		Simple,
 
-	/// <summary>
-	/// The "Complex" preset generates a password with unusual, hard and complex characters.
-	/// </summary>
-	Complex
+		/// <summary>
+		/// The "Complex" preset generates a password with unusual, hard and complex characters.
+		/// </summary>
+		Complex
+	}
 }
