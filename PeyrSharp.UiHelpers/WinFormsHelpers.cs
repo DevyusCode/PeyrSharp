@@ -36,7 +36,7 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="control">The <see cref="Control"/> to center.</param>
 		/// <param name="form">The <see cref="Form"/> where the control is going to be centered.</param>
-		public static void CenterControlOnForm(Control control, Form form)
+		public static void CenterControl(Control control, Form form)
 		{
 			control.Left = (form.ClientSize.Width - control.Width) / 2; // Center horizontally
 			control.Top = (form.ClientSize.Height - control.Height) / 2; // Center vertically
@@ -48,7 +48,7 @@ namespace PeyrSharp.UiHelpers
 		/// <param name="control">The <see cref="Control"/> to center.</param>
 		/// <param name="form">The <see cref="Form"/> where the control is going to be centered.</param>
 		/// <param name="controlAlignement">If <see cref="ControlAlignement.Vertical"/>, the <see cref="Control"/> will be centered vertically. If <see cref="ControlAlignement.Horizontal"/>, the <see cref="Control"/> will be centered horizontally.</param>
-		public static void CenterControlOnForm(Control control, Form form, ControlAlignement controlAlignement)
+		public static void CenterControl(Control control, Form form, ControlAlignement controlAlignement)
 		{
 			switch (controlAlignement)
 			{
@@ -69,7 +69,7 @@ namespace PeyrSharp.UiHelpers
 		/// Centers a specified <see cref="Form"/> on the <see cref="Screen"/>.
 		/// </summary>
 		/// <param name="form"><see cref="Form"/> to center.</param>
-		public static void CenterFormOnScreen(Form form)
+		public static void CenterForm(Form form)
 		{
 			form.Left = (Screen.PrimaryScreen.WorkingArea.Width - form.Width) / 2; // Center horizontally
 			form.Top = (Screen.PrimaryScreen.WorkingArea.Height - form.Height) / 2; // Center vertically

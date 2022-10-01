@@ -34,9 +34,9 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="form">The window to get the DPI.</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double GetScreenDPIFromWinForm(System.Windows.Forms.Form form)
+		public static double GetDpi(Form form)
 		{
-			System.Drawing.Graphics graphics = System.Drawing.Graphics.FromHwnd(form.Handle);
+			Graphics graphics = Graphics.FromHwnd(form.Handle);
 			return graphics.DpiX;
 		}
 
@@ -45,9 +45,9 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="window">The window to get the DPI.</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double GetScreenDPIFromWPFWindow(System.Windows.Window window)
+		public static double GetDpi(System.Windows.Window window)
 		{
-			System.Drawing.Graphics graphics = System.Drawing.Graphics.FromHwnd(new System.Windows.Interop.WindowInteropHelper(window).Handle);
+			Graphics graphics = Graphics.FromHwnd(new System.Windows.Interop.WindowInteropHelper(window).Handle);
 			return graphics.DpiX;
 		}
 
@@ -56,10 +56,10 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="form">The window to get the scaling.</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double GetScreenScalingFromWinForm(System.Windows.Forms.Form form)
+		public static double GetScreenScaling(Form form)
 		{
 			double dpiX;
-			using System.Drawing.Graphics graphics = System.Drawing.Graphics.FromHwnd(form.Handle);
+			using Graphics graphics = Graphics.FromHwnd(form.Handle);
 			dpiX = graphics.DpiX; // Get the DPI
 
 			return dpiX switch
@@ -78,10 +78,10 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="window">The window to get the scaling.</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double GetScreenScalingFromWPFWindow(System.Windows.Window window)
+		public static double GetScreenScaling(System.Windows.Window window)
 		{
 			double dpiX;
-			using System.Drawing.Graphics graphics = System.Drawing.Graphics.FromHwnd(new System.Windows.Interop.WindowInteropHelper(window).Handle);
+			using Graphics graphics = Graphics.FromHwnd(new System.Windows.Interop.WindowInteropHelper(window).Handle);
 			dpiX = graphics.DpiX; // Get the DPI
 
 			return dpiX switch
