@@ -47,18 +47,18 @@ namespace PeyrSharp.UiHelpers
 		/// </summary>
 		/// <param name="control">The <see cref="Control"/> to center.</param>
 		/// <param name="form">The <see cref="Form"/> where the control is going to be centered.</param>
-		/// <param name="controlAlignement">If <see cref="ControlAlignement.Vertical"/>, the <see cref="Control"/> will be centered vertically. If <see cref="ControlAlignement.Horizontal"/>, the <see cref="Control"/> will be centered horizontally.</param>
-		public static void CenterControl(Control control, Form form, ControlAlignement controlAlignement)
+		/// <param name="ControlAlignment">If <see cref="ControlAlignment.Vertical"/>, the <see cref="Control"/> will be centered vertically. If <see cref="ControlAlignment.Horizontal"/>, the <see cref="Control"/> will be centered horizontally.</param>
+		public static void CenterControl(Control control, Form form, ControlAlignment ControlAlignment)
 		{
-			switch (controlAlignement)
+			switch (ControlAlignment)
 			{
-				case ControlAlignement.Horizontal:
+				case ControlAlignment.Horizontal:
 					control.Left = (form.ClientSize.Width - control.Width) / 2; // Center horizontally
 					break;
-				case ControlAlignement.Vertical:
+				case ControlAlignment.Vertical:
 					control.Top = (form.ClientSize.Height - control.Height) / 2; // Center vertically
 					break;
-				case ControlAlignement.Both:
+				case ControlAlignment.Both:
 					control.Left = (form.ClientSize.Width - control.Width) / 2; // Center horizontally
 					control.Top = (form.ClientSize.Height - control.Height) / 2; // Center vertically
 					break;

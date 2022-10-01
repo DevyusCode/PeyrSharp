@@ -17,7 +17,8 @@
 	<PackageTags>ui-helpers;c-sharp;dotnet;vb;peyrsharp;leo corp;wpf;windows-forms;win-forms;ui;windows</PackageTags>
 	<PackageIcon>logo.png</PackageIcon>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,14 +26,14 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre1" />
   </ItemGroup>
 
 </Project>
