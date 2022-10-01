@@ -1,3 +1,4 @@
+![Using PeyrSharp](https://img.shields.io/badge/using-PeyrSharp-DD00FF?logo=nuget)
 ![GitHub contributors](https://img.shields.io/github/contributors/Leo-Corporation/PeyrSharp)
 ![GitHub issues](https://img.shields.io/github/issues/Leo-Corporation/PeyrSharp) 
 ![GitHub](https://img.shields.io/github/license/Leo-Corporation/PeyrSharp)
