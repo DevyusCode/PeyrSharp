@@ -158,7 +158,6 @@
     - [x] ControlAlignment
     - [x] PasswordPresets
     - [x] PasswordStrength
-    - [ ] Shapes
     - [ ] TriangleSides
 - [x] PeyrSharp.Exceptions (namespace)
     - [x] `RGBInvalidValueException`
