@@ -2,10 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworkd>net5.0;net6.0</TargetFrameworkd>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Maths\Geometry\" />
-  </ItemGroup>
 
 </Project>
