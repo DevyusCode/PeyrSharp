@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworkd>net5.0;net6.0</TargetFrameworkd>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Maths\Geometry\" />
+  </ItemGroup>
+
+</Project>
