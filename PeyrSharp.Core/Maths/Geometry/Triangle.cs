@@ -61,7 +61,7 @@ namespace PeyrSharp.Core.Maths.Geometry
 		/// The length of the third side if the <see cref="Triangle"/>.
 		/// </summary>
 		public double Side3 { get; init; } = double.NaN;
-		
+
 		private double[] _sides;
 
 		/// <summary>

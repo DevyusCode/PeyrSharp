@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace PeyrSharp.UiHelpers
 {
