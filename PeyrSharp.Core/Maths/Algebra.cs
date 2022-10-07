@@ -78,5 +78,24 @@ namespace PeyrSharp.Core.Maths
 		/// <param name="number">The number to get the opposite of.</param>
 		/// <returns>The opposite of the number.</returns>
 		public static double GetOpposite(double number) => -number;
+
+		/// <summary>
+		/// Gets the factorial of a number.
+		/// </summary>
+		/// <param name="number">The number to get the factorial of.</param>
+		/// <returns>The factorial of the number</returns>
+		public static int Factorial(int number)
+		{
+			if (number == 1 || number == 0) return 1;
+			int r = 1;
+
+			for (int i = 1; i <= (number < 0 ? 0 - number : number); i++)
+			{
+				r *= i;
+			}
+
+			return number < 0 ? 0 - r : r;
+		}
+
 	}
 }
