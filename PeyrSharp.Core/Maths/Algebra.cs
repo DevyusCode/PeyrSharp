@@ -103,5 +103,12 @@ namespace PeyrSharp.Core.Maths
 		/// <param name="n">The number to get the positive of.</param>
 		/// <returns>The positive of the number.</returns>
 		public static double PositiveOf(double n) => n >= 0 ? n : -n;
+
+		/// <summary>
+		/// Gets the negative of a (<see cref="double"/>) number.
+		/// </summary>
+		/// <param name="n">The number to get negative of.</param>
+		/// <returns>The negative of the number.</returns>
+		public static double NegativeOf(double n) => n <= 0 ? n : -n;
 	}
 }
