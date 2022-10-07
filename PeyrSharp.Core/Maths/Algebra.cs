@@ -71,5 +71,12 @@ namespace PeyrSharp.Core.Maths
 		/// <param name="number">The number to check.</param>
 		/// <returns><see langword="true"/> if the number is an integer.</returns>
 		public static bool IsInt(double number) => (int)number == number;
+
+		/// <summary>
+		/// Gets the opposite of a number.
+		/// </summary>
+		/// <param name="number">The number to get the opposite of.</param>
+		/// <returns>The opposite of the number.</returns>
+		public static double GetOpposite(double number) => -number;
 	}
 }
