@@ -27,51 +27,34 @@ using System;
 namespace PeyrSharp.Core.Maths.Geometry
 {
 	/// <summary>
-	/// A class that represents a Diamond.
+	/// A class that represents a Sphere.
 	/// </summary>
-	public class Diamond
+	public class Sphere
 	{
 		/// <summary>
-		/// The length of the side of the <see cref="Diamond"/>.
+		/// The radius of the <see cref="Sphere"/>.
 		/// </summary>
-		public double Side { get; init; }
+		public double Radius { get; init; }
 
 		/// <summary>
-		/// The perimeter of the <see cref="Diamond"/>.
+		/// The area of the <see cref="Sphere"/>.
 		/// </summary>
-		public double Perimeter => 4 * Side;
+		public double Area => 4 * Math.PI * Math.Pow(Radius, 2);
 
 		/// <summary>
-		/// An array containing the values of the diagonals of the <see cref="Diamond"/> if initialized with the corresponding constructor.
+		/// The volume of the <see cref="Sphere"/>.
 		/// </summary>
-		public double[] Diagonals { get; init; }
+		public double Volume => 3 / 4 * Math.PI * Math.Pow(Radius, 3);
 
 		/// <summary>
-		/// The area of the <see cref="Diamond"/>.
+		/// Initializes a <see cref="Sphere"/> from its radius.
 		/// </summary>
-		public double Area => Diagonals[0] * (Diagonals[1] / 2);
-
-		/// <summary>
-		/// Initializes a <see cref="Diamond"/> from the length of its side.
-		/// </summary>
-		/// <param name="side">The length of the side.</param>
+		/// <param name="radius">The radius of the sphere.</param>
 		/// <exception cref="DivideByZeroException"></exception>
-		public Diamond(double side)
+		public Sphere(double radius)
 		{
-			if (side <= 0) throw new DivideByZeroException("Please provide a value higher than 0.");
-			Side = side;
-		}
-
-		/// <summary>
-		/// Initializes a <see cref="Diamond"/> from its diagonals.
-		/// </summary>
-		/// <param name="diagonal1">The length of the first diagonal.</param>
-		/// <param name="diagonal2">The length of the second diagonal.</param>
-		/// <exception cref="DivideByZeroException"></exception>
-		public Diamond(double diagonal1, double diagonal2)
-		{
-			if (diagonal1 <= 0 || diagonal2 <= 0) throw new DivideByZeroException("Please provide a value higher than 0.");
-			Diagonals = new double[2] { diagonal1, diagonal2 };
+			if (radius <= 0) throw new DivideByZeroException("Please provide a value higher than 0.");
+			Radius = radius;
 		}
 	}
 }
