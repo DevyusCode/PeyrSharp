@@ -1,8 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre1" />
+  </ItemGroup>
 
 </Project>
