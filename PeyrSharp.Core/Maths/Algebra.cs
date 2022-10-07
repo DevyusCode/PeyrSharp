@@ -64,5 +64,12 @@ namespace PeyrSharp.Core.Maths
 			}
 			return sum;
 		}
+
+		/// <summary>
+		/// Checks if a number (<see cref="double"/>) can be an integer 
+		/// </summary>
+		/// <param name="number">The number to check.</param>
+		/// <returns><see langword="true"/> if the number is an integer.</returns>
+		public static bool IsInt(double number) => (int)number == number;
 	}
 }
