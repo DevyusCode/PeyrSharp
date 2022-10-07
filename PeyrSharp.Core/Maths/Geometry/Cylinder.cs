@@ -32,17 +32,17 @@ namespace PeyrSharp.Core.Maths.Geometry
 	public class Cylinder
 	{
 		/// <summary>
-		/// The radius of the cylinder.
+		/// The radius of the <see cref="Cylinder"/>.
 		/// </summary>
 		public double Radius { get; init; }
 
 		/// <summary>
-		/// The height of the cylinder.
+		/// The height of the <see cref="Cylinder"/>.
 		/// </summary>
 		public double Height { get; init; }
 
 		/// <summary>
-		/// The volume of the cylinder.
+		/// The volume of the <see cref="Cylinder"/>.
 		/// </summary>
 		/// <remarks>
 		/// π*(r^2)*height
@@ -50,7 +50,7 @@ namespace PeyrSharp.Core.Maths.Geometry
 		public double Volume => Math.PI * Math.Pow(Radius, 2) * Height;
 
 		/// <summary>
-		/// The area of the base circle of the cylinder.
+		/// The area of the base circle of the <see cref="Cylinder"/>.
 		/// </summary>
 		/// <remarks>
 		/// π*(r^2)
@@ -61,8 +61,8 @@ namespace PeyrSharp.Core.Maths.Geometry
 		/// <summary>
 		/// Initializes a <see cref="Cylinder"/> from a specific radius and height.
 		/// </summary>
-		/// <param name="radius">The radius of the cylinder.</param>
-		/// <param name="height">The height of the cylinder.</param>
+		/// <param name="radius">The radius of the <see cref="Cylinder"/>.</param>
+		/// <param name="height">The height of the <see cref="Cylinder"/>.</param>
 		/// <exception cref="DivideByZeroException"></exception>
 		public Cylinder(double radius, double height)
 		{
