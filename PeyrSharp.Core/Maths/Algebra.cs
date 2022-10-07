@@ -97,5 +97,11 @@ namespace PeyrSharp.Core.Maths
 			return number < 0 ? 0 - r : r;
 		}
 
+		/// <summary>
+		/// Gets the positive of a (<see cref="double"/>) number.
+		/// </summary>
+		/// <param name="n">The number to get the positive of.</param>
+		/// <returns>The positive of the number.</returns>
+		public static double PositiveOf(double n) => n >= 0 ? n : -n;
 	}
 }
