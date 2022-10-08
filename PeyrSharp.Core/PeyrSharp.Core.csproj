@@ -3,10 +3,35 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>PeyrSharp.Core</Title>
+    <Version>1.0.0.2210-pre2</Version>
+    <Authors>Léo Corporation</Authors>
+    <Description>Core methods and features of PeyrSharp.</Description>
+    <Copyright>© 2022</Copyright>
+    <PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>math;password;guid;generators;core;geometry</PackageTags>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre1" />
+    <None Include="..\.github\images\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\NUGET_README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre2" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="1.0.0.2210-pre2" />
   </ItemGroup>
 
 </Project>
