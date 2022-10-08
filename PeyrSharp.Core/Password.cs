@@ -25,6 +25,7 @@ SOFTWARE.
 using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
@@ -145,6 +146,112 @@ namespace PeyrSharp.Core
 			}
 
 			return passwords; // Return the list with all the generated passwords
+		}
+
+		/// <summary>
+		/// Numbers that can be contained in a password.
+		/// </summary>
+		public static string[] Numbers => new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+		
+		/// <summary>
+		/// Special characters that can be contained in a password.
+		/// </summary>
+		public static string[] SpecialCharacters => new string[] { ";", ":", "!", "/", "§", "ù", "*", "$", "%", "µ", "£", ")", "=", "+", "*", "-", "&", "é", "'", "(", "-", "è", "_", "ç", "<", ">", "?", "^", "¨" };
+		
+		/// <summary>
+		/// Characters that shouldn't be included in a password
+		/// </summary>
+		public static string[] ForbidenCharacters => new string[] { "123", "456", "789", "password", "mdp", "pswr", "000", "admin", "111", "222", "333", "444", "555", "666", "777", "888", "999" };
+		
+		/// <summary>
+		/// Lower case characters.
+		/// </summary>
+		public static string[] LowerCaseLetters => new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+		
+		/// <summary>
+		/// Upper case characters.
+		/// </summary>
+		public static string[] UpperCaseLetters => new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+
+		/// <summary>
+		/// Calculates the strength of a password, which depends on its length and the characters used.
+		/// </summary>
+		/// <param name="password">The password to evaluate.</param>
+		/// <returns>The stregth of the password</returns>
+		/// <remarks>
+		/// The strength returned might not reflect the actual strength and value of the password.
+		/// </remarks>
+		/// <exception cref="Exception"></exception>
+		public static PasswordStrength GetStrength(string password)
+		{
+			if (password.Length <= 0) throw new Exception("The lengthof the password must be higher than 0.");
+
+			int score = password.Length / 3; // Calculates the score from the length
+
+			// Init variables
+			bool hasNumbers = false;
+			bool hasUpper = false;
+			bool hasLower = false;
+			bool hasSpecial = false;
+			bool hasForbidden = false;
+
+			// Check if the password contains numbers
+			for (int i = 0; i < password.Length; i++)
+			{
+				hasUpper = Numbers.Contains(password[i].ToString());
+				if (hasUpper) break;
+			}
+
+			// Check if the password contains lowercases
+			for (int i = 0; i < password.Length; i++)
+			{
+				hasUpper = LowerCaseLetters.Contains(password[i].ToString());
+				if (hasUpper) break;
+			}
+
+			// Check if the password contains uppercases
+			for (int i = 0; i < password.Length; i++)
+			{
+				hasUpper = UpperCaseLetters.Contains(password[i].ToString());
+				if (hasUpper) break;
+			}
+
+			// Check if the password contains special chars
+			for (int i = 0; i < password.Length; i++)
+			{
+				hasUpper = SpecialCharacters.Contains(password[i].ToString());
+				if (hasUpper) break;
+			}
+
+			// Check if the password contains lowercases
+			for (int i = 0; i < password.Length; i++)
+			{
+				hasUpper = ForbidenCharacters.Contains(password[i].ToString());
+				if (hasUpper) break;
+			}
+
+			score += hasLower ? 1 : 0;
+			score += hasNumbers ? 1 : 0;
+			score += hasUpper ? 1 : 0;
+			score += hasSpecial ? 2 : 0;
+			score -= hasForbidden ? 3 : 0;
+
+			if (score <= 3)
+			{
+				return PasswordStrength.Low; // Return
+			}
+			else if (score > 3 && score <= 5)
+			{
+				return PasswordStrength.Medium; // Return
+			}
+			else if (score >= 6 && score <= 8)
+			{
+				return PasswordStrength.Good; // Return
+			}
+			else
+			{
+				return PasswordStrength.VeryGood; // Return
+			}
 		}
 	}
 }
