@@ -1,0 +1,19 @@
+:root {
+    /* brand colors */
+    --vp-c-brand: #dd00ff;
+    --vp-c-brand-light: #dd00ff;
+    --vp-c-brand-lighter: #ff8000;
+    --vp-c-brand-dark: #dd00ff;
+}
+
+html.dark {
+    /* brand colors */
+
+    /* background colors */
+    --vp-c-bg: #0a0a1e;
+    --vp-c-bg-light: #141428;
+    --vp-c-bg-lighter: #1e1e32;
+    --vp-code-bg-color: #1e1e32;
+    --vp-c-black-mute: #1e1e32;
+    --vp-c-black: #1e1e32;
+}

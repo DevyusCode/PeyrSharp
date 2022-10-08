@@ -1,0 +1,28 @@
+{
+  "name": "peyrsharp-docs",
+  "version": "1.0.0",
+  "description": "Documentation of PeyrSharp.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build -D ../docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leo-Corporation/PeyrSharp.git"
+  },
+  "keywords": [
+    "docs"
+  ],
+  "author": "Léo Corporation + contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leo-Corporation/PeyrSharp/issues"
+  },
+  "homepage": "https://github.com/Leo-Corporation/PeyrSharp#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.19",
+    "vue": "^3.2.40"
+  }
+}
