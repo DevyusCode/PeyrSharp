@@ -92,3 +92,5 @@ To call methods and classes included in PeyrSharp, you will need to add the corr
 ~~~ c#
 using PeyrSharp.Core;
 ~~~
+
+For more information, you can check the [reference](/reference)
