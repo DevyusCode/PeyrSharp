@@ -58,7 +58,7 @@ PeyrSharp is divided in multiple packages:
 - HEXInvalidValueException
 - InvalidGuidLengthException
 
-**PeyrSharp.Extensions**, extension methods, that extends basic types, such as <code>string</code>, <code>int</code>, <code>double</code> or arrays (<code>T[]</code>).
+**PeyrSharp.Extensions**, extension methods, that extends basic types, such as `string`, `int`, `double` or arrays (`T[]`).
     
 - String
 - Int
