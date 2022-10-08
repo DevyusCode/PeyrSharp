@@ -16,8 +16,8 @@ hero:
       text: Get Started
       link: /get-started
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/Leo-Corporation/PeyrSharp
+      text: Reference
+      link: /reference
 
 features:
   - title: Easy-to-use

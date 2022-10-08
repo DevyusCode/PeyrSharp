@@ -6,7 +6,7 @@ export default {
     outDir: '../docs',
     themeConfig: {
         nav: [
-            { text: 'Guide', link: '/guide' },
+            { text: 'Guide', link: '/get-started' },
             { text: 'Reference', link: '/reference' },
         ],
         repo: 'Leo-Corporation/PeyrSharp',
@@ -19,6 +19,18 @@ export default {
         footer: {
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2022 Léo Corporation'
-        }
+        },
+        socialLinks: [
+            {
+                icon: 'github', link: 'https://github.com/Leo-Corporation/PeyrSharp'
+            },
+            {
+                icon: 'twitter', link: 'https://twitter.com/LeoCorpNews'
+            },
+            {
+                icon: 'youtube', link: 'https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg'
+            }
+        ],
+        outline: [1, 3]
     }
 }
