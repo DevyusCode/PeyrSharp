@@ -24,6 +24,8 @@ SOFTWARE.
 
 using PeyrSharp.Enums;
 using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace PeyrSharp.Core
@@ -98,6 +100,51 @@ namespace PeyrSharp.Core
 				PasswordPresets.Complex => await GenerateAsync(length, "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,0,1,2,3,4,5,6,7,8,9,/,é,&,ç,à,@,°,{,},(,),#,&", ","),// Generate password
 				_ => "", // Return a default value
 			};
+		}
+
+		/// <summary>
+		/// Generates a specific amount of passwords.
+		/// </summary>
+		/// <param name="amount">The number of passwords to generate.</param>
+		/// <param name="length">The length of the password.</param>
+		/// <param name="chars">The characters that can be used in the generated password.</param>
+		/// <param name="separator">The separator used in the chars string.</param>
+		/// <returns>The generated passwords in a <see cref="List{T}"/>.</returns>
+		/// <exception cref="Exception"></exception>
+		public static async Task<List<string>> GenerateAsync(int amount, int length, string chars, string separator)
+		{
+			if (length <= 0 || amount <= 0) throw new Exception("The parameter 'length' (int) must be higher than 0.");
+
+			List<string> passwords = new(); // Create list where all passwords will be stored.
+
+			for (int i = 0; i < amount; i++)
+			{
+				passwords.Add(await GenerateAsync(length, chars, separator)); // Generate a password
+			}
+
+			return passwords; // Return the list with all the generated passwords
+		}
+
+		/// <summary>
+		/// Generates a specific amount of passwords.
+		/// </summary>
+		/// <param name="amount">The number of passwords to generate.</param>
+		/// <param name="length">The length of the password.</param>
+		/// <param name="passwordPresets">The preset used to generate a password.</param>
+		/// <returns>The generated passwords in a <see cref="List{T}"/>.</returns>
+		/// <exception cref="Exception"></exception>
+		public static async Task<List<string>> GenerateAsync(int amount, int length, PasswordPresets passwordPresets)
+		{
+			if (length <= 0 || amount <= 0) throw new Exception("The parameter 'length' (int) must be higher than 0.");
+
+			List<string> passwords = new(); // Create list where all passwords will be stored.
+
+			for (int i = 0; i < amount; i++)
+			{
+				passwords.Add(await GenerateAsync(length, passwordPresets)); // Generate a password
+			}
+
+			return passwords; // Return the list with all the generated passwords
 		}
 	}
 }
