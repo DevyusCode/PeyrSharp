@@ -16,7 +16,7 @@
   <p align="center">
     A C# library designed to make developers' job easier.
     <br />
-    <a href="https://leocorplibrary.leocorporation.dev/"><strong>View documentation »</strong></a>
+    <a href="https://peyrsharp.leocorporation.dev/"><strong>View documentation »</strong></a>
     <br />
     <a href="https://github.com/Leo-Corporation/PeyrSharp/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBug%5D+">Report Bug</a>
     ·

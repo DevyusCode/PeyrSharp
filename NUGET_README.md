@@ -8,7 +8,7 @@
 # PeyrSharp
 A C# library designed to make developers' job easier.
 
-[View documentation »](https://leocorplibrary.leocorporation.dev/) · [Report Bug](https://github.com/Leo-Corporation/PeyrSharp/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBug%5D+) · [Request Feature](https://github.com/Leo-Corporation/PeyrSharp/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BEnhancement%5D+)
+[View documentation »](https://peyrsharp.leocorporation.dev/) · [Report Bug](https://github.com/Leo-Corporation/PeyrSharp/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBug%5D+) · [Request Feature](https://github.com/Leo-Corporation/PeyrSharp/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BEnhancement%5D+)
 
 
 ## Introduction
