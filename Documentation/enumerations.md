@@ -4,7 +4,7 @@ They are grouped by category.
 
 ## Compatibility
 
-Enumerations are part of the `PeyrSharp.Enums` module, which is compatible in all of these frameworks and platforms:
+Enumerations are part of the `PeyrSharp.Enums` module, which is compatible with all of these frameworks and platforms:
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|

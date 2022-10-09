@@ -4,7 +4,7 @@ You can find here all of its properties.
 
 ## Compatibility
 
-The `GuidOptions` class is part of the `PeyrSharp.Core` module, which is compatible in all of these frameworks and platforms:
+The `GuidOptions` class is part of the `PeyrSharp.Core` module, which is compatible with all of these frameworks and platforms:
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|

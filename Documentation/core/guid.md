@@ -8,7 +8,7 @@ This class is `static`.
 
 ## Compatibility
 
-The `GuidGen` class is part of the `PeyrSharp.Core` module, which is compatible in all of these frameworks and platforms:
+The `GuidGen` class is part of the `PeyrSharp.Core` module, which is compatible with all of these frameworks and platforms:
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|
