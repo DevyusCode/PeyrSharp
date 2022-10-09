@@ -31,6 +31,54 @@ export default {
                 icon: 'youtube', link: 'https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg'
             }
         ],
-        outline: [1, 3]
+        outline: [1, 3],
+        sidebar: {
+            '/core/': [
+                {
+                    text: 'Guid',
+                    collapsible: true,
+                    items: [
+                        {
+                            text: 'GuidGen',
+                            link: '/core/guid'
+                        },
+                        {
+                            text: 'GuidOptions',
+                            link: '/core/guid-options'
+                        }
+                    ]
+                },
+                {
+                    text: 'Password',
+                    collapsible: true,
+                    items: [
+                        {
+                            text: 'Password',
+                            link: '/core/password'
+                        }
+                    ]
+                },
+                {
+                    text: 'Maths',
+                    collapsible: true,
+                    items: [
+                        {
+                            text: 'Geometry',
+                            collapsible: true,
+                            items: [
+                                {
+                                    text: 'Cube',
+                                    link: '/core/cube'
+                                }
+                            ]
+                        },
+                        {
+                            text: 'Algebra',
+                            link: '/core/algebra'
+                        }
+                    ]
+                },
+            ]
+        }
     }
 }
