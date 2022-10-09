@@ -68,13 +68,13 @@ export default {
                             items: [
                                 {
                                     text: 'Cube',
-                                    link: '/core/cube'
+                                    link: '/core/maths/geometry/cube'
                                 }
                             ]
                         },
                         {
                             text: 'Algebra',
-                            link: '/core/algebra'
+                            link: '/core/maths/algebra'
                         }
                     ]
                 },

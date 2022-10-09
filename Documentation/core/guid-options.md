@@ -74,7 +74,7 @@ You can `get` and `set` this property after initializing the class.
 public bool Hyphens { get; set; }
 ~~~
 
-The `Hyphens` property is an `bool`, which will determine if you want hyphens in the Guid that will be generated if used with `GuidGen.Generate()`.
+The `Hyphens` property is a `bool`, which will determine if you want hyphens in the Guid that will be generated if used with `GuidGen.Generate()`.
 
 ::: info
 This property can be initialized when using the [`GuidOptions(length, hyphens, braces, upperCaseOnly)`](#guidoptions-length-hyphens-braces-uppercaseonly) constructor.
@@ -89,7 +89,7 @@ You can `get` and `set` this property after initializing the class.
 public bool Braces { get; set; }
 ~~~
 
-The `Braces` property is an `bool`, which will determine if you want braces in the Guid that will be generated if used with `GuidGen.Generate()`.
+The `Braces` property is a `bool`, which will determine if you want braces in the Guid that will be generated if used with `GuidGen.Generate()`.
 
 ::: info
 This property can be initialized when using the [`GuidOptions(length, hyphens, braces, upperCaseOnly)`](#guidoptions-length-hyphens-braces-uppercaseonly) constructor.
@@ -104,7 +104,7 @@ You can `get` and `set` this property after initializing the class.
 public bool UpperCaseOnly { get; set; }
 ~~~
 
-The `UpperCaseOnly` property is an `bool`, which will determine if you want to only have upper cases in the Guid that will be generated if used with `GuidGen.Generate()`.
+The `UpperCaseOnly` property is a `bool`, which will determine if you want to only have upper cases in the Guid that will be generated if used with `GuidGen.Generate()`.
 
 ::: info
 This property can be initialized when using the [`GuidOptions(length, hyphens, braces, upperCaseOnly)`](#guidoptions-length-hyphens-braces-uppercaseonly) constructor.
