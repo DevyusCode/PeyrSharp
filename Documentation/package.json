@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build -d ../docs",
+    "docs:build": "vitepress build && powershell New-Item -Path ./../docs -Name \"CNAME\" -ItemType \"file\" -Value \"peyrsharp.leocorporation.dev\"",
     "docs:serve": "vitepress serve"
   },
   "repository": {
