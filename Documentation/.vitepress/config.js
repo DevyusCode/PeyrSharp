@@ -1,7 +1,7 @@
 export default {
     title: 'PeyrSharp',
     description: 'A C# library designed to make developers\' job easier.',
-    base: '/PeyrSharp/',
+    base: 'peyrsharp.leocorporation.dev',
     lastUpdated: true,
     outDir: '../docs',
     themeConfig: {
