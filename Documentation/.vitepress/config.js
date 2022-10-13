@@ -66,9 +66,25 @@ export default {
                             collapsible: true,
                             items: [
                                 {
+                                    text: 'Circle',
+                                    link: '/core/maths/geometry/circle'
+                                },
+                                {
+                                    text: 'Cone',
+                                    link: '/core/maths/geometry/cone'
+                                },
+                                {
                                     text: 'Cube',
                                     link: '/core/maths/geometry/cube'
-                                }
+                                },
+                                {
+                                    text: 'Cylinder',
+                                    link: '/core/maths/geometry/cylinder'
+                                },
+                                {
+                                    text: 'Diamond',
+                                    link: '/core/maths/geometry/diamond'
+                                },
                             ]
                         },
                         {

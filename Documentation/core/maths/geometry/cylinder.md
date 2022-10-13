@@ -106,7 +106,7 @@ The `Height` property is a `double` which returns the height of the cylinder, wh
 ~~~ c#
 using PeyrSharp.Core.Maths.Geometry;
 
-Circle cylinder = new(10, 40);
+Cylinder cylinder = new(10, 40);
 
 var height = cylinder.Height;
 // height = 40

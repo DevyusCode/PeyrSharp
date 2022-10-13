@@ -76,7 +76,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var area = Cube.Area;
+var area = cube.Area;
 // area = 100
 ~~~
 
@@ -96,7 +96,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var edge = Cube.Edge;
+var edge = cube.Edge;
 // edge = 7.0710678118654755
 ~~~
 
@@ -116,7 +116,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var length = Cube.Length;
+var length = cube.Length;
 // length = 10
 ~~~
 
@@ -136,7 +136,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var height = Cube.Height;
+var height = cube.Height;
 // height = 10
 ~~~
 
@@ -160,7 +160,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var side = Cube.Side ?? 0;
+var side = cube.Side ?? 0;
 // side = 10
 ~~~
 
@@ -180,7 +180,7 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var volume = Cube.Volume; // 10^3
+var volume = cube.Volume; // 10^3
 // volume = 1000
 ~~~
 
@@ -200,6 +200,6 @@ using PeyrSharp.Core.Maths.Geometry;
 
 Cube cube = new(10);
 
-var width = Cube.Width;
+var width = cube.Width;
 // width = 10
 ~~~

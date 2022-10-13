@@ -33,7 +33,7 @@ If `radius` or `height` ≤ 0, a `DivideByZeroException` will be thrown.
 ~~~ c#
 using PeyrSharp.Core.Maths.Geometry;
 
-Cone cone = new(10, 20); // Creates a cone with a radius of 10, and a height of 10
+Cone cone = new(10, 20); // Creates a cone with a radius of 10, and a height of 20
 ~~~
 ## Properties
 ### Volume
