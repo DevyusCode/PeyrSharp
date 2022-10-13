@@ -1,5 +1,5 @@
 # Cylinder
-This page is about the `Cylinder` class available in `PeyrSharp.Core.Maths.Geometry`.
+This page is about the `Cylinder` class available in [`PeyrSharp.Core.Maths.Geometry`](/core/maths/geometry).
 You can find here all of its constructors and properties.
 
 ## Compatibility

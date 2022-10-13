@@ -5,8 +5,12 @@ The reference of PeyrSharp.
 - [GuidGen](/core/guid)
 - [GuidOptions](/core/guid-options)
 - [Maths]()
-    - [Geometry]()
+    - [Geometry](/core/maths/geometry)
         - [Cube](/core/maths/geometry/cube)
+        - [Circle](/core/maths/geometry/circle)
+        - [Cone](/core/maths/geometry/cone)
+        - [Cylinder](/core/maths/geometry/cylinder)
+        - [Diamond](/core/maths/geometry/diamond)
 - [Password](/core/password)
 
 ## PeyrSharp.Enums

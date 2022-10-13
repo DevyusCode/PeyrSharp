@@ -64,6 +64,7 @@ export default {
                         {
                             text: 'Geometry',
                             collapsible: true,
+                            link: '/core/maths/geometry',
                             items: [
                                 {
                                     text: 'Circle',
