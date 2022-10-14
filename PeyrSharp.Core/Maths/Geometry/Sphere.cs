@@ -44,7 +44,7 @@ namespace PeyrSharp.Core.Maths.Geometry
 		/// <summary>
 		/// The volume of the <see cref="Sphere"/>.
 		/// </summary>
-		public double Volume => 3 / 4 * Math.PI * Math.Pow(Radius, 3);
+		public double Volume => 3d / 4d * Math.PI * Math.Pow(Radius, 3);
 
 		/// <summary>
 		/// Initializes a <see cref="Sphere"/> from its radius.
