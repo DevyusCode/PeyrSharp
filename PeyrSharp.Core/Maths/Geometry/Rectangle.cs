@@ -39,33 +39,33 @@ namespace PeyrSharp.Core.Maths.Geometry
 		/// <summary>
 		/// The Height/Length of the rectangle.
 		/// </summary>
-		public double Height { get; init; }
+		public double Length { get; init; }
 
 		/// <summary>
 		/// Creates a <see cref="Rectangle"/> from a specific width and height.
 		/// </summary>
 		/// <param name="width">The width of the rectangle.</param>
-		/// <param name="height">The height/length of the rectangle.</param>
-		public Rectangle(double width, double height)
+		/// <param name="length">The height/length of the rectangle.</param>
+		public Rectangle(double width, double length)
 		{
 			// Assign properties to their values
 			Width = width;
-			Height = height;
+			Length = length;
 		}
 
 		/// <summary>
-		/// Gets the area of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Height"/>.
+		/// Gets the area of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Length"/>.
 		/// </summary>
-		public double Area => Width * Height;
+		public double Area => Width * Length;
 
 		/// <summary>
-		/// Gets the perimeter of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Height"/>.
+		/// Gets the perimeter of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Length"/>.
 		/// </summary>
-		public double Perimeter => 2 * (Width + Height);
+		public double Perimeter => 2 * (Width + Length);
 
 		/// <summary>
-		/// Gets the diagonal of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Height"/>.
+		/// Gets the diagonal of this <see cref="Rectangle"/> from its <see cref="Width"/> and <see cref="Length"/>.
 		/// </summary>
-		public double Diagonal => Math.Sqrt(Math.Pow(Width, 2) + Math.Pow(Height, 2));
+		public double Diagonal => Math.Sqrt(Math.Pow(Width, 2) + Math.Pow(Length, 2));
 	}
 }
