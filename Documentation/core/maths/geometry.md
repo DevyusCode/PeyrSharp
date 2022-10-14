@@ -18,3 +18,8 @@ The namespace is part of the `PeyrSharp.Core` module, which is compatible with a
 - [Cone](/core/maths/geometry/cone)
 - [Cylinder](/core/maths/geometry/cylinder)
 - [Diamond](/core/maths/geometry/diamond)
+- [Hexagon](/core/maths/geometry/hexagon)
+- [Pyramid](/core/maths/geometry/pyramid)
+- [Rectangle](/core/maths/geometry/rectangle)
+- [Sphere](/core/maths/geometry/sphere)
+- [Triangle](/core/maths/geometry/triangle)
