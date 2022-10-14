@@ -32,7 +32,7 @@ If `side` ≤ 0, a `DivideByZeroException` will be thrown.
 ~~~ c#
 using PeyrSharp.Core.Maths.Geometry;
 
-Hexagon hexagon = new(12); // Creates a hexagon with all a length of 12
+Hexagon hexagon = new(12); // Creates a hexagon with a length of 12
 ~~~
 
 ## Properties
