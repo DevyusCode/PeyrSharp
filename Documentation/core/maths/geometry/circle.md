@@ -73,21 +73,3 @@ var perimeter = circle.Perimeter;
 // perimeter = 62.83185307179586
 ~~~
 
-### Radius
-#### Definition
-~~~ c#
-public double Radius { get; init; }
-~~~
-
-The `Radius` property is a `double` which returns the radius of the circle, which was defined when initializing it. You can only `get` this property.
-
-#### Usage
-
-~~~ c#
-using PeyrSharp.Core.Maths.Geometry;
-
-Circle circle = new(10);
-
-var radius = circle.Radius;
-// radius = 10
-~~~
