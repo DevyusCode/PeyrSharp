@@ -17,6 +17,8 @@ The reference of PeyrSharp.
         - [Rectangle](/core/maths/geometry/rectangle)
         - [Sphere](/core/maths/geometry/sphere)
         - [Triangle](/core/maths/geometry/triangle)
+    - [Percentages](/core/maths/percentages.md)
+    - [Trigonometry](/core/maths/trigonometry.md)
 - [Password](/core/password)
 
 ## PeyrSharp.Enums
