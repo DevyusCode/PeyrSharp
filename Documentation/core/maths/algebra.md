@@ -1,6 +1,10 @@
 # Algebra
 This page is about the `Algebra` class available in [`PeyrSharp.Core.Maths`](/core/maths).
-You can find here all of its constructors and properties.
+You can find here all of its methods.
+
+::: info
+This class is `static`.
+:::
 
 ## Compatibility
 

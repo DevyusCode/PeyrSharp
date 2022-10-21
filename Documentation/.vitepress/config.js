@@ -127,7 +127,11 @@ function sidebar() {
                             link: '/core/maths/geometry/triangle'
                         },
                     ]
-                }
+                },
+                {
+                    text: 'Trigonometry',
+                    link: '/core/maths/trigonometry'
+                },
             ]
         },
     ];
