@@ -31,36 +31,22 @@ using System.Threading.Tasks;
 namespace PeyrSharp.Core.Converters
 {
 	/// <summary>
-	/// Class that contains distances converters methods.
+	/// Class that contains temperatures converters methods.
 	/// </summary>
-	public static class Distances
+	public static class Temperature
 	{
 		/// <summary>
-		/// Converts miles to kilometers.
+		/// Converts Celsius (°C) to Fahrenheit (°F).
 		/// </summary>
-		/// <param name="miles">Number of mile(s) to convert.</param>
-		/// <returns>The original value converted in kilometers.</returns>
-		public static double MilesToKm(double miles) => miles * 1.609344; // Convert
+		/// <param name="celsius">Number of Celsius to convert.</param>
+		/// <returns>The original value converted in Fahrenheit.</returns>
+		public static double CelsiusToFahrenheit(double celsius) => celsius * 1.8 + 32; // Convert
 
 		/// <summary>
-		/// Converts kilometers to miles.
+		/// Converts Fahrenheit (°F) to Celcius (°C).
 		/// </summary>
-		/// <param name="kilometers">Number of kilometer(s) to convert.</param>
-		/// <returns>The original value converted in miles.</returns>
-		public static double KmToMiles(double kilometers) => kilometers / 1.609344; // Convert
-
-		/// <summary>
-		/// Converts Feet to Meters.
-		/// </summary>
-		/// <param name="feet">Number of feet to convert.</param>
-		/// <returns>The original value converted in meters.</returns>
-		public static double FeetToMeters(double feet) => feet / 3.2808399; // Convert
-
-		/// <summary>
-		/// Converts Meters to Feet.
-		/// </summary>
-		/// <param name="meters">Number of meters to convert.</param>
-		/// <returns>The original value converted in feet.</returns>
-		public static double MetersToFeet(double meters) => meters * 3.2808399; // Convert
+		/// <param name="fahrenheit">Number of Fahrenheit to convert.</param>
+		/// <returns>The original value converted in Celsius.</returns>
+		public static double FahrenheitToCelsius(double fahrenheit) => (fahrenheit - 32) / 1.8; // Convert
 	}
 }
