@@ -71,6 +71,10 @@ function sidebar() {
             collapsible: true,
             items: [
                 {
+                    text: 'Algebra',
+                    link: '/core/maths/algebra'
+                },
+                {
                     text: 'Geometry',
                     collapsible: true,
                     link: '/core/maths/geometry',
@@ -116,10 +120,6 @@ function sidebar() {
                             link: '/core/maths/geometry/triangle'
                         },
                     ]
-                },
-                {
-                    text: 'Algebra',
-                    link: '/core/maths/algebra'
                 }
             ]
         },

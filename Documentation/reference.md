@@ -4,7 +4,8 @@ The reference of PeyrSharp.
 ## PeyrSharp.Core
 - [GuidGen](/core/guid)
 - [GuidOptions](/core/guid-options)
-- [Maths]()
+- [Maths](/core/maths.md)
+    - [Algebra](/core/maths/algebra.md)
     - [Geometry](/core/maths/geometry)
         - [Cube](/core/maths/geometry/cube)
         - [Circle](/core/maths/geometry/circle)
