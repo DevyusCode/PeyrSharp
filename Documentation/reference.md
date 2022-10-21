@@ -23,3 +23,8 @@ The reference of PeyrSharp.
 
 ## PeyrSharp.Exceptions
 - [Exceptions](/exceptions)
+
+## PeyrSharp.UiHelpers
+- [Home](ui-helpers.md)
+- [Screen](/ui-helpers/screen.md)
+- [WinForms](/ui-helpers/winforms.md)

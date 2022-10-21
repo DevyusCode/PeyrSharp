@@ -33,7 +33,9 @@ export default {
         outline: [1, 3],
         sidebar: {
             '/core/': sidebar(),
-            'get-started': sidebar()
+            'get-started': sidebar(),
+            '/ui-helpers/': uiHelpersSidebar(),
+            "ui-helpers": uiHelpersSidebar()
         }
     }
 }
@@ -118,6 +120,29 @@ function sidebar() {
                 {
                     text: 'Algebra',
                     link: '/core/maths/algebra'
+                }
+            ]
+        },
+    ];
+}
+
+function uiHelpersSidebar() {
+    return [
+        {
+            text: 'UiHelpers',
+            collapsible: false,
+            items: [
+                {
+                    text: 'Home',
+                    link: '/ui-helpers'
+                },
+                {
+                    text: 'Screen',
+                    link: '/ui-helpers/screen'
+                },
+                {
+                    text: 'WinForms',
+                    link: '/ui-helpers/winforms'
                 }
             ]
         },
