@@ -26,7 +26,6 @@ using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace PeyrSharp.Core
@@ -152,22 +151,22 @@ namespace PeyrSharp.Core
 		/// Numbers that can be contained in a password.
 		/// </summary>
 		public static string[] Numbers => new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-		
+
 		/// <summary>
 		/// Special characters that can be contained in a password.
 		/// </summary>
 		public static string[] SpecialCharacters => new string[] { ";", ":", "!", "/", "§", "ù", "*", "$", "%", "µ", "£", ")", "=", "+", "*", "-", "&", "é", "'", "(", "-", "è", "_", "ç", "<", ">", "?", "^", "¨" };
-		
+
 		/// <summary>
 		/// Characters that shouldn't be included in a password
 		/// </summary>
 		public static string[] ForbidenCharacters => new string[] { "123", "456", "789", "password", "mdp", "pswr", "000", "admin", "111", "222", "333", "444", "555", "666", "777", "888", "999" };
-		
+
 		/// <summary>
 		/// Lower case characters.
 		/// </summary>
 		public static string[] LowerCaseLetters => new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-		
+
 		/// <summary>
 		/// Upper case characters.
 		/// </summary>
