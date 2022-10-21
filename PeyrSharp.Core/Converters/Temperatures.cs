@@ -33,7 +33,7 @@ namespace PeyrSharp.Core.Converters
 	/// <summary>
 	/// Class that contains temperatures converters methods.
 	/// </summary>
-	public static class Temperature
+	public static class Temperatures
 	{
 		/// <summary>
 		/// Converts Celsius (°C) to Fahrenheit (°F).
