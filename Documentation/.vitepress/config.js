@@ -1,8 +1,10 @@
 export default {
     title: 'PeyrSharp',
+    logo: '/logo.png',
     description: 'A C# library designed to make developers\' job easier.',
     lastUpdated: true,
     outDir: '../docs',
+    head: [['link', { rel: 'icon', href: '/logo.png' }]],
     themeConfig: {
         nav: [
             { text: 'Guide', link: '/get-started' },
