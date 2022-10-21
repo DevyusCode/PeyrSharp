@@ -1,5 +1,5 @@
 # Diamond
-This page is about the `Diamond` class available in [[`PeyrSharp.Core.Maths.Geometry`](/core/maths/geometry)](/core/maths/geometry).
+This page is about the `Diamond` class available in [`PeyrSharp.Core.Maths.Geometry`](/core/maths/geometry).
 You can find here all of its constructors and properties.
 
 ## Compatibility

@@ -33,6 +33,7 @@ export default {
         outline: [1, 3],
         sidebar: {
             '/core/': sidebar(),
+            'core': sidebar(),
             'get-started': sidebar(),
             '/ui-helpers/': uiHelpersSidebar(),
             "ui-helpers": uiHelpersSidebar()
@@ -70,6 +71,10 @@ function sidebar() {
             text: 'Maths',
             collapsible: true,
             items: [
+                {
+                    text: 'Home',
+                    link: '/core/maths'
+                },
                 {
                     text: 'Algebra',
                     link: '/core/maths/algebra'
