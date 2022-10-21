@@ -129,9 +129,13 @@ function sidebar() {
                     ]
                 },
                 {
+                    text: 'Percentages',
+                    link: '/core/maths/percentages'
+                },
+                {
                     text: 'Trigonometry',
                     link: '/core/maths/trigonometry'
-                },
+                }
             ]
         },
     ];
