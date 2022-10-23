@@ -2,6 +2,12 @@
 The reference of PeyrSharp.
 
 ## PeyrSharp.Core
+- [Converters](/core/converters.md)
+    - [Distances](/core/converters/distances.md)
+    - [Masses](/core/converters/masses.md)
+    - [Temperatures](/core/converters/temperatures.md)
+    - [Time](/core/converters/time.md)
+    - [Volumes](/core/converters/volumes.md)
 - [GuidGen](/core/guid)
 - [GuidOptions](/core/guid-options)
 - [Maths](/core/maths.md)
