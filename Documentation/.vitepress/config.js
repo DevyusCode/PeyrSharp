@@ -69,6 +69,10 @@ function sidebar() {
                     text: 'Time',
                     link: '/core/converters/time'
                 },
+                {
+                    text: 'Volumes',
+                    link: '/core/converters/volumes'
+                },
             ]
         },
         {
