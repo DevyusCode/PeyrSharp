@@ -65,6 +65,10 @@ function sidebar() {
                     text: 'Temperatures',
                     link: '/core/converters/temperatures'
                 },
+                {
+                    text: 'Time',
+                    link: '/core/converters/time'
+                },
             ]
         },
         {
