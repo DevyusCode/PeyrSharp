@@ -1,6 +1,6 @@
 # Distances
 This page is about the `Distances` class available in [`PeyrSharp.Core.Converters`](/core/converters.md).
-You can find here all of its methods and properties.
+You can find here all of its methods.
 
 ::: info
 This class is `static`.

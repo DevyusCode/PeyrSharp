@@ -56,7 +56,11 @@ function sidebar() {
                 {
                     text: 'Distances',
                     link: '/core/converters/distances'
-                }
+                },
+                {
+                    text: 'Masses',
+                    link: '/core/converters/masses'
+                },
             ]
         },
         {
