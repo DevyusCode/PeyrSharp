@@ -46,6 +46,20 @@ export default {
 function sidebar() {
     return [
         {
+            text: 'Converters',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Home',
+                    link: '/core/converters'
+                },
+                {
+                    text: 'Distances',
+                    link: '/core/converters/distances'
+                }
+            ]
+        },
+        {
             text: 'Guid',
             collapsible: true,
             items: [
@@ -56,16 +70,6 @@ function sidebar() {
                 {
                     text: 'GuidOptions',
                     link: '/core/guid-options'
-                }
-            ]
-        },
-        {
-            text: 'Password',
-            collapsible: true,
-            items: [
-                {
-                    text: 'Password',
-                    link: '/core/password'
                 }
             ]
         },
@@ -135,6 +139,16 @@ function sidebar() {
                 {
                     text: 'Trigonometry',
                     link: '/core/maths/trigonometry'
+                }
+            ]
+        },
+        {
+            text: 'Password',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Password',
+                    link: '/core/password'
                 }
             ]
         },
