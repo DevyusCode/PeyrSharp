@@ -61,6 +61,10 @@ function sidebar() {
                     text: 'Masses',
                     link: '/core/converters/masses'
                 },
+                {
+                    text: 'Temperatures',
+                    link: '/core/converters/temperatures'
+                },
             ]
         },
         {
