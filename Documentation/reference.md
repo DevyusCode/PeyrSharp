@@ -3,8 +3,14 @@ The reference of PeyrSharp.
 
 ## PeyrSharp.Core
 - [Converters](/core/converters.md)
+    - [Angle](/core/converters/angle.md)
+    - Colors
+        - [RGB](/core/converters/colors/rgb.md)
+        - [HEX](/core/converters/colors/hex.md)
+        - [HSV](/core/converters/colors/hsv.md)
     - [Distances](/core/converters/distances.md)
     - [Masses](/core/converters/masses.md)
+    - [Storage](/core/converters/storage.md)
     - [Temperatures](/core/converters/temperatures.md)
     - [Time](/core/converters/time.md)
     - [Volumes](/core/converters/volumes.md)
