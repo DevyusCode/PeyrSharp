@@ -34,103 +34,103 @@ namespace PeyrSharp.Core.Converters
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to byte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToByte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToByte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i,// Convert and return value
-			StorageUnits.Kilobyte => i * 1000,// Convert and return value
-			StorageUnits.Megabyte => i * 1000000,// Convert and return value
-			StorageUnits.Gigabyte => i * 1000000000,// Convert and return value
-			StorageUnits.Terabyte => i * 1000000000000,// Convert and return value
-			StorageUnits.Petabyte => i * 1000000000000000,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value,// Convert and return value
+			StorageUnits.Kilobyte => value * 1000,// Convert and return value
+			StorageUnits.Megabyte => value * 1000000,// Convert and return value
+			StorageUnits.Gigabyte => value * 1000000000,// Convert and return value
+			StorageUnits.Terabyte => value * 1000000000000,// Convert and return value
+			StorageUnits.Petabyte => value * 1000000000000000,// Convert and return value
+			_ => value,// Convert and return value
 		};
 
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to Kilobyte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToKilobyte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToKilobyte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i / 1000,// Convert and return value
-			StorageUnits.Kilobyte => i,// Convert and return value
-			StorageUnits.Megabyte => i * 1000,// Convert and return value
-			StorageUnits.Gigabyte => i * 1000000,// Convert and return value
-			StorageUnits.Terabyte => i * 1000000000,// Convert and return value
-			StorageUnits.Petabyte => i * 1000000000000,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value / 1000,// Convert and return value
+			StorageUnits.Kilobyte => value,// Convert and return value
+			StorageUnits.Megabyte => value * 1000,// Convert and return value
+			StorageUnits.Gigabyte => value * 1000000,// Convert and return value
+			StorageUnits.Terabyte => value * 1000000000,// Convert and return value
+			StorageUnits.Petabyte => value * 1000000000000,// Convert and return value
+			_ => value,// Convert and return value
 		};
 
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to Megabyte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToMegabyte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToMegabyte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i / 1000000,// Convert and return value
-			StorageUnits.Kilobyte => i / 1000,// Convert and return value
-			StorageUnits.Megabyte => i,// Convert and return value
-			StorageUnits.Gigabyte => i * 1000,// Convert and return value
-			StorageUnits.Terabyte => i * 1000000,// Convert and return value
-			StorageUnits.Petabyte => i * 1000000000,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value / 1000000,// Convert and return value
+			StorageUnits.Kilobyte => value / 1000,// Convert and return value
+			StorageUnits.Megabyte => value,// Convert and return value
+			StorageUnits.Gigabyte => value * 1000,// Convert and return value
+			StorageUnits.Terabyte => value * 1000000,// Convert and return value
+			StorageUnits.Petabyte => value * 1000000000,// Convert and return value
+			_ => value,// Convert and return value
 		};
 
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to Gigabyte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToGigabyte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToGigabyte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i / 1000000000,// Convert and return value
-			StorageUnits.Kilobyte => i / 1000000,// Convert and return value
-			StorageUnits.Megabyte => i / 1000,// Convert and return value
-			StorageUnits.Gigabyte => i,// Convert and return value
-			StorageUnits.Terabyte => i * 1000,// Convert and return value
-			StorageUnits.Petabyte => i * 1000000,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value / 1000000000,// Convert and return value
+			StorageUnits.Kilobyte => value / 1000000,// Convert and return value
+			StorageUnits.Megabyte => value / 1000,// Convert and return value
+			StorageUnits.Gigabyte => value,// Convert and return value
+			StorageUnits.Terabyte => value * 1000,// Convert and return value
+			StorageUnits.Petabyte => value * 1000000,// Convert and return value
+			_ => value,// Convert and return value
 		};
 
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to Terabyte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToTerabyte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToTerabyte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i / 1000000000000,// Convert and return value
-			StorageUnits.Kilobyte => i / 1000000000,// Convert and return value
-			StorageUnits.Megabyte => i / 1000000,// Convert and return value
-			StorageUnits.Gigabyte => i / 1000,// Convert and return value
-			StorageUnits.Terabyte => i,// Convert and return value
-			StorageUnits.Petabyte => i * 1000,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value / 1000000000000,// Convert and return value
+			StorageUnits.Kilobyte => value / 1000000000,// Convert and return value
+			StorageUnits.Megabyte => value / 1000000,// Convert and return value
+			StorageUnits.Gigabyte => value / 1000,// Convert and return value
+			StorageUnits.Terabyte => value,// Convert and return value
+			StorageUnits.Petabyte => value * 1000,// Convert and return value
+			_ => value,// Convert and return value
 		};
 
 		/// <summary>
 		/// Converts a size (kb, mb, ...) to Petabyte.
 		/// </summary>
-		/// <param name="i">The size to convert.</param>
-		/// <param name="storageUnits">The source <see cref="StorageUnits"/> (kb, mb...).</param>
+		/// <param name="value">The size to convert.</param>
+		/// <param name="storageUnit">The source <see cref="StorageUnits"/> (kb, mb...).</param>
 		/// <returns>A <see cref="double"/> value.</returns>
-		public static double ToPetabyte(double i, StorageUnits storageUnits) => storageUnits switch
+		public static double ToPetabyte(double value, StorageUnits storageUnit) => storageUnit switch
 		{
-			StorageUnits.Byte => i / 1000000000000000,// Convert and return value
-			StorageUnits.Kilobyte => i / 1000000000000,// Convert and return value
-			StorageUnits.Megabyte => i / 1000000000,// Convert and return value
-			StorageUnits.Gigabyte => i / 1000000,// Convert and return value
-			StorageUnits.Terabyte => i / 1000,// Convert and return value
-			StorageUnits.Petabyte => i,// Convert and return value
-			_ => i,// Convert and return value
+			StorageUnits.Byte => value / 1000000000000000,// Convert and return value
+			StorageUnits.Kilobyte => value / 1000000000000,// Convert and return value
+			StorageUnits.Megabyte => value / 1000000000,// Convert and return value
+			StorageUnits.Gigabyte => value / 1000000,// Convert and return value
+			StorageUnits.Terabyte => value / 1000,// Convert and return value
+			StorageUnits.Petabyte => value,// Convert and return value
+			_ => value,// Convert and return value
 		};
 	}
 }
