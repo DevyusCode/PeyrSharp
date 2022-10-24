@@ -46,7 +46,7 @@ namespace PeyrSharp.Core.Converters
 		public int Value { get; init; }
 
 		/// <summary>
-		/// Initializes a HSV color from its hue, satureation, and value.
+		/// Initializes a HSV color from its hue, saturation, and value.
 		/// </summary>
 		/// <param name="hue">The Hue (H).</param>
 		/// <param name="saturation">The Saturation (S).</param>
