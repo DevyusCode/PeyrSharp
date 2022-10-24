@@ -54,6 +54,10 @@ function sidebar() {
                     link: '/core/converters'
                 },
                 {
+                    text: 'Angle',
+                    link: '/core/converters/angle'
+                },
+                {
                     text: 'Distances',
                     link: '/core/converters/distances'
                 },
