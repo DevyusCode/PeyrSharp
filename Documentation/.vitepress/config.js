@@ -58,6 +58,24 @@ function sidebar() {
                     link: '/core/converters/angle'
                 },
                 {
+                    text: 'Colors',
+                    link: '/core/converters/colors',
+                    items: [
+                        {
+                            text: 'RGB',
+                            link: '/core/converters/colors/rgb'
+                        },
+                        {
+                            text: 'HEX',
+                            link: '/core/converters/colors/hex'
+                        },
+                        {
+                            text: 'HSV',
+                            link: '/core/converters/colors/hsv'
+                        },
+                    ]
+                },
+                {
                     text: 'Distances',
                     link: '/core/converters/distances'
                 },
