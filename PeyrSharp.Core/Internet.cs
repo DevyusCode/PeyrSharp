@@ -40,3 +40,12 @@
 			_ => StatusCodes.ClientError
 		};
 
+		/// <summary>
+		/// Gets the protocol of a URL as <see langword="string"/>.
+		/// </summary>
+		/// <param name="url">The URL to parse.</param>
+		/// <returns>The protocol of the URL.</returns>
+		/// <remarks>If the URL is not valid, the value returned might be false.</remarks>
+		/// <exception cref="IndexOutOfRangeException"></exception>
+		public static string GetUrlProtocol(string url) => url.Split("://")[0];
+
