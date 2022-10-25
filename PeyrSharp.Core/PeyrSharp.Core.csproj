@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.0.0.2210-pre3</Version>
+    <Version>1.0.0.2210-pre4</Version>
     <Authors>Léo Corporation</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2022</Copyright>
@@ -30,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre3" />
-    <PackageReference Include="PeyrSharp.Exceptions" Version="1.0.0.2210-pre3" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre4" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="1.0.0.2210-pre4" />
   </ItemGroup>
 
 </Project>
