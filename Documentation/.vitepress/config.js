@@ -102,6 +102,16 @@ function sidebar() {
             ]
         },
         {
+            text: 'Crypt',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Crypt',
+                    link: '/core/crypt'
+                }
+            ]
+        },
+        {
             text: 'Guid',
             collapsible: true,
             items: [

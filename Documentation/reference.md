@@ -2,6 +2,7 @@
 The reference of PeyrSharp.
 
 ## PeyrSharp.Core
+- [Crypt](/core/crypt.md)
 - [Converters](/core/converters.md)
     - [Angle](/core/converters/angle.md)
     - Colors
@@ -16,6 +17,7 @@ The reference of PeyrSharp.
     - [Volumes](/core/converters/volumes.md)
 - [GuidGen](/core/guid)
 - [GuidOptions](/core/guid-options)
+- [Internet](/core/internet.md)
 - [Maths](/core/maths.md)
     - [Algebra](/core/maths/algebra.md)
     - [Geometry](/core/maths/geometry)

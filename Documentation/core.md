@@ -19,6 +19,7 @@ The `Core` namespace contains other namespaces:
 - [Converters](/core/converters.md)
 
 ## Classes
+- [Crypt](/core/crypt.md)
 - [GuidGen](/core/guid.md)
 - [GuidOption](/core/guid-options.md)
 - [Internet](/core/internet.md)
