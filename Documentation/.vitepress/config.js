@@ -116,6 +116,16 @@ function sidebar() {
             ]
         },
         {
+            text: 'Internet',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Internet',
+                    link: '/core/internet'
+                }
+            ]
+        },
+        {
             text: 'Maths',
             collapsible: true,
             items: [
