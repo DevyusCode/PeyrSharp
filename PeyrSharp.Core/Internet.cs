@@ -25,3 +25,18 @@
 		/// <returns><see langword="true"/> if the Internet can be reach.</returns>
 		public static async Task<bool> IsAvailableAsync() => await GetStatusCodeAsync("https://www.bing.com") != 400;
 
+		/// <summary>
+		/// Gets the kind of the status code.
+		/// </summary>
+		/// <param name="statusCode">The status code to analyze.</param>
+		/// <returns>The type of the status code.</returns>
+		public static StatusCodes GetStatusCodeType(int statusCode) => statusCode switch
+		{
+			>= 100 and <= 199 => StatusCodes.Informational,
+			>= 200 and <= 299 => StatusCodes.Success,
+			>= 300 and <= 399 => StatusCodes.Redirection,
+			>= 400 and <= 499 => StatusCodes.ClientError,
+			>= 500 and <= 599 => StatusCodes.ServerError,
+			_ => StatusCodes.ClientError
+		};
+
