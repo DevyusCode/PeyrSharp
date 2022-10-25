@@ -23,13 +23,7 @@ SOFTWARE.
 */
 
 using PeyrSharp.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PeyrSharp.Core.Converters
 {
@@ -70,7 +64,7 @@ namespace PeyrSharp.Core.Converters
 				r = int.Parse(newVal.Substring(0, 2), NumberStyles.AllowHexSpecifier);
 				g = int.Parse(newVal.Substring(2, 2), NumberStyles.AllowHexSpecifier);
 				b = int.Parse(newVal.Substring(4, 2), NumberStyles.AllowHexSpecifier);
-				
+
 				return new(r, g, b);
 			}
 			catch
