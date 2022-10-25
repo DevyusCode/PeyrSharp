@@ -123,7 +123,7 @@ namespace PeyrSharp.Core
 		}
 
 		/// <summary>
-		/// Encrypt a <see cref="string"/> using AES ecnryption.
+		/// Encrypt a <see cref="string"/> using AES encryption.
 		/// </summary>
 		/// <param name="str">The <see cref="string"/> to encrypt.</param>
 		/// <param name="key">The key.</param>
@@ -159,7 +159,7 @@ namespace PeyrSharp.Core
 		}
 
 		/// <summary>
-		/// Decrypts a <see cref="string"/> using AES ecnryption.
+		/// Decrypts a <see cref="string"/> using AES encryption.
 		/// </summary>
 		/// <param name="encrypted">The <see cref="string"/> to decrypt.</param>
 		/// <param name="key">The key.</param>
