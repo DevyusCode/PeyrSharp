@@ -59,7 +59,6 @@ function sidebar() {
                 },
                 {
                     text: 'Colors',
-                    link: '/core/converters/colors',
                     items: [
                         {
                             text: 'RGB',
