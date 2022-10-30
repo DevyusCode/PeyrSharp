@@ -19,7 +19,18 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet }}
-      - run: dotnet build PeyrSharp.sln -c Release
+
+      - name: Build PeyrSharp
+      - run: dotnet build PeyrSharp/PeyrSharp.csproj -c Release
+
+      - name: Build PeyrSharp.Core
+      - run: dotnet build PeyrSharp.Core/PeyrSharp.Core.csproj -c Release
+
+      - name: Build PeyrSharp.Enums
+      - run: dotnet build PeyrSharp.Enums/PeyrSharp.Enums.csproj -c Release
+
+      - name: Build PeyrSharp.Exceptions
+      - run: dotnet build PeyrSharp.Exceptions/PeyrSharp.Exceptions.csproj -c Release
       
-      - name: Test App
-        run: dotnet test PeyrSharp.sln
+      - name: Test PeyrSharp.Core
+        run: dotnet test PeyrSharp/PeyrSharp.csproj
