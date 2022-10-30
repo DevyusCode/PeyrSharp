@@ -100,7 +100,7 @@ namespace PeyrSharp.Env
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>
 		public static double GetTotalSpace(string drive, StorageUnits unit) => ConvertBytes(new DriveInfo(drive).TotalSize, unit);
-		
+
 		/// <summary>
 		/// Gets the total amount of space of a specified drive.
 		/// </summary>
@@ -111,5 +111,26 @@ namespace PeyrSharp.Env
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>
 		public static double GetTotalSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit);
+
+		/// <summary>
+		/// Counts the number of characters in specified file asynchronously.
+		/// </summary>
+		/// <param name="fileName">The file path of the file.</param>
+		/// <exception cref="ArgumentNullException"></exception>
+		/// <exception cref="FileNotFoundException"></exception>
+		/// <returns>The number of characters in the specified file.</returns>
+		public static async Task<int> CountFileCharactersAsync(string fileName)
+		{
+			if (string.IsNullOrEmpty(fileName)) // If the specified fileName is null
+			{
+				throw new ArgumentNullException("The parameter 'fileName' is null or empty."); // Erreur
+			}
+
+			if (!File.Exists(fileName)) // if the file doesn't exist
+			{
+				throw new FileNotFoundException("The parameter 'fileName' does not lead to a specific file name."); // Erreur
+			}
+			return (await File.ReadAllTextAsync(fileName)).Length; // Get the length of the file text.
+		}
 	}
 }
