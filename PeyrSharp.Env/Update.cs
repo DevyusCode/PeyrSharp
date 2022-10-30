@@ -47,5 +47,14 @@ namespace PeyrSharp.Env
 			HttpClient httpClient = new();
 			return httpClient.GetStringAsync(url);
 		}
+
+		/// <summary>
+		/// Compares two versions.
+		/// </summary>
+		/// <param name="currentVersion">The current version of the app.</param>
+		/// <param name="remoteVersion">The latest version stored remotely.</param>
+		/// <returns><see langword="true"/> if an update is available; if the two versions are different.</returns>
+		/// <remarks>You can use the <see cref="GetLastVersionAsync(string)"/> method for the <paramref name="remoteVersion"/>.</remarks>
+		public static bool IsAvailable(string currentVersion, string remoteVersion) => currentVersion != remoteVersion;
 	}
 }
