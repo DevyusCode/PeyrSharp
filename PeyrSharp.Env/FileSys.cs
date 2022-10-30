@@ -89,5 +89,27 @@ namespace PeyrSharp.Env
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>	
 		public static double GetOccupiedSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit) - GetAvailableSpace(drive, unit);
+
+		/// <summary>
+		/// Gets the total amount of space of a specified drive.
+		/// </summary>
+		/// <param name="drive">The drive to get the total space of.</param>
+		/// <param name="unit">The unit of the result returned.</param>
+		/// <returns>The total amount of space.</returns>
+		/// <exception cref="DriveNotFoundException"></exception>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
+		public static double GetTotalSpace(string drive, StorageUnits unit) => ConvertBytes(new DriveInfo(drive).TotalSize, unit);
+		
+		/// <summary>
+		/// Gets the total amount of space of a specified drive.
+		/// </summary>
+		/// <param name="drive">The <see cref="DriveInfo"/> object to get the total space of.</param>
+		/// <param name="unit">The unit of the result returned.</param>
+		/// <returns>The total amount of space.</returns>
+		/// <exception cref="DriveNotFoundException"></exception>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
+		public static double GetTotalSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit);
 	}
 }
