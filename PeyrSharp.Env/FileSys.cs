@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
+using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -35,22 +36,58 @@ namespace PeyrSharp.Env
 	/// </summary>
 	public static class FileSys
 	{
+		private static double ConvertBytes(double b, StorageUnits unit) => unit switch
+		{
+			StorageUnits.Kilobyte => b / 1000,
+			StorageUnits.Megabyte => b / 1000000,
+			StorageUnits.Gigabyte => b / 1000000000,
+			StorageUnits.Terabyte => b / 1000000000000,
+			StorageUnits.Petabyte => b / 1000000000000000,
+			_ => b
+		};
+
 		/// <summary>
 		/// Gets the amount of available storage space on a specified drive.
 		/// </summary>
 		/// <param name="drive">The drive letter or name to get the amount of available space.</param>
+		/// <param name="unit">The unit of the result returned.</param>
 		/// <returns>The amount of free storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
-		public static double GetAvailableSpace(string drive) => new DriveInfo(drive).AvailableFreeSpace;
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
+		public static double GetAvailableSpace(string drive, StorageUnits unit) => ConvertBytes(new DriveInfo(drive).AvailableFreeSpace, unit);
 
 		/// <summary>
 		/// Gets the amount of available storage space on a specified drive.
 		/// </summary>
 		/// <param name="drive">The <see cref="DriveInfo"/> object to get the amount of available space.</param>
-		/// <returns>The amount of free storage space</returns>
+		/// <param name="unit">The unit of the result returned.</param>
+		/// <returns>The amount of free storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
-		public static double GetAvailableSpace(DriveInfo drive) => drive.AvailableFreeSpace;
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>		
+		public static double GetAvailableSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.AvailableFreeSpace, unit);
 
+		/// <summary>
+		/// Gets the amount of occupied storage space on a specified drive.
+		/// </summary>
+		/// <param name="drive">The drive to letter or name to get the amount of occupied space.</param>
+		/// <param name="unit">The unit of the result returned.</param>
+		/// <returns>The amount of occupied storage space.</returns>
+		/// <exception cref="DriveNotFoundException"></exception>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>
+		public static double GetOccupiedSpace(string drive, StorageUnits unit) => ConvertBytes(new DriveInfo(drive).TotalSize, unit) - GetAvailableSpace(drive, unit);
 
+		/// <summary>
+		/// Gets the amount of occupied storage space on a specified drive.
+		/// </summary>
+		/// <param name="drive">The <see cref="DriveInfo"/> object to get the amount of occupied space.</param>
+		/// <param name="unit">The unit of the result returned.</param>
+		/// <returns>The amount of occupied storage space.</returns>
+		/// <exception cref="DriveNotFoundException"></exception>
+		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentNullException"></exception>	
+		public static double GetOccupiedSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit) - GetAvailableSpace(drive, unit);
 	}
 }
