@@ -19,10 +19,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet }}
-      - run: dotnet build <my project>
-      
-      - name: Build App
-        run: dotnet build PeyrSharp.sln -c Release
+      - run: dotnet build PeyrSharp.sln -c Release
       
       - name: Test App
         run: dotnet test PeyrSharp.sln
