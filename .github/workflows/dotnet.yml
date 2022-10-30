@@ -21,16 +21,16 @@ jobs:
           dotnet-version: ${{ matrix.dotnet }}
 
       - name: Build PeyrSharp
-      - run: dotnet build PeyrSharp/PeyrSharp.csproj -c Release
+        run: dotnet build PeyrSharp/PeyrSharp.csproj -c Release
 
       - name: Build PeyrSharp.Core
-      - run: dotnet build PeyrSharp.Core/PeyrSharp.Core.csproj -c Release
+        run: dotnet build PeyrSharp.Core/PeyrSharp.Core.csproj -c Release
 
       - name: Build PeyrSharp.Enums
-      - run: dotnet build PeyrSharp.Enums/PeyrSharp.Enums.csproj -c Release
+        run: dotnet build PeyrSharp.Enums/PeyrSharp.Enums.csproj -c Release
 
       - name: Build PeyrSharp.Exceptions
-      - run: dotnet build PeyrSharp.Exceptions/PeyrSharp.Exceptions.csproj -c Release
+        run: dotnet build PeyrSharp.Exceptions/PeyrSharp.Exceptions.csproj -c Release
       
       - name: Test PeyrSharp.Core
         run: dotnet test PeyrSharp/PeyrSharp.csproj
