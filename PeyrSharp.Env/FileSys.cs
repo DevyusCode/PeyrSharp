@@ -26,6 +26,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -157,5 +158,13 @@ namespace PeyrSharp.Env
 
 			return true;
 		}
+
+		/// <summary>
+		/// Gets the system drive, where Windows is installed.
+		/// </summary>
+		/// <remarks>Only works with Windows.</remarks>
+		[SupportedOSPlatform("windows")]
+		public static DriveInfo SystemDrive { get => (System.CurrentOperatingSystem == OperatingSystems.Windows) ? new DriveInfo(Environment.SystemDirectory) : DriveInfo.GetDrives()[0]; }
+
 	}
 }
