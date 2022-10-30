@@ -132,5 +132,30 @@ namespace PeyrSharp.Env
 			}
 			return (await File.ReadAllTextAsync(fileName)).Length; // Get the length of the file text.
 		}
+
+		/// <summary>
+		/// Checks if your program has the permission to write a file in a specific directory.
+		/// </summary>
+		/// <param name="filePath">The path to the directory.</param>
+		/// <returns><see langword="true"/> if you can write a file in the specified directory.</returns>
+		public static bool CanWriteFile(string filePath)
+		{
+			if (!Directory.Exists(filePath))
+			{
+				throw new DirectoryNotFoundException("The directory does not exist or is invalid.");
+			}
+
+			try
+			{
+				Directory.CreateDirectory($@"{filePath}\PeyrSharpTest");
+				Directory.Delete($@"{filePath}\PeyrSharpTest");
+			}
+			catch
+			{
+				return false;
+			}
+
+			return true;
+		}
 	}
 }
