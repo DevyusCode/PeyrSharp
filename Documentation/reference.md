@@ -35,6 +35,11 @@ The reference of PeyrSharp.
     - [Trigonometry](/core/maths/trigonometry.md)
 - [Password](/core/password)
 
+## PeyrSharp.Env
+- [Home](/env.md)
+- [Logger](/env/logger.md)
+- [Update](/env/update.md)
+
 ## PeyrSharp.Enums
 - [Enumerations](/enumerations)
 

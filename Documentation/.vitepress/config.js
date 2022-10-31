@@ -39,7 +39,8 @@ export default {
             'get-started': sidebar(),
             '/ui-helpers/': uiHelpersSidebar(),
             "ui-helpers": uiHelpersSidebar(),
-            '/env/': envSidebar()
+            '/env/': envSidebar(),
+            'env': envSidebar()
         }
     }
 }
@@ -65,7 +66,7 @@ function envSidebar() {
                     link: '/env/update'
                 }
             ]
-        }
+        },
     ]
 }
 

@@ -52,7 +52,7 @@ private async void Main()
 Compares two versions. Returns a `bool`.
 
 ::: info
-It is recommended to use this method with the [`GetLastVersionAsync()`](#getlastversionasyncurl) one.
+It is recommended to use this method with the [`GetLastVersionAsync()`](#getlastversionasync-url) one.
 :::
 
 #### Arguments
