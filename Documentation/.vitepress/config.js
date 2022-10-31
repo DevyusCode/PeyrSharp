@@ -38,9 +38,35 @@ export default {
             'core': sidebar(),
             'get-started': sidebar(),
             '/ui-helpers/': uiHelpersSidebar(),
-            "ui-helpers": uiHelpersSidebar()
+            "ui-helpers": uiHelpersSidebar(),
+            '/env/': envSidebar()
         }
     }
+}
+
+function envSidebar() {
+    return [
+        {
+            text: 'Logger',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Logger',
+                    link: '/env/logger'
+                }
+            ]
+        },
+        {
+            text: 'Update',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Update',
+                    link: '/env/update'
+                }
+            ]
+        }
+    ]
 }
 
 function sidebar() {
