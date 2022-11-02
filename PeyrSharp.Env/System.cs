@@ -141,19 +141,20 @@ namespace PeyrSharp.Env
 		/// <remarks>The 'process' parameter must have a valid path to the programm to launch in admin mode in <see cref="Process.StartInfo"/>.</remarks>
 		public static void ExecuteAsAdmin(Process process)
 		{
-			if (string.IsNullOrEmpty(process.StartInfo.FileName)) // Si l'argument est vide
+			// Checks if 'fileName' is valid or not
+			if (string.IsNullOrEmpty(process.StartInfo.FileName))
 			{
 				throw new ArgumentNullException("The parameter 'process' has a 'FileName' that is null or empty."); // Message d'erreur
 			}
 
-			if (!File.Exists(process.StartInfo.FileName)) // Si le ficher n'existe pas
+			if (!File.Exists(process.StartInfo.FileName))
 			{
 				throw new FileNotFoundException("The parameter 'process' has a 'FileName' that does not lead to an existing file."); // Message d'erreur
 			}
 
 			process.StartInfo.UseShellExecute = true;
-			process.StartInfo.Verb = "runas"; // Mettre en mode administrateur
-			process.Start(); // Démarrer
+			process.StartInfo.Verb = "runas";
+			process.Start(); // Start
 		}
 
 		/// <summary>
@@ -164,26 +165,27 @@ namespace PeyrSharp.Env
 		/// <exception cref="FileNotFoundException"></exception>
 		public static void ExecuteAsAdmin(string filename)
 		{
-			if (string.IsNullOrEmpty(filename)) // Si l'argument est vide
+			// Checks if 'fileName' is valid or not
+			if (string.IsNullOrEmpty(filename))
 			{
 				throw new ArgumentNullException("The parameter 'filename' is null or empty."); // Message d'erreur
 			}
 
-			if (!File.Exists(filename)) // Si le fichier n'existe pas
+			if (!File.Exists(filename))
 			{
 				throw new FileNotFoundException("The parameter 'filename' does not lead to an existing file."); // Message d'erreur
 			}
 			ProcessStartInfo processStartInfo = new()
 			{
-				FileName = filename, // Mettre le fichier à ouvrir
+				FileName = filename, // Set the file name of the process
 				UseShellExecute = true,
-				Verb = "runas" // Mettre le mode administrateur
+				Verb = "runas"
 			};
 			Process process = new()
 			{
 				StartInfo = processStartInfo
 			};
-			process.Start(); // Démarrer
+			process.Start(); // Start
 		}
 
 		/// <summary>
@@ -192,5 +194,10 @@ namespace PeyrSharp.Env
 		[SupportedOSPlatform("windows")]
 		public static bool IsDarkThemeSupported => CurrentWindowsVersion == WindowsVersion.Windows10 || CurrentWindowsVersion == WindowsVersion.Windows11;
 
+		/// <summary>
+		/// Gets the current UnixTime.
+		/// </summary>
+		/// <returns>The current unix time.</returns>
+		public static int UnixTime => (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds; // Get Unix Time
 	}
 }
