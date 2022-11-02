@@ -51,7 +51,7 @@ namespace PeyrSharp.Env
 		/// Gets the amount of available storage space on a specified drive.
 		/// </summary>
 		/// <param name="drive">The drive letter or name to get the amount of available space.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The amount of free storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
@@ -61,19 +61,19 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets the amount of available storage space on a specified drive.
 		/// </summary>
-		/// <param name="drive">The <see cref="DriveInfo"/> object to get the amount of available space.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="driveInfo">The <see cref="DriveInfo"/> object to get the amount of available space.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The amount of free storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>		
-		public static double GetAvailableSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.AvailableFreeSpace, unit);
+		public static double GetAvailableSpace(DriveInfo driveInfo, StorageUnits unit) => ConvertBytes(driveInfo.AvailableFreeSpace, unit);
 
 		/// <summary>
 		/// Gets the amount of occupied storage space on a specified drive.
 		/// </summary>
 		/// <param name="drive">The drive to letter or name to get the amount of occupied space.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The amount of occupied storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
@@ -83,19 +83,19 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets the amount of occupied storage space on a specified drive.
 		/// </summary>
-		/// <param name="drive">The <see cref="DriveInfo"/> object to get the amount of occupied space.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="driveInfo">The <see cref="DriveInfo"/> object to get the amount of occupied space.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The amount of occupied storage space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>	
-		public static double GetOccupiedSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit) - GetAvailableSpace(drive, unit);
+		public static double GetOccupiedSpace(DriveInfo driveInfo, StorageUnits unit) => ConvertBytes(driveInfo.TotalSize, unit) - GetAvailableSpace(driveInfo, unit);
 
 		/// <summary>
 		/// Gets the total amount of space of a specified drive.
 		/// </summary>
 		/// <param name="drive">The drive to get the total space of.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The total amount of space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
@@ -105,13 +105,13 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets the total amount of space of a specified drive.
 		/// </summary>
-		/// <param name="drive">The <see cref="DriveInfo"/> object to get the total space of.</param>
-		/// <param name="unit">The unit of the result returned.</param>
+		/// <param name="driveInfo">The <see cref="DriveInfo"/> object to get the total space of.</param>
+		/// <param name="unit">The unit of the returned result.</param>
 		/// <returns>The total amount of space.</returns>
 		/// <exception cref="DriveNotFoundException"></exception>
 		/// <exception cref="ArgumentException"></exception>
 		/// <exception cref="ArgumentNullException"></exception>
-		public static double GetTotalSpace(DriveInfo drive, StorageUnits unit) => ConvertBytes(drive.TotalSize, unit);
+		public static double GetTotalSpace(DriveInfo driveInfo, StorageUnits unit) => ConvertBytes(driveInfo.TotalSize, unit);
 
 		/// <summary>
 		/// Counts the number of characters in specified file asynchronously.
