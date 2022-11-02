@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp.Extensions</Title>
-		<Version>1.0.0.2210-pre5</Version>
+		<Version>1.0.0.2211-pre5</Version>
 		<Authors>Léo Corporation</Authors>
 		<Description>Extensions methods of PeyrSharp.</Description>
 		<Copyright>© 2022</Copyright>
@@ -30,7 +30,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre4" />
+	  <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2211-pre5" />
 	</ItemGroup>
 
 </Project>
