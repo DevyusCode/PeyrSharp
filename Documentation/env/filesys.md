@@ -199,6 +199,23 @@ else
 ~~~
 
 ## Properties
+### AppDataPath
+#### Definition
+
+~~~ c#
+public static string AppDataPath { get; }
+~~~
+
+The `AppDataPath` property gets the `%APPDATA%` path. You can only `get` this property.
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+string appdata = FileSys.AppDataPath;
+~~~
+
 ### SystemDrive
 #### Definition
 

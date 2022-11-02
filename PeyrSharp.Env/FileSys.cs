@@ -166,5 +166,9 @@ namespace PeyrSharp.Env
 		[SupportedOSPlatform("windows")]
 		public static DriveInfo SystemDrive { get => (System.CurrentOperatingSystem == OperatingSystems.Windows) ? new DriveInfo(Environment.SystemDirectory) : DriveInfo.GetDrives()[0]; }
 
+		/// <summary>
+		/// Gets the <c>%APPDATA%</c> path.
+		/// </summary>
+		public static string AppDataPath => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 	}
 }
