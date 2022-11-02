@@ -48,25 +48,27 @@ export default {
 function envSidebar() {
     return [
         {
-            text: 'Logger',
+            text: 'Env',
             collapsible: true,
             items: [
                 {
+                    text: 'Home',
+                    link: '/env'
+                },
+                {
+                    text: 'FileSys',
+                    link: '/env/filesys'
+                },
+                {
                     text: 'Logger',
                     link: '/env/logger'
-                }
-            ]
-        },
-        {
-            text: 'Update',
-            collapsible: true,
-            items: [
+                },
                 {
                     text: 'Update',
                     link: '/env/update'
                 }
             ]
-        },
+        }
     ]
 }
 
