@@ -22,10 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 using PeyrSharp.Enums;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 
 namespace PeyrSharp.Env
 {
@@ -56,6 +58,40 @@ namespace PeyrSharp.Env
 				else
 				{
 					return OperatingSystems.Unknown; // Return unknown
+				}
+			}
+		}
+
+		/// <summary>
+		/// Gets the current Windows Version.
+		/// </summary>
+		/// <remarks>You can execute this method on other platforms than Windows, but it will return <see cref="WindowsVersion.Unknown"/>.</remarks>
+		[SupportedOSPlatform("windows")]
+		public static WindowsVersion CurrentWindowsVersion
+		{
+			get
+			{
+				switch (Environment.OSVersion.Version.Major)
+				{
+					case 6: // If major version is 6
+						return Environment.OSVersion.Version.Minor switch
+						{
+							// If Windows 7 (6.1)
+							1 => WindowsVersion.Windows7,// Windows 7
+														 // If Windows 8 (6.2)
+							2 => WindowsVersion.Windows8,// Windows 8
+														 // If Windows 8.1 (6.3)
+							3 => WindowsVersion.Windows81,// Windows 8.1
+							_ => WindowsVersion.Unknown,
+						};
+					case 10: // If Windows 10/11 (NT 10.0)
+						if (Environment.OSVersion.Version.Build >= 22000)
+						{
+							return WindowsVersion.Windows11; // Windows 11
+						}
+						return WindowsVersion.Windows10; // Windows 10
+					default:
+						return WindowsVersion.Unknown;
 				}
 			}
 		}
