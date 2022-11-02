@@ -16,5 +16,6 @@ Some methods, classes or features of `PeyrSharp.Env` might not be available in a
 :::
 
 ## Classes
+- [FileSys](/env/filesys.md)
 - [Logger](/env/logger.md)
 - [Update](/env/update.md)

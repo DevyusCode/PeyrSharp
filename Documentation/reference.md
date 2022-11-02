@@ -37,6 +37,7 @@ The reference of PeyrSharp.
 
 ## PeyrSharp.Env
 - [Home](/env.md)
+- [FileSys](/env/filesys.md)
 - [Logger](/env/logger.md)
 - [Update](/env/update.md)
 
