@@ -24,8 +24,6 @@ SOFTWARE.
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PeyrSharp.Extensions
 {
@@ -96,7 +94,7 @@ namespace PeyrSharp.Extensions
 		/// <param name="array">The array where the item is going to be removed.</param>
 		/// <param name="item">The item to remove.</param>
 		/// <returns>An <see cref="Array"/>.</returns>
-		public static T[] RemoveItem<T>(this T[] array, T item)
+		public static T[] RemoveElement<T>(this T[] array, T item)
 		{
 			if (array.Length <= 0) // If the array is null or empty
 			{
@@ -115,7 +113,7 @@ namespace PeyrSharp.Extensions
 		/// <param name="array">The array where the items are going to be removed.</param>
 		/// <param name="items">The items to remove.</param>
 		/// <returns>An <see cref="Array"/>.</returns>
-		public static T[] RemoveItem<T>(this T[] array, params T[] items)
+		public static T[] RemoveElement<T>(this T[] array, params T[] items)
 		{
 			if (array.Length <= 0) // If the array is null or empty
 			{

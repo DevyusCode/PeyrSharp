@@ -23,11 +23,8 @@ SOFTWARE.
 */
 using PeyrSharp.Enums;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Versioning;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PeyrSharp.Env
