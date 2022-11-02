@@ -29,4 +29,8 @@
 		</None>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre4" />
+	</ItemGroup>
+
 </Project>
