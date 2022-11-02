@@ -1,7 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net5.0;net6.0;net5.0-windows;net6.0-windows</TargetFrameworks>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Title>PeyrSharp</Title>
+		<Version>1.0.0.2211-pre5</Version>
+		<Authors>Léo Corporation</Authors>
+		<Copyright>© 2022</Copyright>
+		<Description>A C# library designed to make developers' job easier.</Description>
+		<PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>math;password;guid;generators;core;geometry;environment;extensions;enumerations;exceptions;ui-helpers</PackageTags>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\.github\images\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\NUGET_README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="PeyrSharp.Core" Version="1.0.0.2211-pre5" />
+	  <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2211-pre5" />
+	  <PackageReference Include="PeyrSharp.Env" Version="1.0.0.2211-pre5" />
+	  <PackageReference Include="PeyrSharp.Exceptions" Version="1.0.0.2211-pre5" />
+	  <PackageReference Include="PeyrSharp.Extensions" Version="1.0.0.2211-pre5" />
+	  <PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.0.0.2211-pre5" />
+	</ItemGroup>
 
 </Project>
