@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 using PeyrSharp.Enums;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Runtime.InteropServices;
 
 namespace PeyrSharp.Env
@@ -54,6 +57,31 @@ namespace PeyrSharp.Env
 				{
 					return OperatingSystems.Unknown; // Return unknown
 				}
+			}
+		}
+
+		/// <summary>
+		/// Gets all running processes.
+		/// </summary>
+		public static Process[] RunningProcesses => Process.GetProcesses();
+
+		/// <summary>
+		/// Gets the names of currently running processes.
+		/// </summary>
+		public static string[] RunningProcessesNames
+		{
+			get
+			{
+				static IEnumerable<string> GetProcs()
+				{
+					var procs = Process.GetProcesses();
+					for (int i = 0; i < procs.Length; i++)
+					{
+						yield return procs[i].ProcessName;
+					}
+				}
+
+				return GetProcs().ToArray();
 			}
 		}
 	}
