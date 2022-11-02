@@ -120,5 +120,15 @@ namespace PeyrSharp.Env
 				return GetProcs().ToArray();
 			}
 		}
+
+		/// <summary>
+		/// Launches an UWP application.
+		/// </summary>
+		/// <param name="packageFamilyName">The <c>PackageFamilyName</c> property.</param>
+		/// <param name="applicationID">The <c>Application Id</c> property in the UWP <c>AppxManifest.xml</c> file.</param>
+		public static void LaunchUWPApp(string packageFamilyName, string applicationID)
+		{
+			Process.Start("explorer.exe", $@"shell:appsFolder\{packageFamilyName}!{applicationID}"); // Synthax to launch UWP apps
+		}
 	}
 }
