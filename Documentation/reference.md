@@ -39,6 +39,7 @@ The reference of PeyrSharp.
 - [Home](/env.md)
 - [FileSys](/env/filesys.md)
 - [Logger](/env/logger.md)
+- [System](/env/system.md)
 - [Update](/env/update.md)
 
 ## PeyrSharp.Enums

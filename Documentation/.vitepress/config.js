@@ -64,6 +64,10 @@ function envSidebar() {
                     link: '/env/logger'
                 },
                 {
+                    text: 'System',
+                    link: '/env/system'
+                },
+                {
                     text: 'Update',
                     link: '/env/update'
                 }
