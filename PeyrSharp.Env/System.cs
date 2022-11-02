@@ -25,6 +25,7 @@ using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
@@ -129,6 +130,60 @@ namespace PeyrSharp.Env
 		public static void LaunchUWPApp(string packageFamilyName, string applicationID)
 		{
 			Process.Start("explorer.exe", $@"shell:appsFolder\{packageFamilyName}!{applicationID}"); // Synthax to launch UWP apps
+		}
+
+		/// <summary>
+		/// Executes a program in administrator mode.
+		/// </summary>
+		/// <param name="process">The process to launch as admin.</param>
+		/// <exception cref="ArgumentNullException"></exception>
+		/// <exception cref="FileNotFoundException"></exception>
+		/// <remarks>The 'process' parameter must have a valid path to the programm to launch in admin mode in <see cref="Process.StartInfo"/>.</remarks>
+		public static void ExecuteAsAdmin(Process process)
+		{
+			if (string.IsNullOrEmpty(process.StartInfo.FileName)) // Si l'argument est vide
+			{
+				throw new ArgumentNullException("The parameter 'process' has a 'FileName' that is null or empty."); // Message d'erreur
+			}
+
+			if (!File.Exists(process.StartInfo.FileName)) // Si le ficher n'existe pas
+			{
+				throw new FileNotFoundException("The parameter 'process' has a 'FileName' that does not lead to an existing file."); // Message d'erreur
+			}
+
+			process.StartInfo.UseShellExecute = true;
+			process.StartInfo.Verb = "runas"; // Mettre en mode administrateur
+			process.Start(); // Démarrer
+		}
+
+		/// <summary>
+		/// Executes a program in administrator mode.
+		/// </summary>
+		/// <param name="filename">The path to the program to launch in admin mode.</param>
+		/// <exception cref="ArgumentNullException"></exception>
+		/// <exception cref="FileNotFoundException"></exception>
+		public static void ExecuteAsAdmin(string filename)
+		{
+			if (string.IsNullOrEmpty(filename)) // Si l'argument est vide
+			{
+				throw new ArgumentNullException("The parameter 'filename' is null or empty."); // Message d'erreur
+			}
+
+			if (!File.Exists(filename)) // Si le fichier n'existe pas
+			{
+				throw new FileNotFoundException("The parameter 'filename' does not lead to an existing file."); // Message d'erreur
+			}
+			ProcessStartInfo processStartInfo = new()
+			{
+				FileName = filename, // Mettre le fichier à ouvrir
+				UseShellExecute = true,
+				Verb = "runas" // Mettre le mode administrateur
+			};
+			Process process = new()
+			{
+				StartInfo = processStartInfo
+			};
+			process.Start(); // Démarrer
 		}
 	}
 }
