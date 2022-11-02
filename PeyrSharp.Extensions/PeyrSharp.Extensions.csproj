@@ -1,17 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
-		<Title>PeyrSharp.Env</Title>
+		<Title>PeyrSharp.Extensions</Title>
 		<Version>1.0.0.2210-pre5</Version>
 		<Authors>Léo Corporation</Authors>
-		<Description>Environment-related methods of PeyrSharp.</Description>
+		<Description>Extensions methods of PeyrSharp.</Description>
 		<Copyright>© 2022</Copyright>
 		<PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>logger;file;env;file-system;update-system;windows;system</PackageTags>
+		<PackageTags>extension;extends;string;double;int;peyrsharp;crypt;converters;array</PackageTags>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -29,7 +29,4 @@
 		</None>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2210-pre4" />
-	</ItemGroup>
 </Project>
