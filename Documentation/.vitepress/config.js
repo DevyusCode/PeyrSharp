@@ -40,9 +40,30 @@ export default {
             '/ui-helpers/': uiHelpersSidebar(),
             "ui-helpers": uiHelpersSidebar(),
             '/env/': envSidebar(),
-            'env': envSidebar()
+            'env': envSidebar(),
+            '/extensions/': extSidebar(),
+            '/extension': extSidebar()
         }
     }
+}
+
+function extSidebar() {
+    return [
+        {
+            text: 'Extensions',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Home',
+                    link: '/extensions'
+                },
+                {
+                    text: 'Int',
+                    link: '/extensions/int'
+                }
+            ]
+        }
+    ]
 }
 
 function envSidebar() {

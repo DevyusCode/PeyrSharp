@@ -48,6 +48,10 @@ The reference of PeyrSharp.
 ## PeyrSharp.Exceptions
 - [Exceptions](/exceptions)
 
+## PeyrSharp.Extensions
+- [Home](/extensions.md)
+- [Int](/extensions/int.md)
+
 ## PeyrSharp.UiHelpers
 - [Home](ui-helpers.md)
 - [Screen](/ui-helpers/screen.md)
