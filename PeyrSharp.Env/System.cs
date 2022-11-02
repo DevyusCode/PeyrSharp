@@ -185,5 +185,12 @@ namespace PeyrSharp.Env
 			};
 			process.Start(); // Démarrer
 		}
+
+		/// <summary>
+		/// Checks if the <see cref="CurrentWindowsVersion"/> supports dark theme.
+		/// </summary>
+		[SupportedOSPlatform("windows")]
+		public static bool IsDarkThemeSupported => CurrentWindowsVersion == WindowsVersion.Windows10 || CurrentWindowsVersion == WindowsVersion.Windows11;
+
 	}
 }
