@@ -98,7 +98,7 @@ namespace PeyrSharp.Extensions
 		/// </summary>
 		/// <param name="s"></param>
 		/// <returns>A <see cref="bool"/> value.</returns>
-		public static bool HasRepeatedCharacters(this string s) => !s.Where((c, i) => i >= 2 && s[i - 1] == c && s[i - 2] == c).Any();
+		public static bool HasRepeatedCharacters(this string s) => s.Where((c, i) => i >= 2 && s[i - 1] == c && s[i - 2] == c).Any();
 
 		/// <summary>
 		/// Encrypt a <see cref="string"/> using AES encryption.
