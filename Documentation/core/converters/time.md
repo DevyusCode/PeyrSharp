@@ -21,6 +21,10 @@ The `Time` class is part of the `PeyrSharp.Core` module, which is compatible wit
 #### Definition
 Converts a specified time unit value to seconds. For instance, you can convert days, hours or minutes to seconds. It returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#toseconds-timeunits).
+:::
+
 #### Arguments
 
 | Type        	| Name        	| Meaning                                       	|
@@ -41,6 +45,10 @@ double seconds = Time.ToSeconds(5, TimeUnits.Minutes);
 ### ToMinutes(d, timeUnits)
 #### Definition
 Converts a specified time unit value to minutes. For instance, you can convert days, hours or seconds to minutes. It returns a `double` value.
+
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#tominutes-timeunits).
+:::
 
 #### Arguments
 
@@ -63,6 +71,10 @@ double min = Time.ToMinutes(120, TimeUnits.Seconds);
 #### Definition
 Converts a specified time unit value to hours. For instance, you can convert days, minutes or seconds to hours. It returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#tohours-timeunits).
+:::
+
 #### Arguments
 
 | Type        	| Name        	| Meaning                                       	|
@@ -83,6 +95,10 @@ double hours = Time.ToHours(1, TimeUnits.Days);
 ### ToDays(d, timeUnits)
 #### Definition
 Converts a specified time unit value to days. For instance, you can convert hours, minutes or seconds to days. It returns a `double` value.
+
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#todays-timeunits).
+:::
 
 #### Arguments
 

@@ -21,12 +21,16 @@ The `Storage` class is part of the `PeyrSharp.Core` module, which is compatible 
 #### Definition
 Converts a size (kb, mb, ...) to byte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#tobyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
 
 #### Usage
 
@@ -41,12 +45,16 @@ double byte = Storage.ToByte(1, StorageUnits.Kilobyte);
 #### Definition
 Converts a size (kb, mb, ...) to kilobyte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#tokilobyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: byte, gigabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: byte, gigabyte...) 	|
 
 #### Usage
 
@@ -61,12 +69,16 @@ double kilobyte = Storage.ToKilobyte(2000, StorageUnits.Byte);
 #### Definition
 Converts a size (kb, mb, ...) to megabyte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#tomegabyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
 
 #### Usage
 
@@ -81,12 +93,16 @@ double megabyte = Storage.ToMegabyte(1500, StorageUnits.Kilobyte);
 #### Definition
 Converts a size (kb, mb, ...) to gigabyte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#togigabyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, megabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, megabyte...) 	|
 
 #### Usage
 
@@ -101,12 +117,16 @@ double gigabyte = Storage.ToGigabyte(1000, StorageUnits.Megabyte);
 #### Definition
 Converts a size (kb, mb, ...) to terabyte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#toterabyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
 
 #### Usage
 
@@ -121,12 +141,16 @@ double terabyte = Storage.ToTerabyte(1, StorageUnits.Petabyte);
 #### Definition
 Converts a size (kb, mb, ...) to petabyte. Returns a `double` value.
 
+::: info
+This method can also be used in [`PeyrSharp.Extensions`](/extensions/double.md#topetabyte-storageunit).
+:::
+
 #### Arguments
 
 | Type        	| Name          	| Meaning                                            	|
 |-------------	|---------------	|----------------------------------------------------	|
 | `double`    	| `value`       	| The value to convert.                              	|
-| `TimeUnits` 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
+| [`StorageUnits`](/enumerations.md#storageunits) 	| `storageUnit` 	| The unit of the value. (ex: kilobyte, gigabyte...) 	|
 
 #### Usage
 
