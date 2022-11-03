@@ -17,7 +17,7 @@ The `IntExtensions` class is part of the `PeyrSharp.Extensions` module, and is c
 | Core            	| ✅       	| ✅     	| ✅              	|
 
 ## Methods
-### GetDivisors
+### GetDivisors()
 #### Definition
 
 Gets all divisors of a specific number. Returns an array of `int[]`.
@@ -34,7 +34,7 @@ using PeyrSharp.Extensions;
 int[] divs = 16.GetDivisors(); // { 1, 2, 4, 8, 16 }
 ~~~
 
-### IsEven
+### IsEven()
 #### Definition
 
 Checks if the number is even. Returns a `bool`.
@@ -51,7 +51,7 @@ using PeyrSharp.Extensions;
 int[] divs = 16.IsEven(); // true
 ~~~
 
-### ToDouble
+### ToDouble()
 #### Definition
 
 Converts an `int` to `double`.
