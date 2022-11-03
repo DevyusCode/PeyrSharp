@@ -35,7 +35,7 @@ namespace PeyrSharp.Env
 	/// <summary>
 	/// Class containing methods related to the system environment.
 	/// </summary>
-	public static class System
+	public static class Sys
 	{
 		/// <summary>
 		/// Gets the current Operating system.
