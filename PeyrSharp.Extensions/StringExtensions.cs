@@ -75,7 +75,7 @@ namespace PeyrSharp.Extensions
 		/// <param name="s">The <see cref="string"/> to check.</param>
 		/// <param name="stringToCheck">The <see cref="string"/> to compare.</param>
 		/// <returns>A <see cref="bool"/> value.</returns>
-		public static bool IsEndingWithSamePunctuation(this string s, string stringToCheck) => s[^1].ToString() == stringToCheck[^1].ToString(); // Return true or false
+		public static bool EndsWithSamePunctuation(this string s, string stringToCheck) => s[^1].ToString() == stringToCheck[^1].ToString(); // Return true or false
 
 		/// <summary>
 		/// Checks if a <see cref="string"/> is ending with the same punctuation than an other one.
@@ -84,7 +84,7 @@ namespace PeyrSharp.Extensions
 		/// <param name="stringToCheck">The <see cref="string"/> to compare.</param>
 		/// <param name="punctuationToCheck">The punctuation sign to check for.</param>
 		/// <returns>A <see cref="bool"/> value.</returns>
-		public static bool IsEndingWithSamePunctuation(this string s, string stringToCheck, string punctuationToCheck) => s.EndsWith(punctuationToCheck) && stringToCheck.EndsWith(punctuationToCheck); // Return true or false
+		public static bool EndsWithSamePunctuation(this string s, string stringToCheck, string punctuationToCheck) => s.EndsWith(punctuationToCheck) && stringToCheck.EndsWith(punctuationToCheck); // Return true or false
 
 		/// <summary>
 		/// Splits a <see cref="string"/> lines to an array.
