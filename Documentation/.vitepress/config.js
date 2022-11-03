@@ -58,8 +58,20 @@ function extSidebar() {
                     link: '/extensions'
                 },
                 {
+                    text: 'Array',
+                    link: '/extensions/array'
+                },
+                {
+                    text: 'Double',
+                    link: '/extensions/double'
+                },
+                {
                     text: 'Int',
                     link: '/extensions/int'
+                },
+                {
+                    text: 'String',
+                    link: '/extensions/string'
                 }
             ]
         }

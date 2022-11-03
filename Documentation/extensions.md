@@ -14,4 +14,7 @@ The `PeyrSharp.Extensions` module is compatible with all of these frameworks and
 
 ## Classes
 
+- [Array](/extensions/array.md)
+- [Double](/extensions/double.md)
 - [Int](/extensions/int.md)
+- [String](/extensions/string.md)

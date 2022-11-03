@@ -50,7 +50,10 @@ The reference of PeyrSharp.
 
 ## PeyrSharp.Extensions
 - [Home](/extensions.md)
+- [Array](/extensions/array.md)
+- [Double](/extensions/double.md)
 - [Int](/extensions/int.md)
+- [String](/extensions/string.md)
 
 ## PeyrSharp.UiHelpers
 - [Home](ui-helpers.md)
