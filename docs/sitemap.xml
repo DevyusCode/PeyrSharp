@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/get-started.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/reference.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/angle.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/colors/rgb.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/colors/hex.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/colors/hsv.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/distances.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/masses.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/storage.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/temperatures.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/time.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/converters/volumes.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/crypt.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/guid.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/guid-options.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/internet.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/algebra.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/circle.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/cone.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/cube.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/cylinder.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/diamond.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/hexagon.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/pyramid.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/rectangle.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/sphere.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/geometry/triangle.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/percentages.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/maths/trigonometry.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core/password.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/env.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/env/filesys.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/env/logger.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/env/system.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/env/update.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/enumerations.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/exceptions.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/extensions.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/extensions/array.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/extensions/double.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/extensions/int.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/extensions/string.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/ui-helpers.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/ui-helpers/screen.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/ui-helpers/winforms.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://peyrsharp.leocorporation.dev/core.html</loc>
+  <lastmod>2022-11-03T09:54:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

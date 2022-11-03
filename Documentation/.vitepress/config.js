@@ -43,7 +43,9 @@ export default {
             'env': envSidebar(),
             '/extensions/': extSidebar(),
             '/extension': extSidebar(),
-            'reference': superSidebar()
+            'reference': superSidebar(),
+            'enumerations': superSidebar(),
+            'exceptions': superSidebar()
         }
     }
 }
