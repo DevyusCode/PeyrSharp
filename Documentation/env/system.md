@@ -1,5 +1,5 @@
-# System
-This page is about the `System` class available in [`PeyrSharp.Env`](/env.md).
+# Sys
+This page is about the `Sys` class available in [`PeyrSharp.Env`](/env.md).
 You can find here all of its methods and properties.
 
 ::: info
@@ -8,7 +8,7 @@ This class is `static`.
 
 ## Compatibility
 
-The `System` class is part of the `PeyrSharp.Env` module, and is compatible with all of these frameworks and platforms:
+The `Sys` class is part of the `PeyrSharp.Env` module, and is compatible with all of these frameworks and platforms:
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|
@@ -45,7 +45,7 @@ using PeyrSharp.Env;
 Process p = new();
 p.StartInfo.FileName = "notepad.exe";
 
-System.ExecuteAsAdmin(p);
+Sys.ExecuteAsAdmin(p);
 ~~~
 
 ### ExecuteAsAdmin(fileName)
@@ -68,7 +68,7 @@ This method only works on Windows.
 ~~~ c#
 using PeyrSharp.Env;
 
-System.ExecuteAsAdmin("notepad.exe");
+Sys.ExecuteAsAdmin("notepad.exe");
 ~~~
 
 ### LaunchUWPApp(packageFamilyName, applicationID)
@@ -101,7 +101,7 @@ This method only works on Windows.
 ~~~ c#
 using PeyrSharp.Env;
 
-System.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App"); // Launch Minecraft UWP
+Sys.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App"); // Launch Minecraft UWP
 ~~~
 
 ## Properties
@@ -119,7 +119,7 @@ Gets the current Operating system. Returns a [`OperatingSystems`](/enumerations.
 ~~~ c#
 using PeyrSharp.Env;
 
-if (System.CurrentOperatingSystem == OperatingSystems.Windows)
+if (Sys.CurrentOperatingSystem == OperatingSystems.Windows)
 {
     Console.WriteLine("You are on Windows");
 }
@@ -143,7 +143,7 @@ This property only works on Windows.
 ~~~ c#
 using PeyrSharp.Env;
 
-if (System.CurrentWindowsVersion == WindowsVersion.Windows11)
+if (Sys.CurrentWindowsVersion == WindowsVersion.Windows11)
 {
     Console.WriteLine("You are on Windows 11");
 }
@@ -167,7 +167,7 @@ This property only works on Windows.
 ~~~ c#
 using PeyrSharp.Env;
 
-if (System.IsDarkThemeSupported)
+if (Sys.IsDarkThemeSupported)
 {
     Console.WriteLine("You are running Windows 10 or higher.");
 }
@@ -187,7 +187,7 @@ Gets the processes that are currently running. Returns a `Process[]` array. You 
 ~~~ c#
 using PeyrSharp.Env;
 
-Process[] procs = System.RunningProcesses;
+Process[] procs = Sys.RunningProcesses;
 
 for (int i = 0; i < procs.Length; i++)
 {
@@ -209,7 +209,7 @@ Gets the names of the processes that are currently running. Returns a `string[]`
 ~~~ c#
 using PeyrSharp.Env;
 
-string[] procs = System.RunningProcessesNames;
+string[] procs = Sys.RunningProcessesNames;
 
 for (int i = 0; i < procs.Length; i++)
 {
@@ -231,5 +231,5 @@ Gets the current UnixTime. Returns an `int`. You can only `get` this property.
 ~~~ c#
 using PeyrSharp.Env;
 
-int unixTime = System.UnixTime;
+int unixTime = Sys.UnixTime;
 ~~~
