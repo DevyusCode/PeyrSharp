@@ -36,15 +36,49 @@ export default {
         sidebar: {
             '/core/': sidebar(),
             'core': sidebar(),
-            'get-started': sidebar(),
+            'get-started': superSidebar(),
             '/ui-helpers/': uiHelpersSidebar(),
             "ui-helpers": uiHelpersSidebar(),
             '/env/': envSidebar(),
             'env': envSidebar(),
             '/extensions/': extSidebar(),
-            '/extension': extSidebar()
+            '/extension': extSidebar(),
+            'reference': superSidebar()
         }
     }
+}
+
+function superSidebar() {
+    return [
+        {
+            text: 'Core',
+            collapsible: true,
+            items: sidebar()
+        },
+        ...envSidebar(),
+        {
+            text: 'Enums',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Home',
+                    link: '/enumerations'
+                }
+            ]
+        },
+        {
+            text: 'Exceptions',
+            collapsible: true,
+            items: [
+                {
+                    text: 'Home',
+                    link: '/exceptions'
+                }
+            ]
+        },
+        ...extSidebar(),
+        ...uiHelpersSidebar()
+    ]
 }
 
 function extSidebar() {
@@ -286,7 +320,7 @@ function uiHelpersSidebar() {
     return [
         {
             text: 'UiHelpers',
-            collapsible: false,
+            collapsible: true,
             items: [
                 {
                     text: 'Home',
