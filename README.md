@@ -117,7 +117,7 @@ PeyrSharp is divided in multiple packages:
 
 ## Compatibility
 ### Platforms
-Some modules of PeyrSharp are targeting features only available in specific operating systems. Thus, some packages aren't available on all platform.
+Some modules of PeyrSharp are targeting features only available in specific operating systems. Thus, some packages aren't available on all platforms.
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|
