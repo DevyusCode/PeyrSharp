@@ -138,6 +138,31 @@ Gets the current Windows version. Returns a [`WindowsVersion`](/enumerations.md#
 This property only works on Windows.
 :::
 
+::: danger
+This property only works if you specify in the Application Manifest, in the compatibility section, that Windows 8, 8.1 and 10/11 are compatible with the software. Otherwise, it will return `Windows8`.
+:::
+
+~~~ xml
+<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+
+      <!-- Windows 7 -->
+      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />
+
+      <!-- Windows 8 -->
+      <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />
+
+      <!-- Windows 8.1 -->
+      <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />
+
+      <!-- Windows 10 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+</compatibility>
+~~~
+
 #### Usage
 
 ~~~ c#

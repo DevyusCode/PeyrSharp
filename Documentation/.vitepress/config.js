@@ -133,7 +133,7 @@ function envSidebar() {
                     link: '/env/logger'
                 },
                 {
-                    text: 'System',
+                    text: 'Sys',
                     link: '/env/system'
                 },
                 {
