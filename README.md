@@ -142,6 +142,9 @@ PeyrSharp is available in the following frameworks
 > Note: .NET Framework and .NET Core are not targeted by PeyrSharp, since they are no longer supported.
 
 ## Documentation
+### Website
+PeyrSharp has an [official website](https://peyrsharp.leocorporation.dev/) where you can find its documentation.
+
 ### Branches
 There are two branches:
 
@@ -149,6 +152,7 @@ There are two branches:
 | :--: | :-----: | :---------: |
 | `main` | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Leo-Corporation/PeyrSharp) | Stable versions |
 | `vNext` | ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Leo-Corporation/PeyrSharp?include_prereleases) | Next version of PeyrSharp (unstable) |
+| `doc` | N/A | The branch used to maintain the documentation. |
 
 > Note: Other branches can also - of course - exists.
 
