@@ -167,5 +167,10 @@ namespace PeyrSharp.Env
 		/// Gets the <c>%APPDATA%</c> path.
 		/// </summary>
 		public static string AppDataPath => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+		/// <summary>
+		/// Returns the directory where the app is executed.
+		/// </summary>
+		public static string CurrentAppDirectory => Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 	}
 }
