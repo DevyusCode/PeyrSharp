@@ -24,6 +24,7 @@ SOFTWARE.
 using PeyrSharp.Enums;
 using System;
 using System.IO;
+using System.Linq;
 using System.Runtime.Versioning;
 using System.Threading.Tasks;
 
@@ -172,5 +173,19 @@ namespace PeyrSharp.Env
 		/// Returns the directory where the app is executed.
 		/// </summary>
 		public static string CurrentAppDirectory => Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+		/// <summary>
+		/// Gets the drive with the lowest free space available.
+		/// </summary>
+		/// <returns>A <see cref="DriveInfo"/> value, which contains the information of the drive.</returns>
+		public static DriveInfo DriveWithLowestFreeSpace
+		{
+			get
+			{
+				var drives = DriveInfo.GetDrives(); // Get all drives
+				drives = drives.Where(x => x.DriveType != DriveType.CDRom).ToArray(); // Remove CD-ROM
+				return drives.OrderBy(x => x.TotalFreeSpace).First(); // Return the drive with the lowest free space
+			}
+		}
 	}
 }
