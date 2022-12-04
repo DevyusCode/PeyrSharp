@@ -189,7 +189,7 @@ namespace PeyrSharp.Env
 		}
 
 		/// <summary>
-		/// Gets the drive with the higest free space available.
+		/// Gets the drive with the highest free space available.
 		/// </summary>
 		/// <returns>A <see cref="DriveInfo"/> which contains the information of the drive.</returns>
 		public static DriveInfo DriveWithHighestFreeSpace
