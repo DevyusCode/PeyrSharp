@@ -95,5 +95,28 @@ namespace PeyrSharp.Core.Converters
 			TimeUnits.Days => d,// Return the expected value
 			_ => d,
 		};
+
+		/// <summary>
+		/// Converts Unix Time to a <see cref="DateTime"/>.
+		/// </summary>
+		/// <param name="unixTime">The Unix Time.</param>
+		/// <returns>The unix time converted to <see cref="DateTime"/>.</returns>
+		public static DateTime UnixTimeToDateTime(int unixTime)
+		{
+			DateTime dtDateTime = new(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc); // Create a date
+			dtDateTime = dtDateTime.AddSeconds(unixTime).ToLocalTime(); // Add the seconds
+			return dtDateTime; // Return the result
+		}
+
+		/// <summary>
+		/// Converts a <see cref="DateTime"/> to Unix Time.
+		/// </summary>
+		/// <param name="dateTime">The <see cref="DateTime"/> to convert.</param>
+		/// <returns>The converted <see cref="DateTime"/> in unix time.</returns>
+		public static int DateTimeToUnixTime(DateTime dateTime)
+		{
+			DateTime dtDateTime = new(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc); // Create a date
+			return (int)dateTime.Subtract(dtDateTime).TotalSeconds; // Return the result
+		}
 	}
 }

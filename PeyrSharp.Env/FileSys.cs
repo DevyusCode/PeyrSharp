@@ -24,6 +24,7 @@ SOFTWARE.
 using PeyrSharp.Enums;
 using System;
 using System.IO;
+using System.Linq;
 using System.Runtime.Versioning;
 using System.Threading.Tasks;
 
@@ -167,5 +168,78 @@ namespace PeyrSharp.Env
 		/// Gets the <c>%APPDATA%</c> path.
 		/// </summary>
 		public static string AppDataPath => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+		/// <summary>
+		/// Returns the directory where the app is executed.
+		/// </summary>
+		public static string CurrentAppDirectory => Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+		/// <summary>
+		/// Gets the drive with the lowest free space available.
+		/// </summary>
+		/// <returns>A <see cref="DriveInfo"/> which contains the information of the drive.</returns>
+		public static DriveInfo DriveWithLowestFreeSpace
+		{
+			get
+			{
+				var drives = DriveInfo.GetDrives(); // Get all drives
+				drives = drives.Where(x => x.DriveType != DriveType.CDRom).ToArray(); // Remove CD-ROM
+				return drives.OrderBy(x => x.TotalFreeSpace).First(); // Return the drive with the lowest free space
+			}
+		}
+
+		/// <summary>
+		/// Gets the drive with the highest free space available.
+		/// </summary>
+		/// <returns>A <see cref="DriveInfo"/> which contains the information of the drive.</returns>
+		public static DriveInfo DriveWithHighestFreeSpace
+		{
+			get
+			{
+				var drives = DriveInfo.GetDrives(); // Get all drives
+				drives = drives.Where(x => x.DriveType != DriveType.CDRom).ToArray(); // Remove CD-ROM
+				return drives.OrderByDescending(x => x.TotalFreeSpace).First(); // Return the drive with the highest free space
+			}
+		}
+
+		/// <summary>
+		/// Gets if a specified drive is a CD/DVD-ROM.
+		/// </summary>
+		/// <param name="driveInfo">The drive to check.</param>
+		/// <returns><see langword="true"/> if the drive is an optical drive; <see langword="false"/> if it isn't.</returns>
+		public static bool IsDriveOpticalDrive(DriveInfo driveInfo) => driveInfo.DriveType == DriveType.CDRom;
+
+		/// <summary>
+		/// Gets the appropriate <see cref="StorageUnits"/> to use depending of the total size of the drive.
+		/// </summary>
+		/// <param name="driveInfo">The drive to get the unit of.</param>
+		/// <returns>The appropriate unit of the specified drive.</returns>
+		public static StorageUnits GetDriveStorageUnit(DriveInfo driveInfo)
+		{
+			if (driveInfo.TotalSize >= Math.Pow(1024, 5))
+			{
+				return StorageUnits.Petabyte;
+			}
+			else if (driveInfo.TotalSize >= Math.Pow(1024, 4))
+			{
+				return StorageUnits.Terabyte;
+			}
+			else if (driveInfo.TotalSize >= 1073741824)
+			{
+				return StorageUnits.Gigabyte;
+			}
+			else if (driveInfo.TotalSize >= 1048576)
+			{
+				return StorageUnits.Megabyte;
+			}
+			else if (driveInfo.TotalSize >= 1024)
+			{
+				return StorageUnits.Kilobyte;
+			}
+			else
+			{
+				return StorageUnits.Byte;
+			}
+		}
 	}
 }

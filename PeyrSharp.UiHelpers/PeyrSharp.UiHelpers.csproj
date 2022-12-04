@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<TargetFrameworks>net5.0-windows;net6.0-windows</TargetFrameworks>
+	<TargetFrameworks>net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
 	<ImplicitUsings>disable</ImplicitUsings>
 	<Nullable>enable</Nullable>
 	<UseWindowsForms>true</UseWindowsForms>
 	<UseWPF>true</UseWPF>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<Title>PeyrSharp.UiHelpers</Title>
-	<Version>1.0.0.2211</Version>
+	<Version>1.1.0.2212</Version>
 	<Authors>Léo Corporation</Authors>
 	<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
 	<Copyright>© 2022</Copyright>
@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.0.0.2211" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.1.0.2212" />
   </ItemGroup>
 
 </Project>
