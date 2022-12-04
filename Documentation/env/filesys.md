@@ -198,6 +198,57 @@ else
 }
 ~~~
 
+### IsDriveOpticalDrive(driveInfo)
+_Available in version 1.1 and higher._
+#### Definition
+Checks if the specified drive is an optical drive, such as CD-ROM or DVD. It returns a `bool`; `true` if the drive is an optical drive.
+
+#### Arguments
+
+| Type     	| Name       	| Meaning                    	|
+|----------	|------------	|----------------------------	|
+| `string` 	| `driveInfo` 	| The drive to check. 	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+if (FileSys.IsOpticalDrive(new(@"E:\")))
+{
+    Console.WriteLine("Drive E:/ is an optical drive")
+}
+~~~
+
+### GetDriveStorageUnit(driveInfo)
+_Available in version 1.1 and higher._
+#### Definition
+Gets the appropriate [`StorageUnits`](/enumerations.md#storageunits) to use depending of the total size of the drive. It returns a `StorageUnits` value.
+
+#### Arguments
+
+| Type     	| Name       	| Meaning                    	|
+|----------	|------------	|----------------------------	|
+| `string` 	| `driveInfo` 	| The drive to get the unit of. 	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+var unit = FileSys.GetDriveStorageUnit(@"C:\");
+
+string message = unit switch
+{
+    StorageUnits.Gigabyte => "The drive unit is in gigabytes",
+    StorageUnits.Terabyte => "The drive unit is in terabytes",
+    StorageUnits.Petabyte => "The drive unit is in petabytes",
+    _ => "Unknown size unit"
+}
+
+Console.WriteLine(message);
+~~~
+
 ## Properties
 ### AppDataPath
 #### Definition
@@ -214,6 +265,62 @@ The `AppDataPath` property gets the `%APPDATA%` path. You can only `get` this pr
 using PeyrSharp.Env;
 
 string appdata = FileSys.AppDataPath;
+~~~
+
+### CurrentAppDirectory 
+_Available in version 1.1 and higher._
+#### Definition
+
+~~~ c#
+public static string CurrentAppDirectory { get; }
+~~~
+
+The `CurrentAppDirectory` property gets the path where is located the executable file that is currently running. You can only `get` this property.
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+string dir = FileSys.CurrentAppDirectory;
+~~~
+
+### DriveWithHighestFreeSpace 
+_Available in version 1.1 and higher._
+#### Definition
+
+~~~ c#
+public static DriveInfo DriveWithHighestFreeSpace { get; }
+~~~
+
+The `DriveWithHighestFreeSpace` property gets the drive with the highest free space available. You can only `get` this property.
+
+#### Usage
+
+~~~ c#
+using System.IO;
+using PeyrSharp.Env;
+
+DriveInfo highest = FileSys.DriveWithHighestFreeSpace;
+~~~
+
+### DriveWithLowestFreeSpace 
+_Available in version 1.1 and higher._
+#### Definition
+
+~~~ c#
+public static DriveInfo DriveWithLowestFreeSpace { get; }
+~~~
+
+The `DriveWithLowestFreeSpace` property gets the drive with the lowest   free space available. You can only `get` this property.
+
+#### Usage
+
+~~~ c#
+using System.IO;
+using PeyrSharp.Env;
+
+DriveInfo lowest = FileSys.DriveWithLowestFreeSpace;
 ~~~
 
 ### SystemDrive
