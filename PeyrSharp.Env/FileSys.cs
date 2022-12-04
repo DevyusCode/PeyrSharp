@@ -177,7 +177,7 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets the drive with the lowest free space available.
 		/// </summary>
-		/// <returns>A <see cref="DriveInfo"/> value, which contains the information of the drive.</returns>
+		/// <returns>A <see cref="DriveInfo"/> which contains the information of the drive.</returns>
 		public static DriveInfo DriveWithLowestFreeSpace
 		{
 			get
@@ -191,7 +191,7 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets the drive with the higest free space available.
 		/// </summary>
-		/// <returns>A <see cref="DriveInfo"/> value, which contains the information of the drive.</returns>
+		/// <returns>A <see cref="DriveInfo"/> which contains the information of the drive.</returns>
 		public static DriveInfo DriveWithHighestFreeSpace
 		{
 			get
@@ -201,5 +201,12 @@ namespace PeyrSharp.Env
 				return drives.OrderByDescending(x => x.TotalFreeSpace).First(); // Return the drive with the highest free space
 			}
 		}
+
+		/// <summary>
+		/// Gets if a specified drive is a CD/DVD-ROM.
+		/// </summary>
+		/// <param name="driveInfo"></param>
+		/// <returns><see langword="true"/> if the drive is an optical drive; <see langword="false"/> if it isn't.</returns>
+		public static bool IsDriveOpticalDrive(DriveInfo driveInfo) => driveInfo.DriveType == DriveType.CDRom;
 	}
 }
