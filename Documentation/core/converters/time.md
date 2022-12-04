@@ -118,6 +118,7 @@ double days = Time.ToDays(72, TimeUnits.Hours);
 ~~~
 
 ### UnixTimeToDateTime(unixTime)
+_Available in version 1.1 and higher._
 #### Definition
 Converts Unix Time to [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime). It returns a `DateTime` value.
 
@@ -136,6 +137,7 @@ var date = Time.UnixTimeToDateTime(1670144268); // 12/04/2022 08:57:48
 ~~~
 
 ### DateTimeToUnixTime(dateTime)
+_Available in version 1.1 and higher._
 #### Definition
 Converts [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) to Unix Time. It returns an `int` value.
 

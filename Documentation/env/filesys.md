@@ -199,6 +199,7 @@ else
 ~~~
 
 ### IsDriveOpticalDrive(driveInfo)
+_Available in version 1.1 and higher._
 #### Definition
 Checks if the specified drive is an optical drive, such as CD-ROM or DVD. It returns a `bool`; `true` if the drive is an optical drive.
 
@@ -220,6 +221,7 @@ if (FileSys.IsOpticalDrive(new(@"E:\")))
 ~~~
 
 ### GetDriveStorageUnit(driveInfo)
+_Available in version 1.1 and higher._
 #### Definition
 Gets the appropriate [`StorageUnits`](/enumerations.md#storageunits) to use depending of the total size of the drive. It returns a `StorageUnits` value.
 
@@ -266,6 +268,7 @@ string appdata = FileSys.AppDataPath;
 ~~~
 
 ### CurrentAppDirectory 
+_Available in version 1.1 and higher._
 #### Definition
 
 ~~~ c#
@@ -283,6 +286,7 @@ string dir = FileSys.CurrentAppDirectory;
 ~~~
 
 ### DriveWithHighestFreeSpace 
+_Available in version 1.1 and higher._
 #### Definition
 
 ~~~ c#
@@ -301,6 +305,7 @@ DriveInfo highest = FileSys.DriveWithHighestFreeSpace;
 ~~~
 
 ### DriveWithLowestFreeSpace 
+_Available in version 1.1 and higher._
 #### Definition
 
 ~~~ c#
