@@ -205,7 +205,7 @@ namespace PeyrSharp.Env
 		/// <summary>
 		/// Gets if a specified drive is a CD/DVD-ROM.
 		/// </summary>
-		/// <param name="driveInfo"></param>
+		/// <param name="driveInfo">The drive to check.</param>
 		/// <returns><see langword="true"/> if the drive is an optical drive; <see langword="false"/> if it isn't.</returns>
 		public static bool IsDriveOpticalDrive(DriveInfo driveInfo) => driveInfo.DriveType == DriveType.CDRom;
 
