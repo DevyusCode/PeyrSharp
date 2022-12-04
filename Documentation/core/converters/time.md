@@ -116,3 +116,42 @@ using PeyrSharp.Enums;
 double days = Time.ToDays(72, TimeUnits.Hours);
 // days = 3
 ~~~
+
+### UnixTimeToDateTime(unixTime)
+_Available in version 1.1 and higher._
+#### Definition
+Converts Unix Time to [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime). It returns a `DateTime` value.
+
+#### Arguments
+
+| Type     	| Name          	| Meaning                                       	|
+|----------	|---------------	|-----------------------------------------------	|
+| `int`    	| `unixTime`    	| The Unix Time to convert.                    	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Core.Converters;
+
+var date = Time.UnixTimeToDateTime(1670144268); // 12/04/2022 08:57:48
+~~~
+
+### DateTimeToUnixTime(dateTime)
+_Available in version 1.1 and higher._
+#### Definition
+Converts [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) to Unix Time. It returns an `int` value.
+
+#### Arguments
+
+| Type     	        | Name        	    | Meaning                                       	|
+|---------------	|-------------	    |-----------------------------------------------	|
+| `DateTime`    	| `dateTime`    	| The converted DateTime in Unix Time.             	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Core.Converters;
+
+int unix = Time.DateTimeToUnixTime(new(2022, 12, 4, 8, 57, 48, DateTimeKind.Utc)); 
+// unix = 1670144268
+~~~
