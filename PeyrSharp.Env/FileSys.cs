@@ -208,5 +208,38 @@ namespace PeyrSharp.Env
 		/// <param name="driveInfo"></param>
 		/// <returns><see langword="true"/> if the drive is an optical drive; <see langword="false"/> if it isn't.</returns>
 		public static bool IsDriveOpticalDrive(DriveInfo driveInfo) => driveInfo.DriveType == DriveType.CDRom;
+
+		/// <summary>
+		/// Gets the appropriate <see cref="StorageUnits"/> to use depending of the total size of the drive.
+		/// </summary>
+		/// <param name="driveInfo">The drive to get the unit of.</param>
+		/// <returns>The appropriate unit of the specified drive.</returns>
+		public static StorageUnits GetDriveStorageUnit(DriveInfo driveInfo)
+		{
+			if (driveInfo.TotalSize >= Math.Pow(1024, 5))
+			{
+				return StorageUnits.Petabyte;
+			}
+			else if (driveInfo.TotalSize >= Math.Pow(1024, 4))
+			{
+				return StorageUnits.Terabyte;
+			}
+			else if (driveInfo.TotalSize >= 1073741824)
+			{
+				return StorageUnits.Gigabyte;
+			}
+			else if (driveInfo.TotalSize >= 1048576)
+			{
+				return StorageUnits.Megabyte;
+			}
+			else if (driveInfo.TotalSize >= 1024)
+			{
+				return StorageUnits.Kilobyte;
+			}
+			else
+			{
+				return StorageUnits.Byte;
+			}
+		}
 	}
 }
