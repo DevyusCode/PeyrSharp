@@ -21,6 +21,11 @@ export default {
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2022 Léo Corporation'
         },
+        algolia: {
+            appId: 'JVAJ1JZ6HO',
+            apiKey: '0ef6a29a84fc5698ce54fde4381bf281',
+            indexName: 'peyrsharp'
+        },
         socialLinks: [
             {
                 icon: 'github', link: 'https://github.com/Leo-Corporation/PeyrSharp'
