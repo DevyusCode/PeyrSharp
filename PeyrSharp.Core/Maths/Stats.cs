@@ -35,5 +35,21 @@ namespace PeyrSharp.Core.Maths
 	/// </summary>
 	public static class Stats
 	{
+		public static double Mean(List<double> values)
+		{
+			// Check for empty input
+			if (values.Count == 0)
+			{
+				throw new ArgumentException("Cannot calculate mean of empty dataset", "values");
+			}
+
+			// Calculate sum of values
+			double sum = values.Sum();
+
+			// Calculate mean
+			double mean = sum / values.Count;
+
+			return mean;
+		}
 	}
 }
