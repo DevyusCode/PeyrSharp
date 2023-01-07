@@ -14,7 +14,7 @@ The `Sys` class is part of the `PeyrSharp.Env` module, and is compatible with al
 |------------------	|---------	|-------	|----------------	|
 | Env            	| ✅       	| ⚠️     	| ⚠️              	|
 | **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| Env            	| ✅       	| ⚠️     	| ⚠️              	|
+| Env            	| ✅       	| ✅     	| ✅              	|
 
 ::: warning
 Some methods, classes or features of `PeyrSharp.Env` might not be available in all platforms.
