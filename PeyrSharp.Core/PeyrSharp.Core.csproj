@@ -4,10 +4,10 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.1.0.2212</Version>
+    <Version>1.2.0.2301-pre1</Version>
     <Authors>Léo Corporation</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
-    <Copyright>© 2022</Copyright>
+    <Copyright>© 2023</Copyright>
     <PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -16,8 +16,7 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>- Added ``UnixTimeToDateTime()`` method (#43)
-- Added ``DateTimeToUnixTime()`` method (#43)</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.1.0.2212" />
-    <PackageReference Include="PeyrSharp.Exceptions" Version="1.1.0.2212" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.2.0.2301-pre1" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="1.2.0.2301-pre1" />
   </ItemGroup>
 
 </Project>

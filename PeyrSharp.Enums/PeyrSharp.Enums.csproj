@@ -7,11 +7,11 @@
 	<Title>PeyrSharp.Enums</Title>
 	<Authors>Léo Corporation</Authors>
 	<Description>Enumerations of PeyrSharp.</Description>
-	<Copyright>© 2022</Copyright>
+	<Copyright>© 2023</Copyright>
 	<PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
 	<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
-	<Version>1.1.0.2212</Version>
+	<Version>1.2.0.2301-pre1</Version>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<PackageIcon>logo.png</PackageIcon>
 	<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
