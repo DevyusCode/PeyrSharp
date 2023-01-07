@@ -35,6 +35,12 @@ namespace PeyrSharp.Core.Maths
 	/// </summary>
 	public static class Stats
 	{
+		/// <summary>
+		/// Calculates the mean (average) of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mean of.</param>
+		/// <returns>The mean of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
 		public static double Mean(List<double> values)
 		{
 			// Check for empty input
@@ -52,6 +58,12 @@ namespace PeyrSharp.Core.Maths
 			return mean;
 		}
 
+		/// <summary>
+		/// Calculates the median of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the median of.</param>
+		/// <returns>The median of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
 		public static double Median(List<double> values)
 		{
 			// Check for empty input
@@ -78,6 +90,27 @@ namespace PeyrSharp.Core.Maths
 			}
 
 			return median;
+		}
+
+		/// <summary>
+		/// Calculates the mode of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mode of.</param>
+		/// <returns>The mode of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mode(List<double> values)
+		{
+			// Check for empty input
+			if (values.Count == 0)
+			{
+				throw new ArgumentException("Cannot calculate mode of empty dataset", "values");
+			}
+
+			// Group values by frequency
+			var frequencyGroups = values.GroupBy(x => x).OrderByDescending(g => g.Count());
+
+			// Return most common value (if more than one, return first)
+			return frequencyGroups.First().Key;
 		}
 
 	}
