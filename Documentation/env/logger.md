@@ -12,9 +12,9 @@ The `Logger` class is part of the `PeyrSharp.Env` module, and is compatible with
 
 | Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
 |------------------	|---------	|-------	|----------------	|
-| Core            	| ✅       	| ✅     	| ✅              	|
+| Env            	| ✅       	| ✅     	| ✅              	|
 | **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| Core            	| ✅       	| ✅     	| ✅              	|
+| Env            	| ✅       	| ✅     	| ✅              	|
 
 ::: warning
 Some methods, classes or features of `PeyrSharp.Env` might not be available in all platforms.
