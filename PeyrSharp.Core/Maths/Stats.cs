@@ -51,5 +51,34 @@ namespace PeyrSharp.Core.Maths
 
 			return mean;
 		}
+
+		public static double Median(List<double> values)
+		{
+			// Check for empty input
+			if (values.Count == 0)
+			{
+				throw new ArgumentException("Cannot calculate median of empty dataset", "values");
+			}
+
+			// Sort values
+			values.Sort();
+
+			// Calculate median
+			double median;
+			int n = values.Count;
+			if (n % 2 == 1)
+			{
+				// Odd number of elements
+				median = values[n / 2];
+			}
+			else
+			{
+				// Even number of elements
+				median = (values[n / 2 - 1] + values[n / 2]) / 2;
+			}
+
+			return median;
+		}
+
 	}
 }
