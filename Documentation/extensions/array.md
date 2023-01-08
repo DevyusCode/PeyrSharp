@@ -96,3 +96,25 @@ int[] numbers = { 1, 2, 3, 4, 5 };
 int[] remove = numbers.RemoveItem(5);
 // remove: { 1, 2, 3, 4 }
 ~~~
+
+### UnSplit(array, separator)
+#### Definition
+Concatenates the elements of a `string` array, using the specified `separator` between each element. Return a `string` that consists of the elements of `array` delimited by the `separator` `string`. If `array` has no elements, the method returns an empty `string`.   
+
+#### Arguments
+
+| Type     	| Name      	| Meaning                                                              	|
+|----------	|------------	|----------------------------------------------------------------------	|
+| `string` 	| `array`    	| The array of `string`s to concatenate.                              	|
+| `string` 	| `separator` 	| The `string` to use as a separator.                                  	|
+
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Extensions;
+
+string[] array = { "a", "b", "c", "d" };
+string final = array.UnSplit(", "); // Concatenate the elements of the array with a comma and a space as a separator
+// final = "a, b, c, d"
+~~~
