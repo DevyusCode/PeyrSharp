@@ -168,5 +168,21 @@ namespace PeyrSharp.Extensions
 
 			return Encoding.Unicode.GetString(decryptedBytes); // Return
 		}
+
+		/// <summary>
+		/// Returns a new <see cref="string"/> in which the characters in a specified range of the current <see cref="string"/> are converted to uppercase.
+		/// </summary>
+		/// <param name="str">The <see cref="string"/> to modify.</param>
+		/// <param name="r">The range of characters to convert to uppercase.</param>
+		/// <returns>A <see cref="string"/> that is equivalent to the current <see cref="string"/>, but with the characters in the specified range converted to uppercase.</returns>
+		public static string ToUpperAt(this string str, Range r) => str[..r.Start.Value] + str.Substring(r.Start.Value, r.End.Value - r.Start.Value + 1).ToUpper() + str[(r.End.Value + 1)..];
+
+		/// <summary>
+		/// Uppercases the first letter of a string.
+		/// </summary>
+		/// <param name="s">The string to capitalize.</param>
+		/// <returns>The input string with the first letter uppercased.</returns>
+		public static string ToUpperAt(this string s) => string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s[1..];
+
 	}
 }
