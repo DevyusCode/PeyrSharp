@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp.Extensions</Title>
-		<Version>1.2.0.2301-pre1</Version>
+		<Version>1.2.0.2301-rc1</Version>
 		<Authors>Léo Corporation</Authors>
 		<Description>Extensions methods of PeyrSharp.</Description>
 		<Copyright>© 2023</Copyright>
@@ -16,6 +16,8 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReleaseNotes>- Added the UnSplit() extension method (#56)
+- Added the ToUpperAt() method (#57)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -30,7 +32,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.2.0.2301-pre1" />
+	  <PackageReference Include="PeyrSharp.Enums" Version="1.2.0.2301-rc1" />
 	</ItemGroup>
 
 </Project>

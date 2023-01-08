@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>PeyrSharp.Exceptions</Title>
-    <Version>1.2.0.2301-pre1</Version>
+    <Version>1.2.0.2301-rc1</Version>
     <Company>Léo Corporation</Company>
     <Description>Exceptions of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
