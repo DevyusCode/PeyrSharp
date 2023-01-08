@@ -32,6 +32,7 @@ The reference of PeyrSharp.
         - [Sphere](/core/maths/geometry/sphere)
         - [Triangle](/core/maths/geometry/triangle)
     - [Percentages](/core/maths/percentages.md)
+    - [Stats](/core/maths/stats.md)
     - [Trigonometry](/core/maths/trigonometry.md)
 - [Password](/core/password)
 
@@ -59,3 +60,4 @@ The reference of PeyrSharp.
 - [Home](ui-helpers.md)
 - [Screen](/ui-helpers/screen.md)
 - [WinForms](/ui-helpers/winforms.md)
+- [WPF](/ui-helpers/wpf.md)

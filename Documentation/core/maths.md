@@ -28,4 +28,5 @@ The `Maths` namespace is part of the `PeyrSharp.Core` module, which is compatibl
         - [Sphere](/core/maths/geometry/sphere)
         - [Triangle](/core/maths/geometry/triangle)
     - [Percentages](/core/maths/percentages.md)
+    - [Stats](/core/maths/stats.md)
     - [Trigonometry](/core/maths/trigonometry.md)

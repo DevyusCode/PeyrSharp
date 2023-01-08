@@ -10,8 +10,9 @@ UiHelpers are part of the `PeyrSharp.UiHelpers` module, which is compatible with
 |------------------	|---------	|-------	|----------------	|
 | UiHelpers            	| ✅       	| ❌     	| ❌              	|
 | **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| UiHelpers            	| ✅       	| ❌     	| ❌              	|
+| UiHelpers            	| ✅       	| ✅     	| ✅              	|
 
 ## Classes
 - [Screen](/ui-helpers/screen.md)
 - [WinForms](/ui-helpers/winforms.md)
+- [WPF](/ui-helpers/wpf.md)

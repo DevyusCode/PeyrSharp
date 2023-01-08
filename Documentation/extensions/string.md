@@ -175,3 +175,43 @@ using PeyrSharp.Extensions;
 string[] lines = "Hello\nWorld".SplitLines();
 // lines = { "Hello", "World" }
 ~~~
+
+### ToUpperAt(str, r)
+#### Definition
+Returns a new `string` in which the characters in a specified range of the current `string` are converted to uppercase. Returns a `string` that is equivalent to the current `string`, but with the characters in the specified range converted to uppercase.   
+
+#### Arguments
+
+| Type     	| Name 	| Meaning                                                     	|
+|----------	|------	|-------------------------------------------------------------	|
+| `string` 	| `str` 	| The `string` to modify.                                     	|
+| `Range`  	| `r`  	| The range of characters to convert to uppercase.             	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Extensions;
+
+string str = "aBcDeFgHiJ";
+string upper = str.ToUpperAt(2..6); // Convert the characters at indexes 2 to 6 (inclusive) to uppercase
+// upper = "aBCDEFGhij"
+~~~
+### ToUpperAt(s)
+#### Definition
+Uppercases the first letter of a `string`. Returns a `string` with the first letter uppercased.
+
+#### Arguments
+
+| Type     	| Name 	| Meaning                               	|
+|----------	|------	|---------------------------------------	|
+| `string` 	| `s`  	| The `string` to capitalize.           	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Extensions;
+
+string str = "test";
+string upper = str.ToUpperAt(); // Uppercase the first letter of the string
+// upper = "Test"
+~~~
