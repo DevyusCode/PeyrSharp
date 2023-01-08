@@ -305,6 +305,10 @@ function sidebar() {
                     link: '/core/maths/percentages'
                 },
                 {
+                    text: 'Stats',
+                    link: '/core/maths/stats'
+                },
+                {
                     text: 'Trigonometry',
                     link: '/core/maths/trigonometry'
                 }
@@ -340,6 +344,10 @@ function uiHelpersSidebar() {
                 {
                     text: 'WinForms',
                     link: '/ui-helpers/winforms'
+                },
+                {
+                    text: 'WPF',
+                    link: '/ui-helpers/wpf'
                 }
             ]
         },
