@@ -1,5 +1,5 @@
 # WinForms
-This page is about the `ScreenHelpers` class available in [`PeyrSharp.UiHelpers`](../ui-helpers.md). This page is about all of its methods.
+This page is about the `WinFormsHelpers` class available in [`PeyrSharp.UiHelpers`](../ui-helpers.md). This page is about all of its methods.
 
 ## Compatibility
 
@@ -9,7 +9,7 @@ WinFormsHelpers are part of the `PeyrSharp.UiHelpers` module, which is compatibl
 |------------------	|---------	|-------	|----------------	|
 | UiHelpers            	| ✅       	| ❌     	| ❌              	|
 | **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| UiHelpers            	| ✅       	| ❌     	| ❌              	|
+| UiHelpers            	| ✅       	| ✅     	| ✅              	|
 
 ## Methods
 ### CenterControl(control, form)

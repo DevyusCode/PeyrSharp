@@ -9,7 +9,7 @@ ScreenHelpers are part of the `PeyrSharp.UiHelpers` module, which is compatible 
 |------------------	|---------	|-------	|----------------	|
 | UiHelpers            	| ✅       	| ❌     	| ❌              	|
 | **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| UiHelpers            	| ✅       	| ❌     	| ❌              	|
+| UiHelpers            	| ✅       	| ✅     	| ✅              	|
 
 ## Methods
 ### GetDpi(form)
