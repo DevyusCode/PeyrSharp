@@ -21,17 +21,24 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
+using System.Windows;
+using System.Windows.Forms;
 
-namespace PeyrSharp
+namespace PeyrSharp.UiHelpers
 {
 	/// <summary>
-	/// About PeyrSharp
+	/// Contains helper methods for working with WPF applications.
 	/// </summary>
-	public static class PeyrSharp
+	public static class WpfHelpers
 	{
 		/// <summary>
-		/// The current version of PeyrSharp.
+		/// Centers a window on the primary screen.
 		/// </summary>
-		public static string Version => "1.2.0.2301";
+		/// <param name="window">The window to center.</param>
+		public static void CenterWindow(Window window)
+		{
+			window.Left = (Screen.PrimaryScreen.WorkingArea.Width - window.Width) / 2; // Center horizontally
+			window.Top = (Screen.PrimaryScreen.WorkingArea.Height - window.Height) / 2; // Center vertically
+		}
 	}
 }

@@ -132,5 +132,21 @@ namespace PeyrSharp.Extensions
 
 			return list.ToArray(); // Return the new array
 		}
+
+		/// <summary>
+		/// Concatenates the elements of a string array, using the specified separator between each element.
+		/// </summary>
+		/// <param name="array">The array of strings to concatenate.</param>
+		/// <param name="separator">The string to use as a separator.</param>
+		/// <returns>A string that consists of the elements of <paramref name="array"/> delimited by the <paramref name="separator"/> string. If <paramref name="array"/> has no elements, the method returns an empty string.</returns>
+		public static string UnSplit(this string[] array, string separator)
+		{
+			string final = "";
+			for (int i = 0; i < array.Length; i++)
+			{
+				final += array[i] + ((i < array.Length) ? separator : "");
+			}
+			return final;
+		}
 	}
 }
