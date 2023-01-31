@@ -1,11 +1,11 @@
 :root {
     /* brand colors */
-    --vp-c-brand: #dd00ff;
-    --vp-c-brand-light: #dd00ff;
-    --vp-c-brand-lighter: #ff8000;
-    --vp-c-brand-dark: #dd00ff;
+    --vp-c-brand: #00E0FF;
+    --vp-c-brand-light: #00E0FF;
+    --vp-c-brand-lighter: #00FF57;
+    --vp-c-brand-dark: #00E0FF;
     --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(135deg, rgba(255, 128, 0, 1) 0%, rgba(221, 0, 255, 1) 100%);
+    --vp-home-hero-name-background: -webkit-linear-gradient(135deg, #00E0FF 0%, #00FF57 100%);
 }
 
 html.dark {
