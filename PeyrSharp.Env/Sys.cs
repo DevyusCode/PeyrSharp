@@ -123,6 +123,25 @@ namespace PeyrSharp.Env
 		}
 
 		/// <summary>
+		/// Gets if a specified process name is currently running.
+		/// </summary>
+		/// <param name="processName">The process name to find.</param>
+		/// <returns>A <see cref="bool"/> value.</returns>
+		public static bool IsProcessRunning(string processName)
+		{
+			Process[] processes = Process.GetProcessesByName(processName); // Get the process(es) that match the name
+
+			if (processes.Length == 0) // If the process is not running
+			{
+				return false; // Return false
+			}
+			else // If the process is running
+			{
+				return true; // Return true
+			}
+		}
+
+		/// <summary>
 		/// Launches an UWP application.
 		/// </summary>
 		/// <param name="packageFamilyName">The <c>PackageFamilyName</c> property.</param>
