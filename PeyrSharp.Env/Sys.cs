@@ -218,5 +218,12 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <returns>The current unix time.</returns>
 		public static int UnixTime => (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds; // Get Unix Time
+
+		/// <summary>
+		/// Gets the name of the current computer.
+		/// </summary>
+		/// <returns>The name of the current computer.</returns>
+		public static string ComputerName => Environment.MachineName;
+		
 	}
 }
