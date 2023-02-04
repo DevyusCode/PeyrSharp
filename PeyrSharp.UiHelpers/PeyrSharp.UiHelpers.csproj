@@ -8,7 +8,7 @@
 	<UseWPF>true</UseWPF>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<Title>PeyrSharp.UiHelpers</Title>
-	<Version>1.2.0.2301</Version>
+	<Version>1.3.0.2302-pre1</Version>
 	<Authors>Léo Corporation</Authors>
 	<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
 	<Copyright>© 2023</Copyright>
@@ -19,7 +19,7 @@
 	<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageReleaseNotes>- Added the CenterWindow() method (#58)</PackageReleaseNotes>
+	<PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.2.0.2301" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.3.0.2302-pre1" />
   </ItemGroup>
 
 </Project>
