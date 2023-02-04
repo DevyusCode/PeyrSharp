@@ -241,5 +241,13 @@ namespace PeyrSharp.Env
 				return StorageUnits.Byte;
 			}
 		}
+
+		/// <summary>
+		/// Gets the current directory of the application.
+		/// </summary>
+		/// <returns>
+		/// A string representing the full path of the current directory.
+		/// </returns>
+		public static string CurrentDirectory => Directory.GetCurrentDirectory();
 	}
 }
