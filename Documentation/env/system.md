@@ -104,6 +104,45 @@ using PeyrSharp.Env;
 Sys.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App"); // Launch Minecraft UWP
 ~~~
 
+### IsProcessRunning(processName)
+#### Definition
+Gets if a specified process name is currently running. Returns a `bool` value indicating whether the process is running (`true`) or not running (`false`).
+
+#### Arguments
+
+| Type     	| Name 	       | Meaning                                                     	|
+|----------	|-------------	|-------------------------------------------------------------	|
+| `string` 	| `processName` | The process name to find.                                    	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+bool isNotepadRunning = Sys.IsProcessRunning("notepad");
+~~~
+
+### TerminateProcess(processId)
+#### Definition
+
+Terminates a process with the specified process ID. Returns `True` if the process was successfully terminated, or `False` if no such process was found or if an error occurred while trying to terminate the process.
+
+#### Arguments
+
+| Type      	| Name      	| Meaning                     	|
+|-----------	|-----------	|---------------------------------	|
+| `int` 	| `processId` 	| The ID of the process to terminate. 	|
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+int processId = 12345;
+
+bool result = Sys.TerminateProcess(processId);
+~~~
+
 ## Properties
 ### CurrentOperatingSystem
 #### Definition

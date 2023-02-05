@@ -344,3 +344,27 @@ using PeyrSharp.Env;
 
 DriveInfo sys = FileSys.SystemDrive;
 ~~~
+
+
+### CurrentDirectory
+#### Definition
+Gets the current directory of the application. Returns a string representing the full path of the current directory.
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Env;
+
+string currentDirectory = FileSys.CurrentDirectory;
+~~~
+
+### ComputerName
+#### Definition
+Returns the name of the current computer as a `string`.
+
+#### Usage
+~~~ c#
+using PeyrSharp.Env;
+
+string computerName = FileSys.ComputerName;
+~~~

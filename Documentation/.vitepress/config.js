@@ -306,6 +306,10 @@ function sidebar() {
                     link: '/core/maths/percentages'
                 },
                 {
+                    text: 'Proba',
+                    link: '/core/maths/proba'
+                },
+                {
                     text: 'Stats',
                     link: '/core/maths/stats'
                 },
