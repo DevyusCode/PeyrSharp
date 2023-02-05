@@ -59,13 +59,13 @@ function superSidebar() {
     return [
         {
             text: 'Core',
-            collapsible: true,
+            collapsed: false,
             items: sidebar()
         },
         ...envSidebar(),
         {
             text: 'Enums',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -75,7 +75,7 @@ function superSidebar() {
         },
         {
             text: 'Exceptions',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -92,7 +92,7 @@ function extSidebar() {
     return [
         {
             text: 'Extensions',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -123,7 +123,7 @@ function envSidebar() {
     return [
         {
             text: 'Env',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -154,7 +154,7 @@ function sidebar() {
     return [
         {
             text: 'Converters',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -166,6 +166,7 @@ function sidebar() {
                 },
                 {
                     text: 'Colors',
+                    collapsed: true,
                     items: [
                         {
                             text: 'RGB',
@@ -209,7 +210,7 @@ function sidebar() {
         },
         {
             text: 'Crypt',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Crypt',
@@ -219,7 +220,7 @@ function sidebar() {
         },
         {
             text: 'Guid',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'GuidGen',
@@ -233,7 +234,7 @@ function sidebar() {
         },
         {
             text: 'Internet',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Internet',
@@ -243,7 +244,7 @@ function sidebar() {
         },
         {
             text: 'Maths',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
@@ -255,7 +256,7 @@ function sidebar() {
                 },
                 {
                     text: 'Geometry',
-                    collapsible: true,
+                    collapsed: true,
                     link: '/core/maths/geometry',
                     items: [
                         {
@@ -316,7 +317,7 @@ function sidebar() {
         },
         {
             text: 'Password',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Password',
@@ -331,7 +332,7 @@ function uiHelpersSidebar() {
     return [
         {
             text: 'UiHelpers',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Home',
