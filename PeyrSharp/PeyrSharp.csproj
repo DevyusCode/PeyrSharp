@@ -4,11 +4,11 @@
 		<TargetFrameworks>net5.0;net6.0;net5.0-windows;net6.0-windows;net7.0;net7.0-windows</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
-		<Version>1.2.0.2301</Version>
+		<Version>1.3.0.2302</Version>
 		<Authors>Léo Corporation</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
-		<PackageProjectUrl>https://github.com/Leo-Corporation/PeyrSharp</PackageProjectUrl>
+		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>math;password;guid;generators;core;geometry;environment;extensions;enumerations;exceptions;ui-helpers</PackageTags>
@@ -16,13 +16,11 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Created Stats class (#52)
-- Added the Mean() method (#53)
-- Added the Median() method (#54)
-- Added the Mode() method (#55)
-- Added the UnSplit() extension method (#56)
-- Added the ToUpperAt() method (#57)
-- Added the CenterWindow() method (#58)</PackageReleaseNotes>
+		<PackageReleaseNotes>- Added the possibility to check if a process is running (#67)
+- Added the possibility to get the current directory (#68)
+- Added the possibility to get the name of the computer (#69)
+- Added the possibility to terminate a process (#70)
+- Added the possibility to generate a random value based on probabilities (#71)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -37,12 +35,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Core" Version="1.2.0.2301" />
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.2.0.2301" />
-	  <PackageReference Include="PeyrSharp.Env" Version="1.2.0.2301" />
-	  <PackageReference Include="PeyrSharp.Exceptions" Version="1.2.0.2301" />
-	  <PackageReference Include="PeyrSharp.Extensions" Version="1.2.0.2301" />
-	  <PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.2.0.2301" />
+	  <PackageReference Include="PeyrSharp.Core" Version="1.3.0.2302" />
+	  <PackageReference Include="PeyrSharp.Enums" Version="1.3.0.2302" />
+	  <PackageReference Include="PeyrSharp.Env" Version="1.3.0.2302" />
+	  <PackageReference Include="PeyrSharp.Exceptions" Version="1.3.0.2302" />
+	  <PackageReference Include="PeyrSharp.Extensions" Version="1.3.0.2302" />
+	  <PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.3.0.2302" />
 	</ItemGroup>
 
 </Project>
