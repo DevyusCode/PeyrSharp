@@ -24,6 +24,7 @@ SOFTWARE.
 using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -224,6 +225,28 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <returns>The name of the current computer.</returns>
 		public static string ComputerName => Environment.MachineName;
-		
+
+		/// <summary>
+		/// Terminates a process with the specified process ID.
+		/// </summary>
+		/// <param name="processId">The ID of the process to terminate.</param>
+		/// <returns>True if the process was successfully terminated, or false if no such process was found or if an error occurred while trying to terminate the process.</returns>
+		public static bool TerminateProcess(int processId)
+		{
+			try
+			{
+				Process process = Process.GetProcessById(processId);
+				process.Kill();
+				return true;
+			}
+			catch (ArgumentException)
+			{
+				return false;
+			}
+			catch (Win32Exception)
+			{
+				return false;
+			}
+		}
 	}
 }
