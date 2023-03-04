@@ -46,5 +46,16 @@ namespace PeyrSharp.Core.Converters
 			return calories * 4.184;
 		}
 
+		/// <summary>
+		/// Converts joules to calories.
+		/// </summary>
+		/// <param name="joules">The amount of energy in joules.</param>
+		/// <returns>The equivalent amount of energy in calories.</returns>
+		public static double JoulesToCalories(double joules)
+		{
+			// 1 calorie = 4.184 joules
+			return joules / 4.184;
+		}
+
 	}
 }
