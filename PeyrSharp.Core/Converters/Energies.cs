@@ -40,22 +40,18 @@ namespace PeyrSharp.Core.Converters
 		/// </summary>
 		/// <param name="calories">The amount of energy in calories.</param>
 		/// <returns>The equivalent amount of energy in joules.</returns>
-		public static double CaloriesToJoules(double calories)
-		{
+		public static double CaloriesToJoules(double calories) =>
 			// 1 calorie = 4.184 joules
-			return calories * 4.184;
-		}
+			calories * 4.184;
 
 		/// <summary>
 		/// Converts joules to calories.
 		/// </summary>
 		/// <param name="joules">The amount of energy in joules.</param>
 		/// <returns>The equivalent amount of energy in calories.</returns>
-		public static double JoulesToCalories(double joules)
-		{
+		public static double JoulesToCalories(double joules) =>
 			// 1 calorie = 4.184 joules
-			return joules / 4.184;
-		}
+			joules / 4.184;
 
 	}
 }
