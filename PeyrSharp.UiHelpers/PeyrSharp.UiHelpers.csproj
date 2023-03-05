@@ -8,7 +8,7 @@
 	<UseWPF>true</UseWPF>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<Title>PeyrSharp.UiHelpers</Title>
-	<Version>1.4.0.2303-rc1</Version>
+	<Version>1.4.0.2303</Version>
 	<Authors>Léo Corporation</Authors>
 	<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
 	<Copyright>© 2023</Copyright>
@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.4.0.2303-rc1" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.4.0.2303" />
   </ItemGroup>
 
 </Project>
