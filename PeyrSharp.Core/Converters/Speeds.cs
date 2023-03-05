@@ -48,5 +48,12 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="kilometersPerHour">The speed in kilometers per hour.</param>
 		/// <returns>The equivalent speed in knots.</returns>
 		public static double KilometersPerHourToKnots(double kilometersPerHour) => kilometersPerHour / 1.852;
+
+		/// <summary>
+		/// Converts knots to miles per hour.
+		/// </summary>
+		/// <param name="knots">The speed in knots.</param>
+		/// <returns>The equivalent speed in miles per hour.</returns>
+		public static double KnotsToMilesPerHour(double knots) => knots * 1.15078;
 	}
 }
