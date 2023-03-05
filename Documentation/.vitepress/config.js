@@ -187,8 +187,16 @@ function sidebar() {
                     link: '/core/converters/distances'
                 },
                 {
+                    text: 'Energies',
+                    link: '/core/converters/energies'
+                },
+                {
                     text: 'Masses',
                     link: '/core/converters/masses'
+                },
+                {
+                    text: 'Speeds',
+                    link: '/core/converters/speeds'
                 },
                 {
                     text: 'Storage',
