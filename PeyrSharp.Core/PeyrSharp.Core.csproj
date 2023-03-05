@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.3.0.2302</Version>
+    <Version>1.4.0.2303</Version>
     <Authors>Léo Corporation</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -16,7 +16,16 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>- Added the possibility to generate a random value based on probabilities (#71)</PackageReleaseNotes>
+    <PackageReleaseNotes>- Added `CaloriesToJoules()` method (#79)
+- Added `JoulesToCalories()` method (#79)
+- Added `KnotsToKilometersPerHour()` method (#80)
+- Added `KilometersPerHourToKnots()` method (#80)
+- Added `KnotsToMilesPerHour()` method (#81)
+- Added `MilesPerHourToKnots()` method (#81)
+- Added `KilometersPerHourToMetersPerSecond()` method (#82)
+- Added `MetersPerSecondToKilometersPerHour()` method (#82)
+- Added `MilesPerHourToKilometersPerHour()` (#83)
+- Added `KilometersPerHourToMilesPerHour()` (#83)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.3.0.2302" />
-    <PackageReference Include="PeyrSharp.Exceptions" Version="1.3.0.2302" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.4.0.2303" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="1.4.0.2303" />
   </ItemGroup>
 
 </Project>

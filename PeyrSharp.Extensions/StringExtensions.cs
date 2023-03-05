@@ -184,5 +184,21 @@ namespace PeyrSharp.Extensions
 		/// <returns>The input string with the first letter uppercased.</returns>
 		public static string ToUpperAt(this string s) => string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s[1..];
 
+		/// <summary>
+		/// Reverses a <see cref="string"/>.
+		/// </summary>
+		/// <param name="input">The string to reverse.</param>
+		/// <returns>The reversed string.</returns>
+		public static string Reverse(this string input)
+		{
+			if (string.IsNullOrEmpty(input))
+			{
+				return input;
+			}
+
+			char[] chars = input.ToCharArray();
+			Array.Reverse(chars);
+			return new string(chars);
+		}
 	}
 }

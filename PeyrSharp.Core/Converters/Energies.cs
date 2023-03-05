@@ -22,16 +22,36 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PeyrSharp.Core.Converters
 {
 	/// <summary>
-	/// About PeyrSharp
+	/// Class that contains energies converters methods.
 	/// </summary>
-	public static class PeyrSharp
+	public static class Energies
 	{
 		/// <summary>
-		/// The current version of PeyrSharp.
+		/// Converts calories to joules.
 		/// </summary>
-		public static string Version => "1.4.0.2303";
+		/// <param name="calories">The amount of energy in calories.</param>
+		/// <returns>The equivalent amount of energy in joules.</returns>
+		public static double CaloriesToJoules(double calories) =>
+			// 1 calorie = 4.184 joules
+			calories * 4.184;
+
+		/// <summary>
+		/// Converts joules to calories.
+		/// </summary>
+		/// <param name="joules">The amount of energy in joules.</param>
+		/// <returns>The equivalent amount of energy in calories.</returns>
+		public static double JoulesToCalories(double joules) =>
+			// 1 calorie = 4.184 joules
+			joules / 4.184;
+
 	}
 }
