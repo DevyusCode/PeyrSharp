@@ -69,5 +69,12 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="kilometersPerHour">The speed in kilometers per hour.</param>
 		/// <returns>The equivalent speed in meters per second.</returns>
 		public static double KilometersPerHourToMetersPerSecond(double kilometersPerHour) => kilometersPerHour / 3.6;
+
+		/// <summary>
+		/// Converts meters per second to kilometers per hour.
+		/// </summary>
+		/// <param name="metersPerSecond">The speed in meters per second.</param>
+		/// <returns>The equivalent speed in kilometers per hour.</returns>
+		public static double MetersPerSecondToKilometersPerHour(double metersPerSecond) => metersPerSecond * 3.6;
 	}
 }
