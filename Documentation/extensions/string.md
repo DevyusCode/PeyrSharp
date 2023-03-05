@@ -215,3 +215,26 @@ string str = "test";
 string upper = str.ToUpperAt(); // Uppercase the first letter of the string
 // upper = "Test"
 ~~~
+### Reverse(input)
+#### Definition
+
+Reverses a `string`.
+
+#### Arguments
+
+| Type       | Name    | Description          |
+|------------|---------|----------------------|
+| `string` | `input` | The string to reverse. |
+
+#### Returns
+
+A `string` representing the reversed input.
+
+#### Usage
+
+~~~ c#
+using PeyrSharp.Extensions;
+
+string reversed = "Hello, world!".Reverse();
+// Output: "!dlrow ,olleH"
+~~~
