@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,Q as r}from"./chunks/framework.7addaa9c.js";const p=JSON.parse('{"title":"Maths","description":"","frontmatter":{},"headers":[],"relativePath":"core/maths.md","lastUpdated":1675590267000}'),o={name:"core/maths.md"},l=r("",7),h=[l];function s(i,m,c,d,n,f){return a(),e("div",null,h)}const _=t(o,[["render",s]]);export{p as __pageData,_ as default};

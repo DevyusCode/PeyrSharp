@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as e,Q as t}from"./chunks/framework.7addaa9c.js";const y=JSON.parse('{"title":"Logger","description":"","frontmatter":{},"headers":[],"relativePath":"env/logger.md","lastUpdated":1680429326000}'),o={name:"env/logger.md"},n=t("",30),l=[n];function p(r,c,i,d,h,g){return e(),s("div",null,l)}const m=a(o,[["render",p]]);export{y as __pageData,m as default};
