@@ -199,5 +199,29 @@ namespace PeyrSharp.Extensions
 		/// <param name="d">The <see cref="double"/> to convert.</param>
 		/// <returns>An <see cref="int"/> value.</returns>
 		public static int ToInt(this double d) => (int)Math.Round(d);
+
+		/// <summary>
+		/// Calculates the mean (average) of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mean of.</param>
+		/// <returns>The mean of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mean(this double[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate mean of empty dataset", "values");
+			}
+
+			// Calculate sum of values
+			double sum = values.Sum();
+
+			// Calculate mean
+			double mean = sum / values.Length;
+
+			return mean;
+		}
+
 	}
 }

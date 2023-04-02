@@ -64,5 +64,29 @@ namespace PeyrSharp.Extensions
 
 			return ds.ToArray();
 		}
+
+		/// <summary>
+		/// Calculates the mean (average) of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mean of.</param>
+		/// <returns>The mean of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mean(this int[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate mean of empty dataset", "values");
+			}
+
+			// Calculate sum of values
+			double sum = values.Sum();
+
+			// Calculate mean
+			double mean = sum / values.Length;
+
+			return mean;
+		}
+
 	}
 }
