@@ -259,5 +259,25 @@ namespace PeyrSharp.Extensions
 			return median;
 		}
 
+		/// <summary>
+		/// Calculates the mode of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mode of.</param>
+		/// <returns>The mode of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mode(this double[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate mode of empty dataset", "values");
+			}
+
+			// Group values by frequency
+			var frequencyGroups = values.GroupBy(x => x).OrderByDescending(g => g.Count());
+
+			// Return most common value (if more than one, return first)
+			return frequencyGroups.First().Key;
+		}
 	}
 }
