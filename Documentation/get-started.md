@@ -1,5 +1,7 @@
 # Get Started
+
 ## Packages and modules
+
 Before installing PeyrSharp, you may want to consider what features you will actually need to use in your project. Indeed, PeyrSharp is divided in multiple modules and packages.
 
 If you think you need all the features of PeyrSharp, you can directly install the PeyrSharp NuGet package. However, you can also install the packages that you only need in your project. Here's a list of all the packages and their features:
@@ -28,6 +30,7 @@ If you think you need all the features of PeyrSharp, you can directly install th
 
 ::: details **PeyrSharp.Enums**, all enumerations used by PeyrSharp
 
+- LogLevel
 - WindowsVersion
 - TimeUnits
 - SystemThemes
@@ -37,7 +40,7 @@ If you think you need all the features of PeyrSharp, you can directly install th
 - PasswordPresets
 - PasswordStrength
 
-:::        
+:::
 
 ::: details **PeyrSharp.Exceptions**, all exceptions used by PeyrSharp
 
@@ -65,25 +68,30 @@ If you think you need all the features of PeyrSharp, you can directly install th
 :::
 
 ## Compatibility
+
 ### Platforms
+
 Some modules of PeyrSharp are targeting features only available in specific operating systems. Thus, some packages aren't available on all platforms.
 
-| Package/Platform 	| Windows 	 | macOS 	 | Linux + others 	    |
-|------------------	|---------	 |-------	 |-------------------	|
-| Core             	| ✅       	| ✅     	| ✅              	|
-| Env              	| ✅       	| ⚠️     	 | ⚠️              	  |
-| Enums            	| ✅       	| ✅     	| ✅              	|
-| Exceptions       	| ✅       	| ✅     	| ✅              	|
-| Extensions       	| ✅       	| ✅     	| ✅              	|
-| UiHelpers        	| ✅       	| ❌     	| ❌              	|
+| Package/Platform | Windows | macOS | Linux + others |
+| ---------------- | ------- | ----- | -------------- |
+| Core             | ✅      | ✅    | ✅             |
+| Env              | ✅      | ⚠️    | ⚠️             |
+| Enums            | ✅      | ✅    | ✅             |
+| Exceptions       | ✅      | ✅    | ✅             |
+| Extensions       | ✅      | ✅    | ✅             |
+| UiHelpers        | ✅      | ❌    | ❌             |
 
 Caption:
+
 - ✅ Full Support
 - ⚠️ Partial Support
 - ❌ Unsupported platform
 
 ### Frameworks
+
 PeyrSharp is available in the following frameworks
+
 - .NET 5
 - .NET 6
 - .NET 7 (soon)
@@ -93,37 +101,42 @@ PeyrSharp is available in the following frameworks
 :::
 
 ## Installation methods
+
 PeyrShall is available on NuGet, you can install it by running the following command:
+
 ### .NET CLI
+
 You can add PeyrSharp to your project the .NET CLI.
 
-~~~ powershell
+```powershell
 dotnet add package PeyrSharp --version 1.0.0.2211
-~~~
+```
 
 ### Package Manager
 
-~~~ sh
+```sh
 NuGet\Install-Package PeyrSharp -Version 1.0.0.2211
-~~~
+```
 
 ### Package Reference
+
 You can specify in your project file that it is dependent on PeyrSharp.
 
-~~~ xml
+```xml
 <PackageReference Include="PeyrSharp" Version="1.0.0.2211" />
-~~~
+```
 
 ## Start coding
+
 To call methods and classes included in PeyrSharp, you will need to add the corresponding using directives in your code file.
 
-~~~ c#
+```c#
 using PeyrSharp.Core;
 using PeyrSharp.Env;
 using PeyrSharp.Enums;
 using PeyrSharp.Exceptions;
 using PeyrSharp.Extensions;
 using PeyrSharp.UiHelpers; // Windows only
-~~~
+```
 
 For more information, you can check the [reference](/reference)
