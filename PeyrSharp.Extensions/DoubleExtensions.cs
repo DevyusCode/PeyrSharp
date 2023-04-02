@@ -23,6 +23,7 @@ SOFTWARE.
 */
 using PeyrSharp.Enums;
 using System;
+using System.Linq;
 
 namespace PeyrSharp.Extensions
 {
@@ -221,6 +222,41 @@ namespace PeyrSharp.Extensions
 			double mean = sum / values.Length;
 
 			return mean;
+		}
+
+		/// <summary>
+		/// Calculates the median of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the median of.</param>
+		/// <returns>The median of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Median(this double[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate median of empty dataset", "values");
+			}
+
+			// Sort values
+			var list = values.ToList();
+			list.Sort();
+
+			// Calculate median
+			double median;
+			int n = list.Count;
+			if (n % 2 == 1)
+			{
+				// Odd number of elements
+				median = list[n / 2];
+			}
+			else
+			{
+				// Even number of elements
+				median = (list[n / 2 - 1] + list[n / 2]) / 2;
+			}
+
+			return median;
 		}
 
 	}
