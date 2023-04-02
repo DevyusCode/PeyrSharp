@@ -11,13 +11,15 @@
 	<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
 	<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
-	<Version>1.4.0.2303</Version>
+	<Version>1.5.0.2304</Version>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<PackageIcon>logo.png</PackageIcon>
 	<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<RepositoryType>git</RepositoryType>
+	<PackageReleaseNotes>- Added the ``LogLevel`` enumeration (#90)
+</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

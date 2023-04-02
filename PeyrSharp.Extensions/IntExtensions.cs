@@ -23,6 +23,7 @@ SOFTWARE.
 */
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PeyrSharp.Extensions
 {
@@ -63,6 +64,85 @@ namespace PeyrSharp.Extensions
 			}
 
 			return ds.ToArray();
+		}
+
+		/// <summary>
+		/// Calculates the mean (average) of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mean of.</param>
+		/// <returns>The mean of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mean(this int[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate mean of empty dataset", "values");
+			}
+
+			// Calculate sum of values
+			double sum = values.Sum();
+
+			// Calculate mean
+			double mean = sum / values.Length;
+
+			return mean;
+		}
+
+		/// <summary>
+		/// Calculates the median of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the median of.</param>
+		/// <returns>The median of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Median(this int[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate median of empty dataset", "values");
+			}
+
+			// Sort values
+			var list = values.ToList();
+			list.Sort();
+
+			// Calculate median
+			double median;
+			int n = list.Count;
+			if (n % 2 == 1)
+			{
+				// Odd number of elements
+				median = list[n / 2];
+			}
+			else
+			{
+				// Even number of elements
+				median = (list[n / 2 - 1] + list[n / 2]) / 2;
+			}
+
+			return median;
+		}
+
+		/// <summary>
+		/// Calculates the mode of a dataset.
+		/// </summary>
+		/// <param name="values">The dataset to calculate the mode of.</param>
+		/// <returns>The mode of the dataset.</returns>
+		/// <exception cref="ArgumentException">Thrown if the dataset is empty.</exception>
+		public static double Mode(this int[] values)
+		{
+			// Check for empty input
+			if (values.Length == 0)
+			{
+				throw new ArgumentException("Cannot calculate mode of empty dataset", "values");
+			}
+
+			// Group values by frequency
+			var frequencyGroups = values.GroupBy(x => x).OrderByDescending(g => g.Count());
+
+			// Return most common value (if more than one, return first)
+			return frequencyGroups.First().Key;
 		}
 	}
 }

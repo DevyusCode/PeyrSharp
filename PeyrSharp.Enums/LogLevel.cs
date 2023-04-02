@@ -22,16 +22,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp
+namespace PeyrSharp.Enums
 {
 	/// <summary>
-	/// About PeyrSharp
+	/// Specifies the severity level of a log message.
 	/// </summary>
-	public static class PeyrSharp
+	public enum LogLevel
 	{
 		/// <summary>
-		/// The current version of PeyrSharp.
+		/// Debug-level messages provide verbose information for debugging purposes.
 		/// </summary>
-		public static string Version => "1.5.0.2304";
+		Debug,
+
+		/// <summary>
+		/// Info-level messages provide informational messages about the application's state.
+		/// </summary>
+		Info,
+
+		/// <summary>
+		/// Warning-level messages indicate a potential problem or non-critical issue.
+		/// </summary>
+		Warning,
+
+		/// <summary>
+		/// Error-level messages indicate an error has occurred in the application.
+		/// </summary>
+		Error,
+
+		/// <summary>
+		/// Critical-level messages indicate a critical error has occurred that requires immediate attention.
+		/// </summary>
+		Critical,
+
+		/// <summary>
+		/// Misc-level messages are for miscellaneous use cases and are not defined in the logging specification.
+		/// </summary>
+		Misc
 	}
 }
