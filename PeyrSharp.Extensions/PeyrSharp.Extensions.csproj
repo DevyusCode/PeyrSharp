@@ -9,7 +9,7 @@
 		<Description>Extensions methods of PeyrSharp.</Description>
 		<Copyright>© 2023</Copyright>
 		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>extension;extends;string;double;int;peyrsharp;crypt;converters;array</PackageTags>
 		<PackageIcon>logo.png</PackageIcon>
@@ -17,8 +17,8 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageReleaseNotes>- Added Mean() extension method for int[] and double[] (#92)
-- Added Median() extension method for int[] and double[] (#93)
-- Added Mode() extension method for int[] and double[] (#94)</PackageReleaseNotes>
+			- Added Median() extension method for int[] and double[] (#93)
+			- Added Mode() extension method for int[] and double[] (#94)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
 	</ItemGroup>
 
 </Project>

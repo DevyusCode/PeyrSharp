@@ -9,7 +9,7 @@
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
     <PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>math;password;guid;generators;core;geometry</PackageTags>
     <PackageIcon>logo.png</PackageIcon>

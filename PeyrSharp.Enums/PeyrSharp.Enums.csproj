@@ -1,36 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
-	<ImplicitUsings>disable</ImplicitUsings>
-	<Nullable>enable</Nullable>
-	<Title>PeyrSharp.Enums</Title>
-	<Authors>Devyus</Authors>
-	<Description>Enumerations of PeyrSharp.</Description>
-	<Copyright>© 2023</Copyright>
-	<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
-	<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
-	<Version>1.5.0.2304</Version>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageIcon>logo.png</PackageIcon>
-	<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<RepositoryType>git</RepositoryType>
-	<PackageReleaseNotes>- Added the ``LogLevel`` enumeration (#90)
-</PackageReleaseNotes>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>PeyrSharp.Enums</Title>
+		<Authors>Devyus</Authors>
+		<Description>Enumerations of PeyrSharp.</Description>
+		<Copyright>© 2023</Copyright>
+		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
+		<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
+		<Version>1.5.0.2304</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>- Added the ``LogLevel`` enumeration (#90)
+		</PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\.github\images\logo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\NUGET_README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\.github\images\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\NUGET_README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>

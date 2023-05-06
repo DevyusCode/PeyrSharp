@@ -10,12 +10,12 @@ export default {
       { text: "Guide", link: "/get-started" },
       { text: "Reference", link: "/reference" },
     ],
-    repo: "Leo-Corporation/PeyrSharp",
+    repo: "DevyusCode/PeyrSharp",
     docsDir: "documentation",
     docsBranch: "main",
     editLink: {
       pattern:
-        "https://github.com/Leo-Corporation/PeyrSharp/edit/main/Documentation/:path",
+        "https://github.com/DevyusCode/PeyrSharp/edit/main/Documentation/:path",
       text: "Edit this page on GitHub",
     },
     footer: {
@@ -30,7 +30,7 @@ export default {
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/Leo-Corporation/PeyrSharp",
+        link: "https://github.com/DevyusCode/PeyrSharp",
       },
       {
         icon: "twitter",

@@ -1,40 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFrameworks>net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
-	<ImplicitUsings>disable</ImplicitUsings>
-	<Nullable>enable</Nullable>
-	<UseWindowsForms>true</UseWindowsForms>
-	<UseWPF>true</UseWPF>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-	<Title>PeyrSharp.UiHelpers</Title>
-	<Version>1.5.0.2304</Version>
-	<Authors>Devyus</Authors>
-	<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
-	<Copyright>© 2023</Copyright>
-	<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
-	<PackageTags>ui-helpers;c-sharp;dotnet;vb;peyrsharp;leo corp;wpf;windows-forms;win-forms;ui;windows</PackageTags>
-	<PackageIcon>logo.png</PackageIcon>
-	<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<PackageReleaseNotes></PackageReleaseNotes>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Title>PeyrSharp.UiHelpers</Title>
+		<Version>1.5.0.2304</Version>
+		<Authors>Devyus</Authors>
+		<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
+		<Copyright>© 2023</Copyright>
+		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
+		<PackageTags>ui-helpers;c-sharp;dotnet;vb;peyrsharp;leo
+			corp;wpf;windows-forms;win-forms;ui;windows</PackageTags>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReleaseNotes></PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\.github\images\logo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\NUGET_README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\.github\images\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\NUGET_README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
+	</ItemGroup>
 
 </Project>

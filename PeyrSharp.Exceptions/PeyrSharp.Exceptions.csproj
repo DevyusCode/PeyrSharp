@@ -11,7 +11,7 @@
     <Description>Exceptions of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
     <PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageTags>exceptions;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
