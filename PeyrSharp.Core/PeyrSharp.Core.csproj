@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.5.0.2304</Version>
+    <Version>1.6.0.2305-pre1</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -16,7 +16,9 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>- Added a method to convert bits to bytes (#100)
+- Added a method to convert bytes to bits (#101)
+- Added a method to convert mach to km/h (#102)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
