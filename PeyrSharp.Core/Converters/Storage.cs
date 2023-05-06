@@ -132,5 +132,12 @@ namespace PeyrSharp.Core.Converters
 			StorageUnits.Petabyte => value,// Convert and return value
 			_ => value,// Convert and return value
 		};
+
+		/// <summary>
+		/// Converts a number of bits to a number of bytes.
+		/// </summary>
+		/// <param name="n">The number of bits to convert.</param>
+		/// <returns>The number of bytes equivalent to n bits.</returns>
+		public static double BitsToBytes(double n) => n / 8;
 	}
 }
