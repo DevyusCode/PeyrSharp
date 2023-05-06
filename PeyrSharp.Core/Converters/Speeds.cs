@@ -84,5 +84,14 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="kilometersPerHour">The speed in kilometers per hour.</param>
 		/// <returns>The equivalent speed in miles per hour.</returns>
 		public static double KilometersPerHourToMilesPerHour(double kilometersPerHour) => kilometersPerHour / 1.60934;
+
+		/// <summary>
+		/// Converts a speed in mach to a speed in kilometers per hour.
+		/// </summary>
+		/// <param name="n">The speed in mach to convert.</param>
+		/// <returns>The speed in kilometers per hour equivalent to n mach.</returns>
+		public static double MachToKilometersPerHour(double n) =>
+			// Use the conversion formula: km/h = mach * 1234.8
+			n * 1234.8;
 	}
 }
