@@ -5,7 +5,7 @@
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
 		<Version>1.5.0.2304</Version>
-		<Authors>Léo Corporation</Authors>
+		<Authors>Devyus</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
 		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>

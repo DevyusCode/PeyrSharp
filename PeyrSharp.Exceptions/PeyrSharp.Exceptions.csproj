@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>PeyrSharp.Exceptions</Title>
     <Version>1.5.0.2304</Version>
-    <Company>Léo Corporation</Company>
+    <Company>Devyus</Company>
     <Description>Exceptions of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
     <PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
