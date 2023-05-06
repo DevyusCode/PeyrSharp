@@ -139,5 +139,12 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="n">The number of bits to convert.</param>
 		/// <returns>The number of bytes equivalent to n bits.</returns>
 		public static double BitsToBytes(double n) => n / 8;
+
+		/// <summary>
+		/// Converts a number of bytes to a number of bits.
+		/// </summary>
+		/// <param name="n">The number of bytes to convert.</param>
+		/// <returns>The number of bits equivalent to n bytes.</returns>
+		public static double BytesToBits(double n) => n * 8;
 	}
 }
