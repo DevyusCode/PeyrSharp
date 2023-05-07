@@ -22,41 +22,28 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp.Enums
+using PeyrSharp.Enums;
+
+namespace PeyrSharp.Core
 {
 	/// <summary>
-	/// Specifies the severity level of a log message.
+	/// Represents a class that can contain some basic info of a status code.
 	/// </summary>
-	public enum LogLevel
+	public class StatusInfo
 	{
 		/// <summary>
-		/// Debug-level messages provide verbose information for debugging purposes.
+		/// Gets or sets the status code that indicates the outcome of the request.
 		/// </summary>
-		Debug,
+		public int StatusCode { get; set; }
 
 		/// <summary>
-		/// Info-level messages provide informational messages about the application's state.
+		/// Gets or sets the status description that provides a human-readable message of the status code.
 		/// </summary>
-		Info,
+		public string StatusDescription { get; set; }
 
 		/// <summary>
-		/// Warning-level messages indicate a potential problem or non-critical issue.
+		/// Gets or sets the status type that categorizes the status code into informational, success, redirection, client error, or server error.
 		/// </summary>
-		Warning,
-
-		/// <summary>
-		/// Error-level messages indicate an error has occurred in the application.
-		/// </summary>
-		Error,
-
-		/// <summary>
-		/// Critical-level messages indicate a critical error has occurred that requires immediate attention.
-		/// </summary>
-		Critical,
-
-		/// <summary>
-		/// Misc-level messages are for miscellaneous use cases and are not defined in the logging specification.
-		/// </summary>
-		Misc
+		public StatusCodes StatusType { get; set; }
 	}
 }

@@ -1,7 +1,7 @@
 ﻿/*
 MIT License
 
-Copyright (c) Léo Corporation
+Copyright (c) Devyus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,12 +21,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PeyrSharp.Core.Converters
 {
@@ -90,5 +84,23 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="kilometersPerHour">The speed in kilometers per hour.</param>
 		/// <returns>The equivalent speed in miles per hour.</returns>
 		public static double KilometersPerHourToMilesPerHour(double kilometersPerHour) => kilometersPerHour / 1.60934;
+
+		/// <summary>
+		/// Converts a speed in mach to a speed in kilometers per hour.
+		/// </summary>
+		/// <param name="n">The speed in mach to convert.</param>
+		/// <returns>The speed in kilometers per hour equivalent to n mach.</returns>
+		public static double MachToKilometersPerHour(double n) =>
+			// Use the conversion formula: km/h = mach * 1234.8
+			n * 1234.8;
+		
+		/// <summary>
+		/// Converts a speed in mach to miles per hour.
+		/// </summary>
+		/// <param name="mach">The speed in mach.</param>
+		/// <returns>The speed in miles per hour.</returns>
+		public static double MachToMilesPerHour(double mach) =>
+			// One mach is equal to 767.269148 miles per hour
+			mach * 767.269148;
 	}
 }

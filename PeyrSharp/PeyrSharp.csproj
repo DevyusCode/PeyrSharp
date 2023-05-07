@@ -5,23 +5,24 @@
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
 		<Version>1.5.0.2304</Version>
-		<Authors>Léo Corporation</Authors>
+		<Authors>Devyus</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
 		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>math;password;guid;generators;core;geometry;environment;extensions;enumerations;exceptions;ui-helpers</PackageTags>
+		<PackageTags>
+			math;password;guid;generators;core;geometry;environment;extensions;enumerations;exceptions;ui-helpers</PackageTags>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageReleaseNotes>- Added the possibility to format the logged message (#89)
-- Added the LogLevel enumeration (#90)
-- Added the possibility to generate a log message depending on the LogLevel (#91)
-- Added Mean() extension method for int[] and double[] (#92)
-- Added Median() extension method for int[] and double[] (#93)
-- Added Mode() extension method for int[] and double[] (#94)</PackageReleaseNotes>
+			- Added the LogLevel enumeration (#90)
+			- Added the possibility to generate a log message depending on the LogLevel (#91)
+			- Added Mean() extension method for int[] and double[] (#92)
+			- Added Median() extension method for int[] and double[] (#93)
+			- Added Mode() extension method for int[] and double[] (#94)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -36,12 +37,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="PeyrSharp.Core" Version="1.5.0.2304" />
-	  <PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
-	  <PackageReference Include="PeyrSharp.Env" Version="1.5.0.2304" />
-	  <PackageReference Include="PeyrSharp.Exceptions" Version="1.5.0.2304" />
-	  <PackageReference Include="PeyrSharp.Extensions" Version="1.5.0.2304" />
-	  <PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Core" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Env" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Exceptions" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Extensions" Version="1.5.0.2304" />
+		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'"
+			Include="PeyrSharp.UiHelpers" Version="1.5.0.2304" />
 	</ItemGroup>
 
 </Project>

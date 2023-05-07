@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Leo-Corporation/PeyrSharp.git"
+    "url": "git+https://github.com/DevyusCode/PeyrSharp.git"
   },
   "keywords": [
     "docs"
   ],
-  "author": "Léo Corporation + contributors",
+  "author": "Devyus + contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Leo-Corporation/PeyrSharp/issues"
+    "url": "https://github.com/DevyusCode/PeyrSharp/issues"
   },
-  "homepage": "https://github.com/Leo-Corporation/PeyrSharp#readme",
+  "homepage": "https://github.com/DevyusCode/PeyrSharp#readme",
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.19",
     "vue": "^3.2.40"
