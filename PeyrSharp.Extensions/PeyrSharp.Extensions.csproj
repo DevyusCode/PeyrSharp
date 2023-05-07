@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp.Extensions</Title>
-		<Version>1.5.0.2304</Version>
+		<Version>1.6.0.2305</Version>
 		<Authors>Devyus</Authors>
 		<Description>Extensions methods of PeyrSharp.</Description>
 		<Copyright>© 2023</Copyright>
@@ -16,9 +16,7 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Added Mean() extension method for int[] and double[] (#92)
-			- Added Median() extension method for int[] and double[] (#93)
-			- Added Mode() extension method for int[] and double[] (#94)</PackageReleaseNotes>
+		<PackageReleaseNotes></PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,7 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="PeyrSharp.Enums" Version="1.5.0.2304" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.6.0.2305" />
 	</ItemGroup>
 
 </Project>
