@@ -252,6 +252,10 @@ function sidebar() {
           text: "Internet",
           link: "/core/internet",
         },
+        {
+          text: "StatusInfo",
+          link: "/core/statusinfo",
+        },
       ],
     },
     {

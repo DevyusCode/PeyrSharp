@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,Q as s}from"./chunks/framework.7addaa9c.js";const y=JSON.parse('{"title":"WPF","description":"","frontmatter":{},"headers":[],"relativePath":"ui-helpers/wpf.md","lastUpdated":1673177430000}'),o={name:"ui-helpers/wpf.md"},n=s("",13),r=[n];function l(i,d,p,c,h,m){return a(),t("div",null,r)}const u=e(o,[["render",l]]);export{y as __pageData,u as default};

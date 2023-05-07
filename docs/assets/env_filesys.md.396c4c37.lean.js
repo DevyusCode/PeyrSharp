@@ -1,1 +1,0 @@
-import{_ as a,c as s,o as e,Q as n}from"./chunks/framework.7addaa9c.js";const F=JSON.parse('{"title":"FileSys","description":"","frontmatter":{},"headers":[],"relativePath":"env/filesys.md","lastUpdated":1675590267000}'),t={name:"env/filesys.md"},o=n("",126),l=[o];function p(r,i,c,d,D,y){return e(),s("div",null,l)}const u=a(t,[["render",p]]);export{F as __pageData,u as default};

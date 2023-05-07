@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a,Q as r}from"./chunks/framework.7addaa9c.js";const u=JSON.parse('{"title":"UiHelpers","description":"","frontmatter":{},"headers":[],"relativePath":"ui-helpers.md","lastUpdated":1673177457000}'),s={name:"ui-helpers.md"},i=r("",7),o=[i];function l(d,h,p,n,c,m){return a(),e("div",null,o)}const f=t(s,[["render",l]]);export{u as __pageData,f as default};
