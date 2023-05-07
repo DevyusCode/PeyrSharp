@@ -1,18 +1,13 @@
 {
-    "**/*.cs": [
-        "/*",
-        "MIT License",
-        "",
-        "Copyright (c) Léo Corporation"
-    ],
-    "ignore": [
-        "**/*.Designer.cs",
-        "PeyrSharp/Properties/",
-        "PeyrSharp.Core/obj/",
-        "PeyrSharp.Enums/obj/",
-        "PeyrSharp.Exceptions/obj/",
-        "PeyrSharp.UiHelpers/obj/",
-        "PeyrSharp.Env/obj/",
-        "PeyrSharp/obj/"
-    ]
+  "**/*.cs": ["/*", "MIT License", "", "Copyright (c) Devyus"],
+  "ignore": [
+    "**/*.Designer.cs",
+    "PeyrSharp/Properties/",
+    "PeyrSharp.Core/obj/",
+    "PeyrSharp.Enums/obj/",
+    "PeyrSharp.Exceptions/obj/",
+    "PeyrSharp.UiHelpers/obj/",
+    "PeyrSharp.Env/obj/",
+    "PeyrSharp/obj/"
+  ]
 }

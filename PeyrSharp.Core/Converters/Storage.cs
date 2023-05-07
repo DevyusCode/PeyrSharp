@@ -1,7 +1,7 @@
 ﻿/*
 MIT License
 
-Copyright (c) Léo Corporation
+Copyright (c) Devyus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -132,5 +132,19 @@ namespace PeyrSharp.Core.Converters
 			StorageUnits.Petabyte => value,// Convert and return value
 			_ => value,// Convert and return value
 		};
+
+		/// <summary>
+		/// Converts a number of bits to a number of bytes.
+		/// </summary>
+		/// <param name="n">The number of bits to convert.</param>
+		/// <returns>The number of bytes equivalent to n bits.</returns>
+		public static double BitsToBytes(double n) => n / 8;
+
+		/// <summary>
+		/// Converts a number of bytes to a number of bits.
+		/// </summary>
+		/// <param name="n">The number of bytes to convert.</param>
+		/// <returns>The number of bits equivalent to n bytes.</returns>
+		public static double BytesToBits(double n) => n * 8;
 	}
 }

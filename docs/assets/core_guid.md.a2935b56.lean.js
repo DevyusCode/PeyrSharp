@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as s,Q as t}from"./chunks/framework.7addaa9c.js";const m=JSON.parse('{"title":"GuidGen","description":"","frontmatter":{},"headers":[],"relativePath":"core/guid.md","lastUpdated":1665311928000}'),n={name:"core/guid.md"},o=t("",43),l=[o];function r(i,c,p,d,h,u){return s(),e("div",null,l)}const y=a(n,[["render",r]]);export{m as __pageData,y as default};

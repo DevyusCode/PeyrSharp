@@ -1,7 +1,7 @@
 ﻿/*
 MIT License
 
-Copyright (c) Léo Corporation
+Copyright (c) Devyus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -47,6 +47,17 @@ namespace PeyrSharp.Core
 		/// <param name="url">The URL where to send the request.</param>
 		/// <returns>The status description of the specified URL.</returns>
 		public static async Task<string> GetStatusDescriptionAsync(string url) => (await new HttpClient().GetAsync(url)).ReasonPhrase;
+
+		/// <summary>
+		/// Gets the status info of a URL by sending an HTTP GET request and returning a <see cref="StatusInfo"/> object.
+		/// </summary>
+		/// <param name="url">The URL to get the status info from.</param>
+		/// <returns>A <see cref="StatusInfo"/> object that contains the status code, description, and type of the URL.</returns>
+		public static async Task<StatusInfo> GetStatusInfoAsync(string url)
+		{
+			var response = await new HttpClient().GetAsync(url);
+			return new StatusInfo() { StatusCode = (int)response.StatusCode, StatusDescription = response.ReasonPhrase, StatusType = GetStatusCodeType((int)response.StatusCode) };
+		}
 
 		/// <summary>
 		/// Checks if a connection to the Internet is available.

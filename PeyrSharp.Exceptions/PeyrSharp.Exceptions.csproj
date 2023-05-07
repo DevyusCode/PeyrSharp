@@ -6,12 +6,12 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>PeyrSharp.Exceptions</Title>
-    <Version>1.5.0.2304</Version>
-    <Company>Léo Corporation</Company>
+    <Version>1.6.0.2305</Version>
+    <Company>Devyus</Company>
     <Description>Exceptions of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
     <PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Leo-Corporation/PeyrSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageTags>exceptions;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>

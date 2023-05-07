@@ -1,7 +1,7 @@
 ﻿/*
 MIT License
 
-Copyright (c) Léo Corporation
+Copyright (c) Devyus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -32,6 +32,6 @@ namespace PeyrSharp
 		/// <summary>
 		/// The current version of PeyrSharp.
 		/// </summary>
-		public static string Version => "1.5.0.2304";
+		public static string Version => "1.6.0.2305";
 	}
 }
