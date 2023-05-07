@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.6.0.2305-pre1</Version>
+    <Version>1.6.0.2305-rc1</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -18,7 +18,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>- Added a method to convert bits to bytes (#100)
 - Added a method to convert bytes to bits (#101)
-- Added a method to convert mach to km/h (#102)</PackageReleaseNotes>
+- Added a method to convert mach to km/h (#102)
+- Added a method to convert mach to miles/h (#103)
+- Added a StatusInfo class (#104)
+- Added a method that gets the status info of a URL (#105)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
