@@ -22,9 +22,9 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: download
-  multiple: true
+  id: module 
   attributes:
+    multiple: true
     label: Which module of the library is impacted?
     options:
       - Core
