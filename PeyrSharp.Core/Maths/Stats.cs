@@ -142,5 +142,22 @@ namespace PeyrSharp.Core.Maths
 
 			return max - min;
 		}
+
+		/// <summary>
+		/// Calculates the sample variance of a list of double values.
+		/// </summary>
+		/// <param name="values">The list of double values.</param>
+		/// <returns>The sample variance of the list of double values.</returns>
+		public static double Variance(List<double> values)
+		{
+			double mean = values.Average();
+			double variance = 0;
+			for (int i = 0; i < values.Count; i++)
+			{
+				variance += Math.Pow((values[i] - mean), 2);
+			}
+			int n = values.Count;
+			return variance / (n - 1);
+		}
 	}
 }
