@@ -111,5 +111,36 @@ namespace PeyrSharp.Core.Maths
 			return frequencyGroups.First().Key;
 		}
 
+		/// <summary>
+		/// Calculates the range of a list of double numbers.
+		/// </summary>
+		/// <param name="numbers">The list of double numbers.</param>
+		/// <returns>The range of the list of double numbers.</returns>
+		/// <exception cref="ArgumentException">Thrown when the list is null or empty.</exception>
+		public static double Range(this List<double> numbers)
+		{
+			if (numbers == null || numbers.Count == 0)
+			{
+				throw new ArgumentException("The list cannot be null or empty.");
+			}
+
+			double min = numbers[0];
+			double max = numbers[0];
+
+			for (int i = 1; i < numbers.Count; i++)
+			{
+				if (numbers[i] < min)
+				{
+					min = numbers[i];
+				}
+
+				if (numbers[i] > max)
+				{
+					max = numbers[i];
+				}
+			}
+
+			return max - min;
+		}
 	}
 }
