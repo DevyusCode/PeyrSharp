@@ -48,6 +48,7 @@ The reference of PeyrSharp.
 - [Logger](/env/logger.md)
 - [System](/env/system.md)
 - [Update](/env/update.md)
+- [UwpApp](/env/uwpapp.md)
 
 ## PeyrSharp.Enums
 

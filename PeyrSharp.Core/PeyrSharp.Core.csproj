@@ -17,9 +17,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>- Added Range() method in Stats (#117)
-- Added Variance() method in Stats (#118)
-- Added StandardDeviation() method in Stats (#119)
-- Improved exceptions
+      - Added Variance() method in Stats (#118)
+      - Added StandardDeviation() method in Stats (#119)
+      - Improved exceptions
     </PackageReleaseNotes>
   </PropertyGroup>
 
