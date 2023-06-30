@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.7.0.2307-pre1</Version>
+    <Version>1.7.0.2307-rc1</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -18,6 +18,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>- Added Range() method in Stats (#117)
 - Added Variance() method in Stats (#118)
+- Added StandardDeviation() method in Stats (#119)
 - Improved exceptions
     </PackageReleaseNotes>
   </PropertyGroup>
