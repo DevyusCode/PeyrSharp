@@ -16,7 +16,8 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>- Fixed IsAvailableAsync() crashes when no internet connection is available (#112)</PackageReleaseNotes>
+    <PackageReleaseNotes>- Fixed IsAvailableAsync() crashes when no internet connection is available
+      (#112)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

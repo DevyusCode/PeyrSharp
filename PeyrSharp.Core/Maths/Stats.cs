@@ -44,7 +44,7 @@ namespace PeyrSharp.Core.Maths
 			// Check for empty input
 			if (values.Count == 0)
 			{
-				throw new ArgumentException("Cannot calculate mean of empty dataset", "values");
+				throw new ArgumentException("Cannot calculate mean of empty dataset", nameof(values));
 			}
 
 			// Calculate sum of values
@@ -67,7 +67,7 @@ namespace PeyrSharp.Core.Maths
 			// Check for empty input
 			if (values.Count == 0)
 			{
-				throw new ArgumentException("Cannot calculate median of empty dataset", "values");
+				throw new ArgumentException("Cannot calculate median of empty dataset", nameof(values));
 			}
 
 			// Sort values
@@ -101,7 +101,7 @@ namespace PeyrSharp.Core.Maths
 			// Check for empty input
 			if (values.Count == 0)
 			{
-				throw new ArgumentException("Cannot calculate mode of empty dataset", "values");
+				throw new ArgumentException("Cannot calculate mode of empty dataset", nameof(values));
 			}
 
 			// Group values by frequency
@@ -111,5 +111,59 @@ namespace PeyrSharp.Core.Maths
 			return frequencyGroups.First().Key;
 		}
 
+		/// <summary>
+		/// Calculates the range of a list of double numbers.
+		/// </summary>
+		/// <param name="numbers">The list of double numbers.</param>
+		/// <returns>The range of the list of double numbers.</returns>
+		/// <exception cref="ArgumentException">Thrown when the list is null or empty.</exception>
+		public static double Range(this List<double> numbers)
+		{
+			if (numbers == null || numbers.Count == 0)
+			{
+				throw new ArgumentException("The list cannot be null or empty.", nameof(numbers));
+			}
+
+			double min = numbers[0];
+			double max = numbers[0];
+
+			for (int i = 1; i < numbers.Count; i++)
+			{
+				if (numbers[i] < min)
+				{
+					min = numbers[i];
+				}
+
+				if (numbers[i] > max)
+				{
+					max = numbers[i];
+				}
+			}
+
+			return max - min;
+		}
+
+		/// <summary>
+		/// Calculates the sample variance of a list of double values.
+		/// </summary>
+		/// <param name="values">The list of double values.</param>
+		/// <returns>The sample variance of the list of double values.</returns>
+		/// <exception cref="ArgumentException">Thrown when the list is null or empty.</exception>
+		public static double Variance(List<double> values)
+		{
+			if (values == null || values.Count == 0)
+			{
+				throw new ArgumentException("The list cannot be null or empty.", nameof(values));
+			}
+
+			double mean = values.Average();
+			double variance = 0;
+			for (int i = 0; i < values.Count; i++)
+			{
+				variance += Math.Pow((values[i] - mean), 2);
+			}
+			int n = values.Count;
+			return variance / (n - 1);
+		}
 	}
 }
