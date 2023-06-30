@@ -149,6 +149,10 @@ function envSidebar() {
           text: "Update",
           link: "/env/update",
         },
+        {
+          text: "UwpApp",
+          link: "/env/uwpapp",
+        },
       ],
     },
   ];
