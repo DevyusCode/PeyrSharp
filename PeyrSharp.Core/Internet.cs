@@ -64,13 +64,33 @@ namespace PeyrSharp.Core
 		/// </summary>
 		/// <param name="url">The page where to check if Internet is available.</param>
 		/// <returns><see langword="true"/> if the Internet can be reach.</returns>
-		public static async Task<bool> IsAvailableAsync(string url) => await GetStatusCodeAsync(url) != 400;
+		public static async Task<bool> IsAvailableAsync(string url)
+		{
+			try
+			{
+				return await GetStatusCodeAsync(url) != 400;
+			}
+			catch
+			{
+				return false; // An excpetion has been thrown likely because the client couldn't resolve the host.
+			}
+		}
 
 		/// <summary>
 		/// Checks if a connection to the Internet is available.
 		/// </summary>
 		/// <returns><see langword="true"/> if the Internet can be reach.</returns>
-		public static async Task<bool> IsAvailableAsync() => await GetStatusCodeAsync("https://www.bing.com") != 400;
+		public static async Task<bool> IsAvailableAsync()
+		{
+			try
+			{
+				return await GetStatusCodeAsync("https://www.bing.com") != 400;
+			}
+			catch
+			{
+				return false; // An excpetion has been thrown likely because the client couldn't resolve the host.
+			}
+		}
 
 		/// <summary>
 		/// Gets the kind of the status code.
