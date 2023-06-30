@@ -165,5 +165,20 @@ namespace PeyrSharp.Core.Maths
 			int n = values.Count;
 			return variance / (n - 1);
 		}
+
+		/// <summary>
+		/// Calculates the standard deviation of a list of double numbers.
+		/// </summary>
+		/// <param name="values">The list of double numbers.</param>
+		/// <returns>The standard deviation of the list of double numbers.</returns>
+		/// <exception cref="ArgumentException">Thrown when the list is null or empty.</exception>
+		public static double StandardDeviation(List<double> values)
+		{
+			if (values == null || values.Count == 0)
+			{
+				throw new ArgumentException("The list cannot be null or empty.", nameof(values));
+			}
+			return Math.Sqrt(Variance(values));
+		}
 	}
 }

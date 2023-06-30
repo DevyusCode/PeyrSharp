@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.6.1.2305</Version>
+    <Version>1.7.0.2307</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -16,8 +16,11 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>- Fixed IsAvailableAsync() crashes when no internet connection is available
-      (#112)</PackageReleaseNotes>
+    <PackageReleaseNotes>- Added Range() method in Stats (#117)
+- Added Variance() method in Stats (#118)
+- Added StandardDeviation() method in Stats (#119)
+- Improved exceptions
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,8 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="1.6.1.2305" />
-    <PackageReference Include="PeyrSharp.Exceptions" Version="1.6.1.2305" />
+    <PackageReference Include="PeyrSharp.Enums" Version="1.7.0.2307" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="1.7.0.2307" />
   </ItemGroup>
 
 </Project>

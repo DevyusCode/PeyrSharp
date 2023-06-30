@@ -22,16 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
 
-namespace PeyrSharp
+namespace PeyrSharp.Env
 {
 	/// <summary>
-	/// About PeyrSharp
+	/// Represents a smplified version of an UWP app object.
 	/// </summary>
-	public static class PeyrSharp
-	{
-		/// <summary>
-		/// The current version of PeyrSharp.
-		/// </summary>
-		public static string Version => "1.7.0.2307";
-	}
+	/// <param name="Name">The name of the UWP app.</param>
+	/// <param name="AppID">The App ID in the Package Family Name property.</param>
+	public record UwpApp(string Name, string AppID);
 }
