@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0;net5.0-windows;net6.0-windows;net7.0;net7.0-windows</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
-		<Version>1.6.1.2305</Version>
+		<Version>1.7.0.2307</Version>
 		<Authors>Devyus</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
@@ -32,12 +32,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="PeyrSharp.Core" Version="1.6.1.2305" />
-		<PackageReference Include="PeyrSharp.Enums" Version="1.6.1.2305" />
-		<PackageReference Include="PeyrSharp.Env" Version="1.6.1.2305" />
-		<PackageReference Include="PeyrSharp.Exceptions" Version="1.6.1.2305" />
-		<PackageReference Include="PeyrSharp.Extensions" Version="1.6.1.2305" />
-		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.6.1.2305" />
+		<PackageReference Include="PeyrSharp.Core" Version="1.7.0.2307" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.7.0.2307" />
+		<PackageReference Include="PeyrSharp.Env" Version="1.7.0.2307" />
+		<PackageReference Include="PeyrSharp.Exceptions" Version="1.7.0.2307" />
+		<PackageReference Include="PeyrSharp.Extensions" Version="1.7.0.2307" />
+		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.7.0.2307" />
 	</ItemGroup>
 
 </Project>

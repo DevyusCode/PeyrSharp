@@ -11,7 +11,7 @@
 		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
 		<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
-		<Version>1.6.1.2305</Version>
+		<Version>1.7.0.2307</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
