@@ -30,6 +30,9 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using System.Text.Json;
+using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PeyrSharp.Env
 {
@@ -247,6 +250,53 @@ namespace PeyrSharp.Env
 			{
 				return false;
 			}
+		}
+
+		/// <summary>
+		/// Retrieves a list of UWP (Universal Windows Platform) apps asynchronously.
+		/// </summary>
+		/// <remarks>Only works on Windows 10 and higher.</remarks>
+		/// <returns>A task that represents the asynchronous operation. The task result contains a list of UwpApp objects representing the UWP apps.</returns>
+		/// <exception cref="FileNotFoundException"></exception>
+		/// <exception cref="Win32Exception"></exception>
+		[SupportedOSPlatform("windows")]
+		public static async Task<List<UwpApp>> GetUwpAppsAsync()
+		{
+			ProcessStartInfo pInfo = new()
+			{
+				FileName = "powershell.exe",
+				Arguments = @"& Get-StartApps | ConvertTo-Json > $env:appdata\UwpApps.json",
+				UseShellExecute = true,
+				CreateNoWindow = true
+			};
+
+			Process process = new() { StartInfo = pInfo };
+			process.Start();
+			await process.WaitForExitAsync();
+
+			string appsFile = await File.ReadAllTextAsync($@"{FileSys.AppDataPath}\UWPapps.json");
+			List<UwpApp> apps = JsonSerializer.Deserialize<List<UwpApp>>(appsFile); // Get apps
+			List<UwpApp> sortedApps = new(); // Create final list
+			Dictionary<UwpApp, string> uwpApps = new(); // Create a dictionnary
+
+			// Sort apps to only have UWP apps (they have a "!" in the AppID property)
+			for (int i = 0; i < apps.Count; i++)
+			{
+				if (apps[i].AppID.Contains('!'))
+				{
+					uwpApps.Add(apps[i], apps[i].Name);
+				}
+			}
+
+			// Sort alphabetically
+			var sorted = from pair in uwpApps orderby pair.Value ascending select pair; // Sort
+
+			foreach (KeyValuePair<UwpApp, string> pair1 in sorted)
+			{
+				sortedApps.Add(pair1.Key);
+			}
+
+			return sortedApps; // Return
 		}
 	}
 }
