@@ -34,6 +34,48 @@ namespace PeyrSharp.Core
 {
 	public static class XmlHelper
 	{
+		public static T? LoadFromXml<T>(string path) where T : new()
+		{
+			try
+			{
+				// Check if the file exists
+				if (File.Exists(path))
+				{
+					// Create an XmlSerializer for type T
+					XmlSerializer serializer = new(typeof(T));
+
+					// Create a StreamReader to read from the file
+					using StreamReader reader = new(path);
+
+					// Deserialize the object from the file
+					T obj = (T)serializer.Deserialize(reader);
+
+					// Return the object
+					return obj;
+				}
+				else
+				{
+					Directory.CreateDirectory(Path.GetDirectoryName(path));
+					// Create a new instance of type T
+					T obj = new();
+
+					// Save the object to the file using the SaveToXml method
+					SaveToXml(obj, path);
+
+					// Return the object
+					return obj;
+				}
+			}
+			catch (Exception ex)
+			{
+				// Handle the exception
+				Console.WriteLine("An error occurred: " + ex.Message);
+
+				// Return null if an exception is thrown
+				return default;
+			}
+		}
+
 		public static bool SaveToXml<T>(T obj, string path)
 		{
 			// Create an XmlSerializer for type T
