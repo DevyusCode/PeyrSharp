@@ -32,8 +32,23 @@ using System.Xml.Serialization;
 
 namespace PeyrSharp.Core
 {
+	/// <summary>
+	/// Provides helper methods for loading and saving objects to/from XML files.
+	/// </summary>
 	public static class XmlHelper
 	{
+		/// <summary>
+		/// Loads an object of type T from an XML file at the specified path.
+		/// If the file does not exist, a new instance of type T will be created
+		/// and saved to the file using the SaveToXml method before returning it.
+		/// </summary>
+		/// <typeparam name="T">The type of object to be loaded.</typeparam>
+		/// <param name="path">The path of the XML file to load or create.</param>
+		/// <returns>
+		/// The loaded object of type T if the file exists and can be deserialized successfully,
+		/// or a new instance of type T if the file does not exist and can be created and saved successfully.
+		/// If an exception occurs during loading or saving, the method returns <see langword="null"/>.
+		/// </returns>
 		public static T? LoadFromXml<T>(string path) where T : new()
 		{
 			try
@@ -76,6 +91,13 @@ namespace PeyrSharp.Core
 			}
 		}
 
+		/// <summary>
+		/// Saves the specified object of type T to an XML file at the specified path.
+		/// </summary>
+		/// <typeparam name="T">The type of object to be saved.</typeparam>
+		/// <param name="obj">The object to be saved.</param>
+		/// <param name="path">The path of the XML file to save the object.</param>
+		/// <returns><see langword="true"/> if the object is successfully serialized and saved to the file; otherwise, <see langword="false"/>.</returns>
 		public static bool SaveToXml<T>(T obj, string path)
 		{
 			// Create an XmlSerializer for type T
