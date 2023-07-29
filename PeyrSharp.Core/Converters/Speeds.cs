@@ -93,7 +93,7 @@ namespace PeyrSharp.Core.Converters
 		public static double MachToKilometersPerHour(double n) =>
 			// Use the conversion formula: km/h = mach * 1234.8
 			n * 1234.8;
-		
+
 		/// <summary>
 		/// Converts a speed in mach to miles per hour.
 		/// </summary>

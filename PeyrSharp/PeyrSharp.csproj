@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0;net5.0-windows;net6.0-windows;net7.0;net7.0-windows</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
-		<Version>1.7.0.2307</Version>
+		<Version>1.8.0.2308</Version>
 		<Authors>Devyus</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
@@ -17,7 +17,10 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Fixed IsAvailableAsync() crashes when no internet connection is available (#112)</PackageReleaseNotes>
+		<PackageReleaseNotes>- Added Save() method in XmlHelper (#126)
+- Added Load() method in XmlHelper (#127)
+- Added Save() method in JsonHelper (#128)
+- Added Load() method in JsonHelper (#129)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -32,12 +35,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="PeyrSharp.Core" Version="1.7.0.2307" />
-		<PackageReference Include="PeyrSharp.Enums" Version="1.7.0.2307" />
-		<PackageReference Include="PeyrSharp.Env" Version="1.7.0.2307" />
-		<PackageReference Include="PeyrSharp.Exceptions" Version="1.7.0.2307" />
-		<PackageReference Include="PeyrSharp.Extensions" Version="1.7.0.2307" />
-		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.7.0.2307" />
+		<PackageReference Include="PeyrSharp.Core" Version="1.8.0.2308" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.8.0.2308" />
+		<PackageReference Include="PeyrSharp.Env" Version="1.8.0.2308" />
+		<PackageReference Include="PeyrSharp.Exceptions" Version="1.8.0.2308" />
+		<PackageReference Include="PeyrSharp.Extensions" Version="1.8.0.2308" />
+		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.8.0.2308" />
 	</ItemGroup>
 
 </Project>

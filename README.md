@@ -54,6 +54,8 @@ PeyrSharp is divided in multiple packages:
 - Converters
 - Internet
 - Crypt
+- XmlHelper
+- JsonHelper
 
 </details>
 
@@ -64,8 +66,9 @@ PeyrSharp is divided in multiple packages:
 
 - FileSys
 - Logger
-- Update
 - System
+- Update
+- UwpApp
 
 </details>
 
