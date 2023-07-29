@@ -4,7 +4,7 @@
     <TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>1.8.0.2308-pre1</Version>
+    <Version>1.8.0.2308-rc1</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -17,7 +17,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>- Added Save() method in XmlHelper (#126)
-- Added Load() method in XmlHelper (#127)</PackageReleaseNotes>
+- Added Load() method in XmlHelper (#127)
+- Added Save() method in JsonHelper (#128)
+- Added Load() method in JsonHelper (#129)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
