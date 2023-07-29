@@ -32,8 +32,17 @@ using System.Threading.Tasks;
 
 namespace PeyrSharp.Core
 {
+	/// <summary>
+	/// A helper class for working with JSON files.
+	/// </summary>
 	public static class JsonHelper
 	{
+		/// <summary>
+		/// Saves an object as a JSON file.
+		/// </summary>
+		/// <typeparam name="T">The type of the object to save.</typeparam>
+		/// <param name="obj">The object to save.</param>
+		/// <param name="fileName">The name of the file to save to.</param>
 		public static void SaveAsJson<T>(T obj, string fileName)
 		{
 			// Convert the object to a JSON string
@@ -43,6 +52,12 @@ namespace PeyrSharp.Core
 			File.WriteAllText(fileName, json);
 		}
 
+		/// <summary>
+		/// Loads an object from a JSON file.
+		/// </summary>
+		/// <typeparam name="T">The type of the object to load.</typeparam>
+		/// <param name="fileName">The name of the file to load from.</param>
+		/// <returns>The object loaded from the file.</returns>
 		public static T LoadFromJson<T>(string fileName)
 		{
 			// Read the JSON string from the file
