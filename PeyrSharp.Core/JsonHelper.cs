@@ -43,5 +43,16 @@ namespace PeyrSharp.Core
 			File.WriteAllText(fileName, json);
 		}
 
+		public static T LoadFromJson<T>(string fileName)
+		{
+			// Read the JSON string from the file
+			string json = File.ReadAllText(fileName);
+
+			// Convert the JSON string to an object of type T
+			T obj = JsonSerializer.Deserialize<T>(json);
+
+			// Return the object
+			return obj;
+		}
 	}
 }
