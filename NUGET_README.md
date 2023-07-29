@@ -42,8 +42,9 @@ PeyrSharp is divided in multiple packages:
 
 - FileSys
 - Logger
-- Update
 - System
+- Update
+- UwpApp
 
 **PeyrSharp.Enums**, all enumerations used by PeyrSharp
 

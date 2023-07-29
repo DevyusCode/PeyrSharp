@@ -66,8 +66,9 @@ PeyrSharp is divided in multiple packages:
 
 - FileSys
 - Logger
-- Update
 - System
+- Update
+- UwpApp
 
 </details>
 
