@@ -249,6 +249,20 @@ function sidebar() {
       ],
     },
     {
+      text: "Helpers",
+      collapsed: false,
+      items: [
+        {
+          text: "JsonHelper",
+          link: "/core/json-helper",
+        },
+        {
+          text: "XmlHelper",
+          link: "/core/xml-helper",
+        },
+      ],
+    },
+    {
       text: "Internet",
       collapsed: false,
       items: [
