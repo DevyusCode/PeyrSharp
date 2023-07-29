@@ -22,6 +22,7 @@ The reference of PeyrSharp.
 - [GuidGen](/core/guid)
 - [GuidOptions](/core/guid-options)
 - [Internet](/core/internet.md)
+- [JsonHelper](/core/json-helper.md)
 - [Maths](/core/maths.md)
   - [Algebra](/core/maths/algebra.md)
   - [Geometry](/core/maths/geometry)
@@ -40,6 +41,7 @@ The reference of PeyrSharp.
   - [Trigonometry](/core/maths/trigonometry.md)
 - [Password](/core/password)
 - [StatusInfo](/core/statusinfo.md)
+- [XmlHelper](/core/xml-helper.md)
 
 ## PeyrSharp.Env
 
