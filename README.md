@@ -54,6 +54,8 @@ PeyrSharp is divided in multiple packages:
 - Converters
 - Internet
 - Crypt
+- XmlHelper
+- JsonHelper
 
 </details>
 
