@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
+using Microsoft.Win32;
 using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
@@ -240,6 +241,28 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <returns>The name of the current computer.</returns>
 		public static string ComputerName => Environment.MachineName;
+
+		/// <summary>
+		/// Gets the current theme. Only works on Windows 10/11.
+		/// </summary>
+		[SupportedOSPlatform("windows")]
+		public static SystemThemes CurrentTheme
+		{
+			get
+			{
+				if (CurrentWindowsVersion != WindowsVersion.Windows10 && CurrentWindowsVersion != WindowsVersion.Windows11)
+				{
+					return SystemThemes.Unknown; // Avoid errors on older OSs
+				}
+				var t = Registry.GetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "SystemUsesLightTheme", "1");
+				return t switch
+				{
+					0 => SystemThemes.Dark,
+					1 => SystemThemes.Light,
+					_ => SystemThemes.Unknown
+				}; // Return
+			}
+		}
 
 		/// <summary>
 		/// Terminates a process with the specified process ID.
