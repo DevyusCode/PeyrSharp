@@ -23,10 +23,8 @@ SOFTWARE.
 */
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace PeyrSharp.UiHelpers
 {
@@ -41,13 +39,13 @@ namespace PeyrSharp.UiHelpers
 		/// <returns>A list of <see cref="WindowInfo"/> objects representing the visible windows.</returns>
 		public static List<WindowInfo> GetWindows()
 		{
-			List<WindowInfo> windowList = new List<WindowInfo>();
+			List<WindowInfo> windowList = new();
 			EnumWindows((hWnd, lParam) =>
 			{
 				if (IsWindowVisible(hWnd))
 				{
-					StringBuilder titleBuilder = new StringBuilder(256);
-					StringBuilder classNameBuilder = new StringBuilder(256);
+					StringBuilder titleBuilder = new(256);
+					StringBuilder classNameBuilder = new(256);
 
 					GetWindowText(hWnd, titleBuilder, titleBuilder.Capacity);
 					GetClassName(hWnd, classNameBuilder, classNameBuilder.Capacity);
