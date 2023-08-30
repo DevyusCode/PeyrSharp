@@ -150,6 +150,7 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <param name="packageFamilyName">The <c>PackageFamilyName</c> property.</param>
 		/// <param name="applicationID">The <c>Application Id</c> property in the UWP <c>AppxManifest.xml</c> file.</param>
+		[SupportedOSPlatform("windows")]
 		public static void LaunchUWPApp(string packageFamilyName, string applicationID)
 		{
 			Process.Start("explorer.exe", $@"shell:appsFolder\{packageFamilyName}!{applicationID}"); // Synthax to launch UWP apps
@@ -159,6 +160,7 @@ namespace PeyrSharp.Env
 		/// Launches an UWP application using information from a <see cref="UwpApp"/> object.
 		/// </summary>
 		/// <param name="uwpApp">The UWP application to launch.</param>
+		[SupportedOSPlatform("windows")]
 		public static void LaunchUWPApp(UwpApp uwpApp)
 		{
 			string[] info = uwpApp.AppID.Split("!");
