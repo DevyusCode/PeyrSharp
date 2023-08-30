@@ -156,6 +156,16 @@ namespace PeyrSharp.Env
 		}
 
 		/// <summary>
+		/// Launches an UWP application using information from a <see cref="UwpApp"/> object.
+		/// </summary>
+		/// <param name="uwpApp">The UWP application to launch.</param>
+		public static void LaunchUWPApp(UwpApp uwpApp)
+		{
+			string[] info = uwpApp.AppID.Split("!");
+			LaunchUWPApp(info[0], info[1]);
+		}
+
+		/// <summary>
 		/// Executes a program in administrator mode.
 		/// </summary>
 		/// <param name="process">The process to launch as admin.</param>
