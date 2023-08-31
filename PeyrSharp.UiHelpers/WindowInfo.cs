@@ -21,17 +21,29 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
+using System;
 
-namespace PeyrSharp
+namespace PeyrSharp.UiHelpers
 {
 	/// <summary>
-	/// About PeyrSharp
+	/// Represents information about a window.
 	/// </summary>
-	public static class PeyrSharp
+	public class WindowInfo
 	{
 		/// <summary>
-		/// The current version of PeyrSharp.
+		/// Gets or sets the handle of the window.
 		/// </summary>
-		public static string Version => "1.9.0.2309";
+		public IntPtr Handle { get; set; }
+
+		/// <summary>
+		/// Gets or sets the name of the window.
+		/// </summary>
+		public string Name { get; set; }
+
+		/// <summary>
+		/// Gets or sets the class name of the window.
+		/// </summary>
+		public string ClassName { get; set; }
 	}
+
 }

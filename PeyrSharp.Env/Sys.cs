@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 */
+using Microsoft.Win32;
 using PeyrSharp.Enums;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,6 @@ using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace PeyrSharp.Env
 {
@@ -150,9 +150,21 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <param name="packageFamilyName">The <c>PackageFamilyName</c> property.</param>
 		/// <param name="applicationID">The <c>Application Id</c> property in the UWP <c>AppxManifest.xml</c> file.</param>
+		[SupportedOSPlatform("windows")]
 		public static void LaunchUWPApp(string packageFamilyName, string applicationID)
 		{
 			Process.Start("explorer.exe", $@"shell:appsFolder\{packageFamilyName}!{applicationID}"); // Synthax to launch UWP apps
+		}
+
+		/// <summary>
+		/// Launches an UWP application using information from a <see cref="UwpApp"/> object.
+		/// </summary>
+		/// <param name="uwpApp">The UWP application to launch.</param>
+		[SupportedOSPlatform("windows")]
+		public static void LaunchUWPApp(UwpApp uwpApp)
+		{
+			string[] info = uwpApp.AppID.Split("!");
+			LaunchUWPApp(info[0], info[1]);
 		}
 
 		/// <summary>
@@ -228,6 +240,28 @@ namespace PeyrSharp.Env
 		/// </summary>
 		/// <returns>The name of the current computer.</returns>
 		public static string ComputerName => Environment.MachineName;
+
+		/// <summary>
+		/// Gets the current theme. Only works on Windows 10/11.
+		/// </summary>
+		[SupportedOSPlatform("windows")]
+		public static SystemThemes CurrentTheme
+		{
+			get
+			{
+				if (CurrentWindowsVersion != WindowsVersion.Windows10 && CurrentWindowsVersion != WindowsVersion.Windows11)
+				{
+					return SystemThemes.Unknown; // Avoid errors on older OSs
+				}
+				var t = Registry.GetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "SystemUsesLightTheme", "1");
+				return t switch
+				{
+					0 => SystemThemes.Dark,
+					1 => SystemThemes.Light,
+					_ => SystemThemes.Unknown
+				}; // Return
+			}
+		}
 
 		/// <summary>
 		/// Terminates a process with the specified process ID.
