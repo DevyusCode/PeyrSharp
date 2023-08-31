@@ -196,7 +196,7 @@ namespace PeyrSharp.Extensions
 		/// Uppercases the first letter of a string.
 		/// </summary>
 		/// <param name="s">The string to capitalize.</param>
-		/// <returns>The input string with the first letter uppercased.</returns>
+		/// <returns>The input string with the first letter lowercased.</returns>
 		public static string ToLowerAt(this string s) => string.IsNullOrEmpty(s) ? s : char.ToLower(s[0]) + s[1..];
 
 		/// <summary>
