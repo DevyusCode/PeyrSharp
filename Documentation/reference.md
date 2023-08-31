@@ -73,4 +73,6 @@ The reference of PeyrSharp.
 - [Home](ui-helpers.md)
 - [Screen](/ui-helpers/screen.md)
 - [WinForms](/ui-helpers/winforms.md)
+- [WindowHelpers](/ui-helpers/windowhelpers.md)
+- [WindowInfo](/ui-helpers/windowinfo.md)
 - [WPF](/ui-helpers/wpf.md)

@@ -385,6 +385,14 @@ function uiHelpersSidebar() {
           link: "/ui-helpers/winforms",
         },
         {
+          text: "WindowHelpers",
+          link: "/ui-helpers/windowhelpers",
+        },
+        {
+          text: "WindowInfo",
+          link: "/ui-helpers/windowinfo",
+        },
+        {
           text: "WPF",
           link: "/ui-helpers/wpf",
         },

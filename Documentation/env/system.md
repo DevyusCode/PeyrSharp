@@ -110,6 +110,29 @@ using PeyrSharp.Env;
 Sys.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App"); // Launch Minecraft UWP
 ```
 
+### LaunchUWPApp(uwpApp)
+
+#### Definition
+
+Launches a UWP application using information from a [`UwpApp`](uwpapp.md) object.
+
+::: warning
+This method only works on Windows.
+:::
+
+#### Arguments
+
+| Type     | Name     | Meaning                        |
+| -------- | -------- | ------------------------------ |
+| `UwpApp` | `uwpApp` | The UWP application to launch. |
+
+#### Usage
+
+```c#
+using PeyrSharp.Env;
+Sys.LaunchUWPApp(myApp);
+```
+
 ### IsProcessRunning(processName)
 
 #### Definition
@@ -276,6 +299,41 @@ using PeyrSharp.Env;
 if (Sys.IsDarkThemeSupported)
 {
     Console.WriteLine("You are running Windows 10 or higher.");
+}
+```
+
+### CurrentTheme
+
+#### Definition
+
+```c#
+[SupportedOSPlatform("windows")]
+public static SystemThemes CurrentTheme { get; }
+```
+
+Gets the current theme. Returns a [`SystemThemes`](/enumerations.md#systemthemes) value. You can only `get` this property.
+
+::: warning
+This property only works on Windows 10/11.
+:::
+
+#### Usage
+
+```c#
+using Microsoft.Win32;
+using PeyrSharp.Env;
+
+if (Sys.CurrentTheme == SystemThemes.Light)
+{
+    Console.WriteLine("The current theme is light.");
+}
+else if (Sys.CurrentTheme == SystemThemes.Dark)
+{
+    Console.WriteLine("The current theme is dark.");
+}
+else
+{
+    Console.WriteLine("The current theme is unknown."); // Might happen on other versions than Windows 10/11
 }
 ```
 
