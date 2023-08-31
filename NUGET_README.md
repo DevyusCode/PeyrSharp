@@ -35,13 +35,16 @@ PeyrSharp is divided in multiple packages:
 - Converters
 - Internet
 - Crypt
+- XmlHelper
+- JsonHelper
 
 **PeyrSharp.Env**, methods related to the file system and to the current execution environment.
 
 - FileSys
 - Logger
-- Update
 - System
+- Update
+- UwpApp
 
 **PeyrSharp.Enums**, all enumerations used by PeyrSharp
 
