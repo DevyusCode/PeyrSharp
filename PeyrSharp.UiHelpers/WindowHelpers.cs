@@ -67,8 +67,6 @@ namespace PeyrSharp.UiHelpers
 			return windowList;
 		}
 
-		// ... (rest of the code)
-
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
