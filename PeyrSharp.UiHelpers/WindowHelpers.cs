@@ -76,6 +76,11 @@ namespace PeyrSharp.UiHelpers
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MAXIMIZE, IntPtr.Zero);
 		}
+
+		public static void RestoreWindow(WindowInfo windowInfo)
+		{
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_RESTORE, IntPtr.Zero);
+		}
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
