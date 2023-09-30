@@ -103,6 +103,17 @@ namespace PeyrSharp.UiHelpers
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MINIMIZE, IntPtr.Zero);
 		}
 
+		/// <summary>
+		/// Moves a window to specified coordinates.
+		/// </summary>
+		/// <param name="windowInfo">The window to move.</param>
+		/// <param name="x">The X-axis coordinates.</param>
+		/// <param name="y">The Y-axis coordinates.</param>
+		public static void MoveWindow(WindowInfo windowInfo, int x, int y)
+		{
+			SetWindowPos(windowInfo.Handle, IntPtr.Zero, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+		}
+
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
@@ -113,9 +124,15 @@ namespace PeyrSharp.UiHelpers
 		private const int SC_MAXIMIZE = 0xF030;
 		private const int SC_RESTORE = 0xF120;
 		private const int SC_MINIMIZE = 0xF020;
+		private const uint SWP_NOSIZE = 0x0001;
+		private const uint SWP_NOZORDER = 0x0004;
 
 		[DllImport("user32.dll")]
 		private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
+
+		[DllImport("user32.dll")]
+		private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int x, int y, int cx, int cy, uint uFlags);
+
 
 		[DllImport("user32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
