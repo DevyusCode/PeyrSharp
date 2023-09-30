@@ -67,21 +67,37 @@ namespace PeyrSharp.UiHelpers
 			return windowList;
 		}
 
+		/// <summary>
+		/// Closes a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to close.</param>
 		public static void CloseWindow(WindowInfo windowInfo)
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_CLOSE, IntPtr.Zero);
 		}
 
+		/// <summary>
+		/// Maximizes a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to maximize.</param>
 		public static void MaximizeWindow(WindowInfo windowInfo)
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MAXIMIZE, IntPtr.Zero);
 		}
 
+		/// <summary>
+		/// Restores a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to restore.</param>
 		public static void RestoreWindow(WindowInfo windowInfo)
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_RESTORE, IntPtr.Zero);
 		}
 
+		/// <summary>
+		/// Minimizes a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to minimize.</param>
 		public static void MinimizeWindow(WindowInfo windowInfo)
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MINIMIZE, IntPtr.Zero);
