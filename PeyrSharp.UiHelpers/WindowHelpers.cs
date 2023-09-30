@@ -114,18 +114,34 @@ namespace PeyrSharp.UiHelpers
 			SetWindowPos(windowInfo.Handle, IntPtr.Zero, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 		}
 
+		/// <summary>
+		/// Sets the Topmost property of a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to target.</param>
+		/// <param name="isTopMost">The value of the TopMost property. <see langword="true"/> if the window should always stay on top; <see langword="false"/> otherwise.</param>
+		public static void SetTopMost(WindowInfo windowInfo, bool isTopMost)
+		{
+			SetWindowPos(windowInfo.Handle, isTopMost ? HWND_TOPMOST : HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+		}
+
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
 		}
 
 		private const int WM_SYSCOMMAND = 0x0112;
+
 		private const int SC_CLOSE = 0xF060;
 		private const int SC_MAXIMIZE = 0xF030;
 		private const int SC_RESTORE = 0xF120;
 		private const int SC_MINIMIZE = 0xF020;
+
 		private const uint SWP_NOSIZE = 0x0001;
 		private const uint SWP_NOZORDER = 0x0004;
+		internal const uint SWP_NOMOVE = 0x0002;
+
+		internal const int HWND_TOPMOST = -1;
+		internal const int HWND_NOTOPMOST = -2;
 
 		[DllImport("user32.dll")]
 		private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
@@ -133,6 +149,8 @@ namespace PeyrSharp.UiHelpers
 		[DllImport("user32.dll")]
 		private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int x, int y, int cx, int cy, uint uFlags);
 
+		[DllImport("user32.dll")]
+		static extern bool SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
 		[DllImport("user32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
