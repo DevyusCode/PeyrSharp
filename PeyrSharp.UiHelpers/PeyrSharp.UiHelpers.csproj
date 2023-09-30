@@ -8,7 +8,7 @@
 		<UseWPF>true</UseWPF>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp.UiHelpers</Title>
-		<Version>1.9.0.2309</Version>
+		<Version>1.10.0.2310-rc1</Version>
 		<Authors>Devyus</Authors>
 		<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
 		<Copyright>© 2023</Copyright>
@@ -20,8 +20,14 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Added WindowInfo class (#139)
-- Added the possibility to get a list of opened windows (#139)</PackageReleaseNotes>
+		<PackageReleaseNotes>- Added the possibility to close windows (#143)
+- Added the possibility to maximize windows (#143)
+- Added the possibility to restore windows (#143)
+- Added the possibility to minimize windows (#143)
+- Added XML documentation (#143)
+- Added the possibility to set the position of any window (#144)
+- Added SetTopMost() method (#145)
+- Added GetWindowSize() method (#146)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
