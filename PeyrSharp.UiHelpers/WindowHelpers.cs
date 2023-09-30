@@ -73,7 +73,7 @@ namespace PeyrSharp.UiHelpers
 		/// <param name="windowInfo">The window to close.</param>
 		public static void CloseWindow(WindowInfo windowInfo)
 		{
-			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_CLOSE, IntPtr.Zero);
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, (IntPtr)SC_CLOSE, IntPtr.Zero);
 		}
 
 		/// <summary>
@@ -82,7 +82,7 @@ namespace PeyrSharp.UiHelpers
 		/// <param name="windowInfo">The window to maximize.</param>
 		public static void MaximizeWindow(WindowInfo windowInfo)
 		{
-			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MAXIMIZE, IntPtr.Zero);
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, (IntPtr)SC_MAXIMIZE, IntPtr.Zero);
 		}
 
 		/// <summary>
@@ -91,7 +91,7 @@ namespace PeyrSharp.UiHelpers
 		/// <param name="windowInfo">The window to restore.</param>
 		public static void RestoreWindow(WindowInfo windowInfo)
 		{
-			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_RESTORE, IntPtr.Zero);
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, (IntPtr)SC_RESTORE, IntPtr.Zero);
 		}
 
 		/// <summary>
@@ -100,7 +100,7 @@ namespace PeyrSharp.UiHelpers
 		/// <param name="windowInfo">The window to minimize.</param>
 		public static void MinimizeWindow(WindowInfo windowInfo)
 		{
-			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MINIMIZE, IntPtr.Zero);
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, (IntPtr)SC_MINIMIZE, IntPtr.Zero);
 		}
 
 		/// <summary>
