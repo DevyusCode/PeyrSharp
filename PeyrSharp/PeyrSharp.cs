@@ -32,6 +32,6 @@ namespace PeyrSharp
 		/// <summary>
 		/// The current version of PeyrSharp.
 		/// </summary>
-		public static string Version => "1.9.0.2309";
+		public static string Version => "1.10.0.2310";
 	}
 }
