@@ -67,10 +67,24 @@ namespace PeyrSharp.UiHelpers
 			return windowList;
 		}
 
+		public static void CloseWindow(WindowInfo windowInfo)
+		{
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_CLOSE, IntPtr.Zero);
+		}
+
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
 		}
+
+		private const int WM_SYSCOMMAND = 0x0112;
+		private const int SC_CLOSE = 0xF060;
+		private const int SC_MAXIMIZE = 0xF030;
+		private const int SC_RESTORE = 0xF120;
+		private const int SC_MINIMIZE = 0xF020;
+
+		[DllImport("user32.dll")]
+		private static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
 		[DllImport("user32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
