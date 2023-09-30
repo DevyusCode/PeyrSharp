@@ -144,10 +144,8 @@ namespace PeyrSharp.UiHelpers
 			}
 		}
 
-		private static bool IsWindowVisible(IntPtr hWnd)
-		{
-			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
-		}
+		[DllImport("user32.dll")]
+		private static extern bool IsWindowVisible(IntPtr hWnd);
 
 		private const int WM_SYSCOMMAND = 0x0112;
 
@@ -171,14 +169,6 @@ namespace PeyrSharp.UiHelpers
 
 		[DllImport("user32.dll")]
 		static extern bool SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
-
-		[DllImport("user32.dll")]
-		[return: MarshalAs(UnmanagedType.Bool)]
-		private static extern bool IsWindowVisibleCore(IntPtr hWnd);
-
-		[DllImport("user32.dll")]
-		[return: MarshalAs(UnmanagedType.Bool)]
-		private static extern bool IsIconic(IntPtr hWnd);
 
 		[DllImport("user32.dll")]
 		[return: MarshalAs(UnmanagedType.Bool)]
