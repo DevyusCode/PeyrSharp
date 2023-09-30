@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as a,Q as o}from"./chunks/framework.b637c96f.js";const f=JSON.parse('{"title":"Env","description":"","frontmatter":{},"headers":[],"relativePath":"env.md","filePath":"env.md","lastUpdated":1673089188000}'),s={name:"env.md"},r=o("",8),l=[r];function d(i,n,h,c,m,p){return e(),a("div",null,l)}const v=t(s,[["render",d]]);export{f as __pageData,v as default};

@@ -38,7 +38,7 @@ export default {
       },
       {
         icon: "youtube",
-        link: "https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg",
+        link: "https://www.youtube.com/@PeyronnetGroup/",
       },
     ],
     outline: [1, 3],
