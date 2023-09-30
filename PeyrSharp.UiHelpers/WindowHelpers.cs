@@ -124,6 +124,26 @@ namespace PeyrSharp.UiHelpers
 			SetWindowPos(windowInfo.Handle, isTopMost ? HWND_TOPMOST : HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
 		}
 
+		/// <summary>
+		/// Gets the width and height of a window.
+		/// </summary>
+		/// <param name="windowInfo">The window to get the size of.</param>
+		/// <returns>A tuple of integers; the first one represents the width of the window, the second one represents the height.</returns>
+		/// <exception cref="InvalidOperationException"></exception>
+		public static (int, int) GetWindowSize(WindowInfo windowInfo)
+		{
+			if (GetWindowRect(windowInfo.Handle, out RECT rect))
+			{
+				int width = rect.Right - rect.Left;
+				int height = rect.Bottom - rect.Top;
+				return (width, height);
+			}
+			else
+			{
+				throw new InvalidOperationException("Failed to retrieve window size.");
+			}
+		}
+
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
@@ -170,5 +190,19 @@ namespace PeyrSharp.UiHelpers
 
 		[DllImport("user32.dll")]
 		private static extern int GetClassName(IntPtr hWnd, StringBuilder className, int count);
+
+		[DllImport("user32.dll")]
+		[return: MarshalAs(UnmanagedType.Bool)]
+		private static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+
+		[Serializable]
+		[StructLayout(LayoutKind.Sequential)]
+		private struct RECT
+		{
+			public int Left;
+			public int Top;
+			public int Right;
+			public int Bottom;
+		}
 	}
 }
