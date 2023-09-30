@@ -81,6 +81,12 @@ namespace PeyrSharp.UiHelpers
 		{
 			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_RESTORE, IntPtr.Zero);
 		}
+
+		public static void MinimizeWindow(WindowInfo windowInfo)
+		{
+			SendMessage(windowInfo.Handle, WM_SYSCOMMAND, SC_MINIMIZE, IntPtr.Zero);
+		}
+
 		private static bool IsWindowVisible(IntPtr hWnd)
 		{
 			return IsWindowVisibleCore(hWnd) && !IsIconic(hWnd);
