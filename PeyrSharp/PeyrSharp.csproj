@@ -4,7 +4,7 @@
 		<TargetFrameworks>net5.0;net6.0;net5.0-windows;net6.0-windows;net7.0;net7.0-windows</TargetFrameworks>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp</Title>
-		<Version>1.9.0.2309</Version>
+		<Version>1.10.0.2310</Version>
 		<Authors>Devyus</Authors>
 		<Copyright>© 2023</Copyright>
 		<Description>A C# library designed to make developers' job easier.</Description>
@@ -17,12 +17,15 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Added ToLowerAt(s) (#136)
-- Added ToLowerAt(str, r) (#136)
-- Added LaunchUWPApp(UwpApp) (#137)
-- Added CurrentTheme property (#138)
-- Added WindowInfo class (#139)
-- Added the possibility to get a list of opened windows (#139)</PackageReleaseNotes>
+		<PackageReleaseNotes>(for Windows only)
+- Added the possibility to close windows (#143)
+- Added the possibility to maximize windows (#143)
+- Added the possibility to restore windows (#143)
+- Added the possibility to minimize windows (#143)
+- Added XML documentation (#143)
+- Added the possibility to set the position of any window (#144)
+- Added SetTopMost() method (#145)
+- Added GetWindowSize() method (#146)</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -37,12 +40,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="PeyrSharp.Core" Version="1.9.0.2309" />
-		<PackageReference Include="PeyrSharp.Enums" Version="1.9.0.2309" />
-		<PackageReference Include="PeyrSharp.Env" Version="1.9.0.2309" />
-		<PackageReference Include="PeyrSharp.Exceptions" Version="1.9.0.2309" />
-		<PackageReference Include="PeyrSharp.Extensions" Version="1.9.0.2309" />
-		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.9.0.2309" />
+		<PackageReference Include="PeyrSharp.Core" Version="1.10.0.2310" />
+		<PackageReference Include="PeyrSharp.Enums" Version="1.10.0.2310" />
+		<PackageReference Include="PeyrSharp.Env" Version="1.10.0.2310" />
+		<PackageReference Include="PeyrSharp.Exceptions" Version="1.10.0.2310" />
+		<PackageReference Include="PeyrSharp.Extensions" Version="1.10.0.2310" />
+		<PackageReference Condition="'$(TargetPlatformIdentifier)' == 'Windows'" Include="PeyrSharp.UiHelpers" Version="1.10.0.2310" />
 	</ItemGroup>
 
 </Project>
