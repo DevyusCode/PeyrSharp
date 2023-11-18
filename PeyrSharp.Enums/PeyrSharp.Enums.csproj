@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net5.0;net6.0;net7.0</TargetFrameworks>
+		<TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Title>PeyrSharp.Enums</Title>
@@ -11,14 +11,15 @@
 		<PackageProjectUrl>https://peyrsharp.leocorporation.dev/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/DevyusCode/PeyrSharp</RepositoryUrl>
 		<PackageTags>enums;c-sharp;dotnet;vb;peyrsharp;leo corp</PackageTags>
-		<Version>1.10.0.2310</Version>
+		<Version>2.0.0.2311</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
-		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageReleaseNotes>- Added .NET 8 Support
+- Removed .NET 5 Support</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>

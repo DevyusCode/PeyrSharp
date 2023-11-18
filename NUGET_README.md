@@ -37,6 +37,7 @@ PeyrSharp is divided in multiple packages:
 - Crypt
 - XmlHelper
 - JsonHelper
+- StatusInfo
 
 **PeyrSharp.Env**, methods related to the file system and to the current execution environment.
 
@@ -74,6 +75,8 @@ PeyrSharp is divided in multiple packages:
 
 - WinForms
 - Screen
+- WindowHelpers
+- WindowInfo
 - WPF
 
 ## Compatibility
@@ -101,11 +104,11 @@ Caption:
 
 PeyrSharp is available in the following frameworks
 
-- .NET 5
 - .NET 6
 - .NET 7
+- .NET 8
 
-> Note: .NET Framework and .NET Core are not targeted by PeyrSharp, since they are no longer supported.
+> Note: .NET Framework, .NET Core and .NET 5 are not targeted by PeyrSharp, since they are no longer supported.
 
 ## Documentation
 
@@ -128,9 +131,9 @@ Here's what you'll need to contribute to this project:
   - .NET Desktop Development
   - Git
 - .NET
-  - .NET 5 (SDK + runtime)
   - .NET 6 (SDK + runtime)
   - .NET 7 (SDK + runtime)
+  - .NET 8 (SDK + runtime)
 - (_optional_) NuGet
 
 ## Badge

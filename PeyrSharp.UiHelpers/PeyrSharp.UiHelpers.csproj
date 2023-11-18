@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net5.0-windows;net6.0-windows;net7.0-windows</TargetFrameworks>
+		<TargetFrameworks>net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<UseWPF>true</UseWPF>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>PeyrSharp.UiHelpers</Title>
-		<Version>1.10.0.2310</Version>
+		<Version>2.0.0.2311</Version>
 		<Authors>Devyus</Authors>
 		<Description>Useful helpers for Windows Forms and Windows Presentation Framework.</Description>
 		<Copyright>© 2023</Copyright>
@@ -20,14 +20,8 @@
 		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageReleaseNotes>- Added the possibility to close windows (#143)
-- Added the possibility to maximize windows (#143)
-- Added the possibility to restore windows (#143)
-- Added the possibility to minimize windows (#143)
-- Added XML documentation (#143)
-- Added the possibility to set the position of any window (#144)
-- Added SetTopMost() method (#145)
-- Added GetWindowSize() method (#146)</PackageReleaseNotes>
+		<PackageReleaseNotes>- Added .NET 8 Support
+- Removed .NET 5 Support</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -42,7 +36,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="PeyrSharp.Enums" Version="1.10.0.2310" />
+		<PackageReference Include="PeyrSharp.Enums" Version="2.0.0.2311" />
 	</ItemGroup>
 
 </Project>

@@ -29,12 +29,6 @@
 
 ## Introduction
 
-### The roots
-
-In March 2020, we published LeoCorpLibrary, which was also a C# library that contains useful methods. When we started the development of it, we didn't know where the project will go yet. Over the releases, we've added more and more methods and new features. However, the meaning and the purpose of LeoCorpLibrary was becoming less clear for everyone; it was becoming a mess. This is why we decided to rather not release v5, but instead, we decided to make a brand new .NET Library, PeyrSharp.
-
-### Our next product
-
 PeyrSharp is a C# written library designed to make developers' life easier. We've all written code that we wish we hadn't. PeyrSharp is here to respond to this need; by implementing useful methods in various domains: Mathematics, Web/HTTP requests, unit converters, extensions, environment-related operations, and more!
 
 ## Modules
@@ -56,6 +50,7 @@ PeyrSharp is divided in multiple packages:
 - Crypt
 - XmlHelper
 - JsonHelper
+- StatusInfo
 
 </details>
 
@@ -118,6 +113,8 @@ PeyrSharp is divided in multiple packages:
 
 - WinForms
 - Screen
+- WindowHelpers
+- WindowInfo
 - WPF
 
 </details>
@@ -147,11 +144,11 @@ Caption:
 
 PeyrSharp is available in the following frameworks
 
-- .NET 5
 - .NET 6
 - .NET 7
+- .NET 8
 
-> Note: .NET Framework and .NET Core are not targeted by PeyrSharp, since they are no longer supported.
+> Note: .NET Framework, .NET Core and .NET 5 are not targeted by PeyrSharp, since they are no longer supported.
 
 ## Documentation
 
@@ -179,9 +176,9 @@ Here's what you'll need to contribute to this project:
   - .NET Desktop Development
   - Git
 - .NET
-  - .NET 5 (SDK + runtime)
   - .NET 6 (SDK + runtime)
   - .NET 7 (SDK + runtime)
+  - .NET 8 (SDK + runtime)
 - (_optional_) NuGet
 
 ## Badge
