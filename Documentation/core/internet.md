@@ -14,7 +14,7 @@ The `Internet` class is part of the `PeyrSharp.Core` module, which is compatible
 | Package/Platform | Windows    | macOS      | Linux + others |
 | ---------------- | ---------- | ---------- | -------------- |
 | Core             | ✅         | ✅         | ✅             |
-| **Framework**    | **.NET 5** | **.NET 6** | **.NET 7**     |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
 | Core             | ✅         | ✅         | ✅             |
 
 ## Methods

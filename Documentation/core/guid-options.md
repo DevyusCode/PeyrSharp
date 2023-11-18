@@ -1,4 +1,5 @@
 # GuidOptions
+
 This page is about the `GuidOptions` class available in PeyrSharp.Core.
 You can find here all of its properties.
 
@@ -6,20 +7,23 @@ You can find here all of its properties.
 
 The `GuidOptions` class is part of the `PeyrSharp.Core` module, which is compatible with all of these frameworks and platforms:
 
-| Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
-|------------------	|---------	|-------	|----------------	|
-| Core            	| ✅       	| ✅     	| ✅              	|
-| **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| Core            	| ✅       	| ✅     	| ✅              	|
+| Package/Platform | Windows    | macOS      | Linux + others |
+| ---------------- | ---------- | ---------- | -------------- |
+| Core             | ✅         | ✅         | ✅             |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
+| Core             | ✅         | ✅         | ✅             |
 
 ## Constructors
+
 ### GuidOptions()
+
 #### Definition
+
 Initializes `GuidOptions` with default values for its properties.
 
 #### Usage
 
-~~~ c#
+```c#
 using PeyrSharp.Core;
 
 var options = new GuidOptions();
@@ -30,15 +34,17 @@ var options = new GuidOptions();
         - Braces = false
         - UpperCaseOnly = false
 */
-~~~
+```
 
 ### GuidOptions(length, hyphens, braces, upperCaseOnly)
+
 #### Definition
+
 Initializes `GuidOptions` with specific values for its properties.
 
 #### Usage
 
-~~~ c#
+```c#
 using PeyrSharp.Core;
 
 var options = new GuidOptions(32, true, true, true);
@@ -49,15 +55,17 @@ var options = new GuidOptions(32, true, true, true);
         - Braces = true
         - UpperCaseOnly = true
 */
-~~~
+```
 
 ## Properties
+
 ### Length
+
 #### Definition
 
-~~~ c#
+```c#
 public int Length { get; set; }
-~~~
+```
 
 The `Length` property is an `int` representing the length of the Guid that will be generated if used with `GuidGen.Generate()`.
 
@@ -68,11 +76,12 @@ This property can be initialized when using the [`GuidOptions(length, hyphens, b
 You can `get` and `set` this property after initializing the class.
 
 ### Hyphens
+
 #### Definition
 
-~~~ c#
+```c#
 public bool Hyphens { get; set; }
-~~~
+```
 
 The `Hyphens` property is a `bool`, which will determine if you want hyphens in the Guid that will be generated if used with `GuidGen.Generate()`.
 
@@ -83,11 +92,12 @@ This property can be initialized when using the [`GuidOptions(length, hyphens, b
 You can `get` and `set` this property after initializing the class.
 
 ### Braces
+
 #### Definition
 
-~~~ c#
+```c#
 public bool Braces { get; set; }
-~~~
+```
 
 The `Braces` property is a `bool`, which will determine if you want braces in the Guid that will be generated if used with `GuidGen.Generate()`.
 
@@ -98,11 +108,12 @@ This property can be initialized when using the [`GuidOptions(length, hyphens, b
 You can `get` and `set` this property after initializing the class.
 
 ### UpperCaseOnly
+
 #### Definition
 
-~~~ c#
+```c#
 public bool UpperCaseOnly { get; set; }
-~~~
+```
 
 The `UpperCaseOnly` property is a `bool`, which will determine if you want to only have upper cases in the Guid that will be generated if used with `GuidGen.Generate()`.
 

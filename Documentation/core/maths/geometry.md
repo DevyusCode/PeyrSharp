@@ -1,4 +1,5 @@
 # Geometry
+
 This page is about the `Geometry` namespace available in `PeyrSharp.Core.Maths`.
 This namespace includes several classes to get and calculates various aspects of different shapes, like the area, perimeter, volume and more.
 
@@ -6,13 +7,14 @@ This namespace includes several classes to get and calculates various aspects of
 
 The namespace is part of the `PeyrSharp.Core` module, which is compatible with all of these frameworks and platforms:
 
-| Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
-|------------------	|---------	|-------	|----------------	|
-| Core            	| ✅       	| ✅     	| ✅              	|
-| **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| Core            	| ✅       	| ✅     	| ✅              	|
+| Package/Platform | Windows    | macOS      | Linux + others |
+| ---------------- | ---------- | ---------- | -------------- |
+| Core             | ✅         | ✅         | ✅             |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
+| Core             | ✅         | ✅         | ✅             |
 
 ## Classes
+
 - [Cube](/core/maths/geometry/cube)
 - [Circle](/core/maths/geometry/circle)
 - [Cone](/core/maths/geometry/cone)

@@ -10,7 +10,7 @@ Enumerations are part of the `PeyrSharp.Enums` module, which is compatible with 
 | Package/Platform | Windows    | macOS      | Linux + others |
 | ---------------- | ---------- | ---------- | -------------- |
 | Enums            | ✅         | ✅         | ✅             |
-| **Framework**    | **.NET 5** | **.NET 6** | **.NET 7**     |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
 | Enums            | ✅         | ✅         | ✅             |
 
 ## Converters

@@ -1,4 +1,5 @@
 # Proba
+
 This page is about the `Proba` class available in [`PeyrSharp.Core.Maths`](/core/maths).
 You can find here all of its methods.
 
@@ -10,29 +11,31 @@ This class is `static`.
 
 The `Proba` class is part of the `PeyrSharp.Core` module, which is compatible with all of these frameworks and platforms:
 
-| Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
-|------------------	|---------	|-------	|----------------	|
-| Core            	| ✅       	| ✅     	| ✅              	|
-| **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| Core            	| ✅       	| ✅     	| ✅              	|
+| Package/Platform | Windows    | macOS      | Linux + others |
+| ---------------- | ---------- | ---------- | -------------- |
+| Core             | ✅         | ✅         | ✅             |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
+| Core             | ✅         | ✅         | ✅             |
 
 ## Methods
+
 ### GetRandomValue(probabilities)
+
 #### Definition
 
 Gets a random value based on the specified probabilities. Returns a randomly selected value.
 
 #### Type parameters
 
-| Type      	| Name      	| Meaning                       	|
-|-----------	|-----------	|----------------------------------	|
-| `T`       	| -         	| The type of the values to select from. |
+| Type | Name | Meaning                                |
+| ---- | ---- | -------------------------------------- |
+| `T`  | -    | The type of the values to select from. |
 
 #### Parameters
 
-| Type      	| Name               	| Meaning                                	|
-|-----------	|-------------------	|------------------------------------------------	|
-| `Dictionary<T, double>` 	| `probabilities` 	| A dictionary containing the probability of getting each value. 	|
+| Type                    | Name            | Meaning                                                        |
+| ----------------------- | --------------- | -------------------------------------------------------------- |
+| `Dictionary<T, double>` | `probabilities` | A dictionary containing the probability of getting each value. |
 
 #### Exceptions
 
@@ -41,7 +44,7 @@ Gets a random value based on the specified probabilities. Returns a randomly sel
 
 #### Usage
 
-~~~ c#
+```c#
 using PeyrSharp.Core.Maths;
 
 Dictionary<string, double> probabilities = new Dictionary<string, double>
@@ -51,4 +54,4 @@ Dictionary<string, double> probabilities = new Dictionary<string, double>
 };
 
 string result = Proba.GetRandomValue(probabilities);
-~~~
+```

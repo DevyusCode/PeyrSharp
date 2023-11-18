@@ -14,7 +14,7 @@ The `DoubleExtensions` class is part of the `PeyrSharp.Extensions` module, and i
 | Package/Platform | Windows    | macOS      | Linux + others |
 | ---------------- | ---------- | ---------- | -------------- |
 | Extensions       | ✅         | ✅         | ✅             |
-| **Framework**    | **.NET 5** | **.NET 6** | **.NET 7**     |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
 | Extensions       | ✅         | ✅         | ✅             |
 
 ## Methods
