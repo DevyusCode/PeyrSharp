@@ -24,7 +24,7 @@ features:
     details: Using PeyrSharp in a project is very easy and intuitive.
     icon: ✅
   - title: .NET Powered
-    details: PeyrSharp is built using C# and .NET. It's available for projects targeting .NET 5 and higher.
+    details: PeyrSharp is built using C# and .NET. It's available for projects targeting .NET 6 and higher.
     icon: 🚀
   - title: Cross-Platform
     details: PeyrSharp is compatible with every operating systems that .NET supports.
