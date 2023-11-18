@@ -1,4 +1,5 @@
 # UiHelpers
+
 This page is about the exceptions available in `PeyrSharp.UiHelpers`.
 They are grouped by category.
 
@@ -6,13 +7,14 @@ They are grouped by category.
 
 UiHelpers are part of the `PeyrSharp.UiHelpers` module, which is compatible with all of these frameworks and platforms:
 
-| Package/Platform 	| Windows 	| macOS 	| Linux + others 	|
-|------------------	|---------	|-------	|----------------	|
-| UiHelpers            	| ✅       	| ❌     	| ❌              	|
-| **Framework**         | **.NET 5** | **.NET 6**  | **.NET 7** |
-| UiHelpers            	| ✅       	| ✅     	| ✅              	|
+| Package/Platform | Windows    | macOS      | Linux + others |
+| ---------------- | ---------- | ---------- | -------------- |
+| UiHelpers        | ✅         | ❌         | ❌             |
+| **Framework**    | **.NET 6** | **.NET 7** | **.NET 8**     |
+| UiHelpers        | ✅         | ✅         | ✅             |
 
 ## Classes
+
 - [Screen](/ui-helpers/screen.md)
 - [WinForms](/ui-helpers/winforms.md)
 - [WPF](/ui-helpers/wpf.md)

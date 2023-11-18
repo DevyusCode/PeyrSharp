@@ -23,8 +23,9 @@ If you think you need all the features of PeyrSharp, you can directly install th
 
 - FileSys
 - Logger
-- Update
 - System
+- Update
+- UwpApp
 
 :::
 
@@ -52,17 +53,19 @@ If you think you need all the features of PeyrSharp, you can directly install th
 
 ::: details **PeyrSharp.Extensions**, extension methods, that extends basic types, such as <code>string</code>, <code>int</code>, <code>double</code> or arrays (<code>T[]</code>).
 
-- String
-- Int
-- Double
 - Array (`T[]`)
+- Double
+- Int
+- String
 
 :::
 
-::: details **PeyrSharp.UiHelpers**, methods related to Windows Forms or to the Windows Presentation Framework (WPF).
+::: details **PeyrSharp.UiHelpers**, methods related to Windows Forms, the Windows Presentation Framework (WPF) or <code>user32.dll</code>.
 
-- WinForms
 - Screen
+- WinForms
+- WindowHelper
+- WindowInfo
 - WPF
 
 :::
@@ -92,12 +95,16 @@ Caption:
 
 PeyrSharp is available in the following frameworks
 
-- .NET 5
 - .NET 6
 - .NET 7
+- .NET 8
 
 ::: info
 .NET Framework and .NET Core are not targeted by PeyrSharp, since they are no longer supported.
+:::
+
+::: info
+.NET 5 is no longer supported starting with version 2.0.0.2311 and higher.
 :::
 
 ## Installation methods
@@ -109,13 +116,13 @@ PeyrShall is available on NuGet, you can install it by running the following com
 You can add PeyrSharp to your project the .NET CLI.
 
 ```powershell
-dotnet add package PeyrSharp --version 1.0.0.2211
+dotnet add package PeyrSharp --version 2.0.0.2311
 ```
 
 ### Package Manager
 
 ```sh
-NuGet\Install-Package PeyrSharp -Version 1.0.0.2211
+NuGet\Install-Package PeyrSharp -Version 2.0.0.2311
 ```
 
 ### Package Reference
@@ -123,7 +130,7 @@ NuGet\Install-Package PeyrSharp -Version 1.0.0.2211
 You can specify in your project file that it is dependent on PeyrSharp.
 
 ```xml
-<PackageReference Include="PeyrSharp" Version="1.0.0.2211" />
+<PackageReference Include="PeyrSharp" Version="2.0.0.2311" />
 ```
 
 ## Start coding
