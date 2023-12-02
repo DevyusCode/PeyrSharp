@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>2.0.0.2311</Version>
+    <Version>2.1.0.2312-pre1</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -16,8 +16,9 @@
     <PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>- Added .NET 8 Support
-- Removed .NET 5 Support</PackageReleaseNotes>
+    <PackageReleaseNotes>- Added DownloadFile() method (#157)
+- Added XML Documentation
+- Added new overload for GenerateAsync() in Password (#158)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
