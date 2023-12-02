@@ -93,6 +93,13 @@ namespace PeyrSharp.Core
 			}
 		}
 
+		/// <summary>
+		/// Downloads a file from a specified link and saves it to a specified path.
+		/// </summary>
+		/// <param name="link">The URL of the file to download.</param>
+		/// <param name="path">The local path where the file should be saved.</param>
+		/// <returns>Returns true if the file was downloaded and saved successfully, otherwise returns false.</returns>
+		/// <exception cref="Exception">Throws an exception if an error occurs during the download or save process.</exception>
 		public static async Task<bool> DownloadFile(string link, string path)
 		{
 			try
