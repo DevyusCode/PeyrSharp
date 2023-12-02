@@ -24,6 +24,7 @@ SOFTWARE.
 
 using PeyrSharp.Enums;
 using System;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -89,6 +90,21 @@ namespace PeyrSharp.Core
 			catch
 			{
 				return false; // An excpetion has been thrown likely because the client couldn't resolve the host.
+			}
+		}
+
+		public static async Task<bool> DownloadFile(string link, string path)
+		{
+			try
+			{
+				using HttpClient client = new();
+				byte[] data = await client.GetByteArrayAsync(link);
+				await File.WriteAllBytesAsync(path, data);
+				return true;
+			}
+			catch
+			{
+				return false;
 			}
 		}
 
