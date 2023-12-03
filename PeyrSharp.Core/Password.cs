@@ -83,6 +83,40 @@ namespace PeyrSharp.Core
 		}
 
 		/// <summary>
+		/// Asynchronously generates a string of a specified length using a given set of characters.
+		/// </summary>
+		/// <param name="length">The length of the string to generate.</param>
+		/// <param name="chars">An array of characters to use for generating the string.</param>
+		/// <returns>A task that represents the asynchronous operation. The task result contains the generated string.</returns>
+		/// <exception cref="Exception">Throws an exception if the length parameter is not greater than 0.</exception>
+		public static Task<string> GenerateAsync(int length, string[] chars)
+		{
+			Task<string> task = new(() =>
+			{
+				// Setup variables
+				string finalPassword = "";
+				Random random = new();
+				int number = 0;
+
+				if (length > 0) // Check if the length valid
+				{
+					for (int i = 1; i < length; i++) // Generate a password of a specific length
+					{
+						number = random.Next(0, chars.Length);
+						finalPassword += chars[number]; // Append a character to the string
+					}
+				}
+				else
+				{
+					throw new Exception("The parameter 'length' (int) must be higher than 0.");
+				}
+				return finalPassword;
+			});
+			task.Start();
+			return task;
+		}
+
+		/// <summary>
 		/// Generates a password asynchronously.
 		/// </summary>
 		/// <param name="length">The length of the password.</param>

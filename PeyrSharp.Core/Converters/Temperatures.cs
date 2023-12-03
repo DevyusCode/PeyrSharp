@@ -42,5 +42,33 @@ namespace PeyrSharp.Core.Converters
 		/// <param name="fahrenheit">Number of Fahrenheit to convert.</param>
 		/// <returns>The original value converted in Celsius.</returns>
 		public static double FahrenheitToCelsius(double fahrenheit) => (fahrenheit - 32) / 1.8; // Convert
+
+		/// <summary>
+		/// Converts a temperature value from Celsius to Kelvin.
+		/// </summary>
+		/// <param name="celsius">Temperature value in Celsius.</param>
+		/// <returns>Temperature value in Kelvin.</returns>
+		public static double CelsiusToKelvin(double celsius) => celsius + 273.15;
+
+		/// <summary>
+		/// Converts a temperature value from Fahrenheit to Kelvin.
+		/// </summary>
+		/// <param name="fahrenheit">Temperature value in Fahrenheit.</param>
+		/// <returns>Temperature value in Kelvin.</returns>
+		public static double FahrenheitToKelvin(double fahrenheit) => (fahrenheit + 459.67) * 5 / 9;
+
+		/// <summary>
+		/// Converts a temperature value from Kelvin to Celsius.
+		/// </summary>
+		/// <param name="kelvin">Temperature value in Kelvin.</param>
+		/// <returns>Temperature value in Celsius.</returns>
+		public static double KelvinToCelsius(double kelvin) => kelvin - 273.15;
+
+		/// <summary>
+		/// Converts a temperature value from Kelvin to Fahrenheit.
+		/// </summary>
+		/// <param name="kelvin">Temperature value in Kelvin.</param>
+		/// <returns>Temperature value in Fahrenheit.</returns>
+		public static double KelvinToFahrenheit(double kelvin) => kelvin * 9 / 5 - 459.67;
 	}
 }

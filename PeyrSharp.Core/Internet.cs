@@ -24,6 +24,7 @@ SOFTWARE.
 
 using PeyrSharp.Enums;
 using System;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -89,6 +90,28 @@ namespace PeyrSharp.Core
 			catch
 			{
 				return false; // An excpetion has been thrown likely because the client couldn't resolve the host.
+			}
+		}
+
+		/// <summary>
+		/// Downloads a file from a specified link and saves it to a specified path.
+		/// </summary>
+		/// <param name="link">The URL of the file to download.</param>
+		/// <param name="path">The local path where the file should be saved.</param>
+		/// <returns>Returns true if the file was downloaded and saved successfully, otherwise returns false.</returns>
+		/// <exception cref="Exception">Throws an exception if an error occurs during the download or save process.</exception>
+		public static async Task<bool> DownloadFile(string link, string path)
+		{
+			try
+			{
+				using HttpClient client = new();
+				byte[] data = await client.GetByteArrayAsync(link);
+				await File.WriteAllBytesAsync(path, data);
+				return true;
+			}
+			catch
+			{
+				return false;
 			}
 		}
 
