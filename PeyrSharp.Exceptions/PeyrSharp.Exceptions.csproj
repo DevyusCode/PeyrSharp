@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>PeyrSharp.Exceptions</Title>
-    <Version>2.0.0.2311</Version>
+    <Version>2.1.0.2312</Version>
     <Company>Devyus</Company>
     <Description>Exceptions of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -18,8 +18,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>- Added .NET 8 Support
-- Removed .NET 5 Support</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

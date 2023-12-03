@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>PeyrSharp.Core</Title>
-    <Version>2.1.0.2312-rc1</Version>
+    <Version>2.1.0.2312</Version>
     <Authors>Devyus</Authors>
     <Description>Core methods and features of PeyrSharp.</Description>
     <Copyright>© 2023</Copyright>
@@ -37,8 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="PeyrSharp.Enums" Version="2.0.0.2311" />
-    <PackageReference Include="PeyrSharp.Exceptions" Version="2.0.0.2311" />
+    <PackageReference Include="PeyrSharp.Enums" Version="2.1.0.2312" />
+    <PackageReference Include="PeyrSharp.Exceptions" Version="2.1.0.2312" />
   </ItemGroup>
 
 </Project>
