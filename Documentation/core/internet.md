@@ -242,3 +242,47 @@ using PeyrSharp.Core;
 bool valid = Internet.GetUrlProtocol("a/test");
 // valid = false
 ```
+
+### DownloadFile(link, path)
+
+#### Definition
+
+Downloads a file from a specified link and saves it to a specified path.
+
+#### Arguments
+
+| Type     | Name   | Meaning                                        |
+| -------- | ------ | ---------------------------------------------- |
+| `string` | `link` | The URL of the file to download.               |
+| `string` | `path` | The local path where the file should be saved. |
+
+#### Returns
+
+Returns `true` if the file was downloaded and saved successfully, otherwise returns `false`.
+
+#### Exceptions
+
+| Type               | Meaning                                                                     |
+| ------------------ | --------------------------------------------------------------------------- |
+| `System.Exception` | Throws an exception if an error occurs during the download or save process. |
+
+#### Usage
+
+```c#
+using System;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
+using PeyrSharp.Core;
+
+bool success = await Internet.DownloadFile("https://example.com/file.txt", "C:\\path\\file.txt");
+
+if (success)
+{
+    Console.WriteLine("File downloaded and saved successfully.");
+}
+else
+{
+    Console.WriteLine("Failed to download or save the file.");
+}
+```
