@@ -148,7 +148,7 @@ PeyrSharp is available in the following frameworks
 - .NET 7
 - .NET 8
 
-> Note: .NET Framework, .NET Core and .NET 5 are not targeted by PeyrSharp, since they are no longer supported.
+> Note: .NET Framework, .NET Core and .NET 5 are not targeted by PeyrSharp.
 
 ## Documentation
 
